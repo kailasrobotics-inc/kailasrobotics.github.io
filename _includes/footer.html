@@ -1,0 +1,153 @@
+<footer>
+    <section id="bottom">
+      <div class="bottom-cta">
+        <h2 class="subtitle sc-over">
+          	<div lang="jp">会社情報</div>
+          	<div lang="mon">Компани</div>
+          	<div lang="eng">Company</div>
+        </h2>
+        <div  class="wrapper">
+          <table class="table" >
+              <tr>
+                <th class="lang" key="nameCom" style="border:none;">
+                  <span lang="jp">社名</span> 
+                  <span lang="mon">Компанийн нэр</span>
+                  <span lang="eng">Company name</span>
+                </th>
+                <td  style="border-width: 0px;" >
+                  <span lang="jp">株式会社 Sorako Japan</span>
+                  <span lang="mon">Sorako Japan.inc</span>
+                  <span lang="eng">Sorako Japan.inc</span>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <span lang="jp">設立</span>
+                  <span lang="mon">Байгууллага</span>
+                  <span lang="eng">Establishment</span>
+                </th>
+                <td>
+                  <span lang="jp">2014年07月</span>
+                  <span lang="mon">2014 оны 7-р сар</span>
+                  <span lang="eng">July 2014</span>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <span lang="jp">資本金</span>
+                  <span lang="mon">Хөрөнгө</span>
+                  <span lang="eng">Capital</span>
+                </th>
+                <td>
+                   <span lang="jp">500万円</span>
+                   <span lang="mon">5 сая иен</span>
+                   <span lang="eng">5 million yen</span>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <span lang="jp">所在地</span> 
+                  <span lang="mon">Байршил</span> 
+                  <span lang="eng">location</span> 
+                </th>
+                <td> 
+                  <ul>
+                    <li>
+                       <span lang="jp">〒182-0034 東京都調布市下石原3丁目2−7 平田ビル 2F N7  </span>
+                       <span lang="mon">Монгол улс, Улаанбаатар хот, Сүхбаатар дүүрэг, 1-р хороо, Энхтайваны өргөн чөлөө - 15A/5 Амбассадор оффис 403 тоот </span>
+                       <span lang="eng">〒182-0034 Tokyo, Chofu, Shimoishiwara, 3 Chome−2−7 Hirata Building 2F N7</span>
+                     </li>
+                     <li>
+                       <span lang="jp"><strong>メールアドレス</strong>:  info@sorako.jp</span>
+                       <span lang="eng"><strong>Mail address</strong>:  info@sorako.jp</span>
+                     </li>   
+                     <li>
+                       <span lang="jp"><strong>電話</strong>： 042-444-7899</span>
+                       <span lang="eng"><strong>Telephone</strong>:  042-444-7899</span>
+                     </li>
+                  </ul> 
+                </td>
+              </tr>
+              <tr>
+                <th>
+                    <span lang="jp">事業内容</span>
+                    <span lang="mon">Бизнесийн тодорхойлолт</span>
+                    <span lang="eng">Business description</span>
+                 </th>
+                <td>
+                  <ul>
+                    <li>
+                      <span lang="jp">モバイルアプリ開発、運営</span>
+                      <span lang="mon">Гар утасны програм боловсруулах, ажиллуулах</span>
+                      <span lang="eng">Mobile application development and operation</span>
+                    </li>
+                    <li>
+                      <span lang="jp">インターネットによる情報サービス業</span>
+                      <span lang="mon">Интернэт мэдээллийн үйлчилгээний салбар</span>
+                      <span lang="eng">Internet information service industry</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <th class="ths"></th>
+                <td class="tds">
+                </td>
+              </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+  </footer>
+<!--   <img class="model" src="img/backtop.png" alt="" /> -->
+  <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-arrow-circle-o-up"></i></a>
+  
+  <script src="assets/js/all.js"></script>
+  <script type="text/javascript">
+    let langs = ['jp', 'mon', 'eng'];
+    let lang = 'jp';
+    setLangStyles(lang);
+
+    function setStyles(styles) {
+      var elementId = '__lang_styles';
+      var element = document.getElementById(elementId);
+      if (element) {
+        element.remove();
+      }
+
+      let style = document.createElement('style');
+      style.id = elementId;
+      style.type = 'text/css';
+
+      if (style.styleSheet) {
+        style.styleSheet.cssText = styles;
+      } else {
+        style.appendChild(document.createTextNode(styles));
+      }
+      document.getElementsByTagName('head')[0].appendChild(style);
+    }
+
+    function setLang(lang) {
+      setLangStyles(lang);
+    }
+
+    function setLangStyles(lang) {
+      let styles = langs
+        .filter(function (l) {
+          return l != lang;
+        })
+        .map(function (l) {
+          return ':lang('+ l +') { display: none; }';
+        })
+        .join(' ');
+
+      setStyles(styles);
+    }
+  </script>
+  <script type='text/javascript' src="assets/js/custom.js"></script>
+  <script type='text/javascript' src="assets/js/jquery.min.js"></script>
+  <script type='text/javascript' src="assets/js/bootstrap.js"></script>
+  <script type='text/javascript' src="assets/js/jquery.prettyPhoto.js"></script>
+  <script type='text/javascript' src="assets/js/sequence.jquery.js"></script>
+  <script type='text/javascript' src="assets/js/jquery-hover-effect.js"></script> 
+  
