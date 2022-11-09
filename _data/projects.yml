@@ -501,25 +501,25 @@
   PlatformJpTit: iPhone
   # technology
   technologyEng: echnology developed
-  technologyMon: хөгжүүлсэн технологи
-  technologyJp: 開発技術
-  # language
-  technologyEngLang:  Objective C,Web servise (API)
-  technologyMonLang:  Objective C,Web servise (API)
-  technologyJpLang:  Objective C,Web servise (API)
-  # Database
-  DatabaseEng: Database
-  DatabaseMon: өгөгдлийн сан
-  DatabaseJp: データベース
-  # used databases
-  DatabaseEngUsed: MySQL server, SQLite
-  DatabaseMonUsed: MySQL server, SQLite
-  DatabaseJpUsed: MySQL server, SQLite
-  # Explanation
-  ExplanationEng: Explanation
-  ExplanationMon: Тайлбар
-  ExplanationJp: 説明 
-  # Explanation in
-  ExplanationJpIn: このアプリは、結婚式の結婚式の写真を収集し、訪問者が訪れる興味深い写真の写真を含むアルバムを作成することで写真を作成します。
-  ExplanationEngIn: The app creates a photo by collecting a wedding photo for the wedding and creating an album with photos of interesting photos that come with visitors.
-  ExplanationMonIn: Хуримын үйл ажилгаанд хуримын албом зураг цуглуулах, ирсэн зочдоор сонирхолтой оцгой эгшинг авсан зургуудаар альбом үүсгэдэг апп.
+#   technologyMon: хөгжүүлсэн технологи
+#   technologyJp: 開発技術
+#   # language
+#   technologyEngLang:  Objective C,Web servise (API)
+#   technologyMonLang:  Objective C,Web servise (API)
+#   technologyJpLang:  Objective C,Web servise (API)
+#   # Database
+#   DatabaseEng: Database
+#   DatabaseMon: өгөгдлийн сан
+#   DatabaseJp: データベース
+#   # used databases
+#   DatabaseEngUsed: MySQL server, SQLite
+#   DatabaseMonUsed: MySQL server, SQLite
+#   DatabaseJpUsed: MySQL server, SQLite
+#   # Explanation
+#   ExplanationEng: Explanation
+#   ExplanationMon: Тайлбар
+#   ExplanationJp: 説明 
+#   # Explanation in
+#   ExplanationJpIn: このアプリは、結婚式の結婚式の写真を収集し、訪問者が訪れる興味深い写真の写真を含むアルバムを作成することで写真を作成します。
+#   ExplanationEngIn: The app creates a photo by collecting a wedding photo for the wedding and creating an album with photos of interesting photos that come with visitors.
+#   ExplanationMonIn: Хуримын үйл ажилгаанд хуримын албом зураг цуглуулах, ирсэн зочдоор сонирхолтой оцгой эгшинг авсан зургуудаар альбом үүсгэдэг апп.

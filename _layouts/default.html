@@ -17,27 +17,27 @@
     <div id="services" class="parallax section lb">
         <div class="container">
             <div class="section-title text-center">
-                <h3 lang="eng">executed projects</h3>
-                <h3 lang="mon">гүйцэтгэсэн төслүүд</h3>
-                <h3 lang="jp">実行されたプロジェクト</h3>
-            </div><!-- end title -->
+                <h3 lang="eng"></h3>
+                <h3 lang="mon"></h3>
+                <h3 lang="jp"></h3>
+            </div>
             <div class="owl-services owl-carousel owl-theme">
-            {{ content}}
-            </div><!-- end row -->
+            <!-- {{ content}} -->
+            </div>
            <div class=" text-center" >
-          <h3 lang="eng">Authorized distributor</h3>
-          <h3 lang="mon">Итгэмжлэгдсэн худалдааны төлөөлөгч</h3>
-          <h3 lang="jp">正規代理店販売</h3>
+          <h3 lang="eng"></h3>
+          <h3 lang="mon"></h3>
+          <h3 lang="jp"></h3>
           <table class="tableth">
-            {% for authorized in site.data.authorized %}  
+           <!--  {% for authorized in site.data.authorized %}  
             <th {{ authorized.ink }} {{ authorized.thstyle }}>
                <a href="{{ authorized.imagelink }}" {{authorized.styles}}> <img class="dev" src="{{ authorized.imageUrl }}" ></a>
             </th>
-             {% endfor %}
+             {% endfor %} -->
           </table>
-        </div><!-- end title -->
+        </div>
         <hr class="hr1">
-        </div><!-- end container -->
+        </div>
     </div><!-- end section -->
   {% include footer.html %}
 </body>
