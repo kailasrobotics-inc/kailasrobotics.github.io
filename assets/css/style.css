@@ -213,13 +213,24 @@ border-color: none;
 }
 
 /*============== 5. Intro section ===================*/
-
+.custom-title {
+  color: white;
+  margin-top: 30px;
+  font-size: 45px;
+}
+.custom-p5 {
+  padding: 30px 0px;
+}
+.custom-text-color {
+  color: black;
+}
 /* parallax */
 .section {
+    background: url(../img/slides/robot2.png) 50% 18% no-repeat;
     display: block;
     position: relative;
     overflow: hidden;
-    padding: 120px 0;
+/*    padding: 120px 0;*/
 }
 .section.lb {
     background-color: #f2f3f5;
@@ -238,7 +249,7 @@ border-color: none;
 }
 
 section#intro {
-  background: #000 url(../img/bg/bg1.jpg) 50% 0% no-repeat;
+  background: #000 url(../img/bg/background1.jpg) 50% 0% no-repeat;
   color: #fff;
   max-height: 650px;
   height: auto;
@@ -622,7 +633,7 @@ span.zoom {
 
 section#bottom {
   width: 100%;
-  background: url(../img/bg/bg2.jpg) 50% 0 no-repeat;
+  background: url(../img/bg/background1.jpg) 50% 0 no-repeat;
   color: #fff;
   max-height: 650px;
   height: auto;
