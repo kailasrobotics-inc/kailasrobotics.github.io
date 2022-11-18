@@ -219,14 +219,14 @@ border-color: none;
   font-size: 45px;
 }
 .custom-p5 {
-  padding: 30px 0px;
+  padding: 170px 0px;
 }
 .custom-text-color {
   color: black;
 }
 /* parallax */
 .section {
-    background: url(../img/slides/robot2.png) 50% 18% no-repeat;
+    background: url(../img/slides/robot2.png) 50% 11% no-repeat;
     display: block;
     position: relative;
     overflow: hidden;
