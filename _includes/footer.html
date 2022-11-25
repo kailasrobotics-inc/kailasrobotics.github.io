@@ -163,20 +163,29 @@
 </footer>
 <a href="#" id="scroll-to-top" class="dmtop global-radius show"><i class="fa fa-arrow-circle-o-up"></i></a>
 <script src="assets/js/all.js"></script>
-<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
+<script type='text/javascript' src="assets/js/custom.js"></script>
+<script type='text/javascript' src="assets/js/jquery.min.js"></script>
+<script type='text/javascript' src="assets/js/bootstrap.js"></script>
 <script type="text/javascript">
     let langs = ['jp', 'mon', 'eng'];
     let lang = 'jp';
     setLangStyles(lang);
 
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwYRUkhIxtB26xIlIX3A_uv34Dl_-4kbkNCrUyjLhzWtvFJ-QJFHQHxvisdltaK_ADI/exec'
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwSNOPhtU3uQgqk3Y4xbLLonhB3eOF0cPY6uZDwLfFwdDHS8YNsG1M5G2P4H5o_D7t3/exec'
     const form = document.forms['googleSheet']
 
     form.addEventListener('submit', e => {
         e.preventDefault()
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => $("#formAlerts").html("<div class='alert alert-success'>Successfully</div>"))
-            .catch(error => $("#formAlerts").html("<div class='alert alert-danger'>Error</div>"))
+            .then(response => {
+                $("#formAlerts").html('<div class="alert alert-success"><span lang="jp">成功!</span><span lang="eng">Successfully!</span></div>');
+                clearForm()
+                setTimeout(function(){
+                    $("#closeBtn").click()
+                    $("#formAlerts").html('')
+                }, 350) 
+            })
+            .catch(error => $("#formAlerts").html('<div class="alert alert-danger"><span lang="jp">エラー!</span><span lang="eng">Error!</div>'))
     })
 
     function setStyles(styles) {
@@ -219,7 +228,4 @@
         $('#myForm').get(0).reset()
     }
 </script>
-<script type='text/javascript' src="assets/js/custom.js"></script>
-<script type='text/javascript' src="assets/js/jquery.min.js"></script>
-<script type='text/javascript' src="assets/js/bootstrap.js"></script>
 
