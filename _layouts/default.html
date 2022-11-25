@@ -42,7 +42,7 @@
                     <div class="u-container-style u-layout-cell u-left-cell u-size-28 u-layout-cell-1">
                         <div class="u-container-layout u-container-layout-1">
                             <h2 class="u-custom-font u-font-arial u-text u-text-1"> 
-                                <span lang="jp">イントロ</span>
+                                <span lang="jp">我々は</span>
                                 <span lang="eng">Introduction</span>
                             </h2>
                             <p class="u-custom-font u-font-arial u-text u-text-2">
@@ -83,7 +83,7 @@
     <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <form id="myForm" name="googleSheet">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick="clearForm()">&times;</button>
+                <button type="button" class="close" id="closeBtn" data-dismiss="modal" aria-hidden="true" onclick="clearForm()">&times;</button>
                 <h3>
                     <span lang="jp">お問い合わせ</span>
                     <span lang="eng">Contact Us</span>
@@ -131,16 +131,14 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <!-- <a href="" class="btn" onclick="clearForm()">
-                    <span lang="jp">閉</span>
-                    <span lang="eng">Close</span>
-                </a>
-                <a href="" class="btn btn-primary" type="submit">
+                <button class="btn btn-danger" type="reset">
+                    <span lang="jp">リセット</span>
+                    <span lang="eng">Reset</span>
+                </button>
+                <button class="btn btn-success" type="submit">
                     <span lang="jp">送信</span>
                     <span lang="eng">Send</span>
-                </a> -->
-                <button class="btn btn-danger" type="reset">Reset</button>
-                <button class="btn btn-primary" type="submit">Send</button>
+                </button>
             </div>
         </form>
     </div>
