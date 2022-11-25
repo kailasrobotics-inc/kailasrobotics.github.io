@@ -8,13 +8,13 @@
 
 .u-section-1 .u-image-1 {
   min-height: 841px;
-  background-image: url("../img/zurag/intror.jpg");
+  background-image: linear-gradient(to top, white, transparent, transparent, transparent, transparent), url("../img/zurag/intror.jpg");
   background-position: 50% 50%;
 }
 
 .u-section-1 .u-image-2 {
   min-height: 841px;
-  background-image: url("../img/zurag/introbg.jpg");
+  background-image: linear-gradient(to top, white, transparent, transparent, transparent, transparent), linear-gradient(to bottom, white, transparent, transparent, transparent, transparent), url("../img/zurag/introbg.jpg");
   background-position: 0% 50%;
 }
 
@@ -218,7 +218,7 @@
 
 .u-section-2 .u-image-2 {
   min-height: 687px;
-  background-image: url("../img/zurag/robot2.png");
+  background-image: linear-gradient(to top, white, transparent, transparent, transparent, transparent), url("../img/zurag/robot2.png");
 }
 
 .u-section-2 .u-layout-wrap-2 {
