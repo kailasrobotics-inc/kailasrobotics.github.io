@@ -87,7 +87,7 @@
 
                                         </h5>
                                         <div class="u-block-content u-text">
-                                            <span lang="jp">〒116-0013 東京都荒川区西日暮里六丁目37番1号</span>
+                                            <span lang="jp">〒116-0013 東京都荒川区</br>西日暮里六丁目37番1号</span>
                                            <span lang="eng">〒16-37-1 Nishinippori, Arakawa-ku, Tokyo 116-0013</span>
                                         </div>
                                     </div>
@@ -139,6 +139,20 @@
                                     </div>
                                 </div>
                             </div>
+                            <div data-position="" class="u-expanded-width u-position u-position-8">
+                                <div class="u-block">
+                                    <div class="u-block-container u-clearfix">
+                                        <h5 class="u-block-header u-text u-text-body-alt-color u-text-15">
+                                            <span lang="jp">代表取締役社長</span>
+                                            <span lang="eng">CEO</span>
+                                        </h5>
+                                        <div class="u-block-content u-text u-text-body-alt-color u-text-16">
+                                            <span lang="jp">ダンバダルジャ・ムンフバヤル (ダンバ)</span>
+                                            <span lang="eng">Dambadarjaa Munkhbayar (Damba)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -149,10 +163,21 @@
 </footer>
 <a href="#" id="scroll-to-top" class="dmtop global-radius show"><i class="fa fa-arrow-circle-o-up"></i></a>
 <script src="assets/js/all.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
 <script type="text/javascript">
     let langs = ['jp', 'mon', 'eng'];
     let lang = 'jp';
     setLangStyles(lang);
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwYRUkhIxtB26xIlIX3A_uv34Dl_-4kbkNCrUyjLhzWtvFJ-QJFHQHxvisdltaK_ADI/exec'
+    const form = document.forms['googleSheet']
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => $("#formAlerts").html("<div class='alert alert-success'>Successfully</div>"))
+            .catch(error => $("#formAlerts").html("<div class='alert alert-danger'>Error</div>"))
+    })
 
     function setStyles(styles) {
         var elementId = '__lang_styles';
@@ -188,6 +213,10 @@
             .join(' ');
 
         setStyles(styles);
+    }
+
+    function clearForm() {
+        $('#myForm').get(0).reset()
     }
 </script>
 <script type='text/javascript' src="assets/js/custom.js"></script>
