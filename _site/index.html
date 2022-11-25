@@ -23,7 +23,7 @@
 <meta name="generator" content="Nicepage 5.0.7, nicepage.com">
 <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
 
-<link rel="icon" type="image/x-icon" href="assets/img/kailas.ico2.png">
+<link rel="icon" type="image/x-icon" href="assets/img/droneicon.png">
 <link rel="stylesheet" href="assets/css/bootstrap.css" />
 <link rel="stylesheet" href="assets/css/bootstrap-responsive.css" />
 <link rel="stylesheet" href="assets/css/style.css" /> 
@@ -113,7 +113,7 @@
                     <div class="u-container-style u-layout-cell u-left-cell u-size-28 u-layout-cell-1">
                         <div class="u-container-layout u-container-layout-1">
                             <h2 class="u-custom-font u-font-arial u-text u-text-1"> 
-                                <span lang="jp">イントロ</span>
+                                <span lang="jp">我々は</span>
                                 <span lang="eng">Introduction</span>
                             </h2>
                             <p class="u-custom-font u-font-arial u-text u-text-2">
@@ -154,7 +154,7 @@
     <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <form id="myForm" name="googleSheet">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick="clearForm()">&times;</button>
+                <button type="button" class="close" id="closeBtn" data-dismiss="modal" aria-hidden="true" onclick="clearForm()">&times;</button>
                 <h3>
                     <span lang="jp">お問い合わせ</span>
                     <span lang="eng">Contact Us</span>
@@ -202,16 +202,14 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <!-- <a href="" class="btn" onclick="clearForm()">
-                    <span lang="jp">閉</span>
-                    <span lang="eng">Close</span>
-                </a>
-                <a href="" class="btn btn-primary" type="submit">
+                <button class="btn btn-danger" type="reset">
+                    <span lang="jp">リセット</span>
+                    <span lang="eng">Reset</span>
+                </button>
+                <button class="btn btn-success" type="submit">
                     <span lang="jp">送信</span>
                     <span lang="eng">Send</span>
-                </a> -->
-                <button class="btn btn-danger" type="reset">Reset</button>
-                <button class="btn btn-primary" type="submit">Send</button>
+                </button>
             </div>
         </form>
     </div>
@@ -380,20 +378,29 @@
 </footer>
 <a href="#" id="scroll-to-top" class="dmtop global-radius show"><i class="fa fa-arrow-circle-o-up"></i></a>
 <script src="assets/js/all.js"></script>
-<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
+<script type='text/javascript' src="assets/js/custom.js"></script>
+<script type='text/javascript' src="assets/js/jquery.min.js"></script>
+<script type='text/javascript' src="assets/js/bootstrap.js"></script>
 <script type="text/javascript">
     let langs = ['jp', 'mon', 'eng'];
     let lang = 'jp';
     setLangStyles(lang);
 
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwYRUkhIxtB26xIlIX3A_uv34Dl_-4kbkNCrUyjLhzWtvFJ-QJFHQHxvisdltaK_ADI/exec'
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwSNOPhtU3uQgqk3Y4xbLLonhB3eOF0cPY6uZDwLfFwdDHS8YNsG1M5G2P4H5o_D7t3/exec'
     const form = document.forms['googleSheet']
 
     form.addEventListener('submit', e => {
         e.preventDefault()
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => $("#formAlerts").html("<div class='alert alert-success'>Successfully</div>"))
-            .catch(error => $("#formAlerts").html("<div class='alert alert-danger'>Error</div>"))
+            .then(response => {
+                $("#formAlerts").html('<div class="alert alert-success"><span lang="jp">成功!</span><span lang="eng">Successfully!</span></div>');
+                clearForm()
+                setTimeout(function(){
+                    $("#closeBtn").click()
+                    $("#formAlerts").html('')
+                }, 350) 
+            })
+            .catch(error => $("#formAlerts").html('<div class="alert alert-danger"><span lang="jp">エラー!</span><span lang="eng">Error!</div>'))
     })
 
     function setStyles(styles) {
@@ -436,9 +443,6 @@
         $('#myForm').get(0).reset()
     }
 </script>
-<script type='text/javascript' src="assets/js/custom.js"></script>
-<script type='text/javascript' src="assets/js/jquery.min.js"></script>
-<script type='text/javascript' src="assets/js/bootstrap.js"></script>
 
 
 </body>
