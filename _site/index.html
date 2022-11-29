@@ -387,7 +387,7 @@
     setLangStyles(lang);
 
     const scriptURL = 'https://script.google.com/macros/s/AKfycbwSNOPhtU3uQgqk3Y4xbLLonhB3eOF0cPY6uZDwLfFwdDHS8YNsG1M5G2P4H5o_D7t3/exec'
-    const scriptMailURL = 'https://script.google.com/macros/s/AKfycbwQozkOfktv8C2zLhPrwCs0GE0ImMkIKMp0D6iSbsnO8wEBYL6MOxxaiQj3Q4c7UAR6/exec'
+    const scriptMailURL = 'https://script.google.com/macros/s/AKfycbydPZtuYVZPQlVhqvFphbrrzFcsdekGp4kE_b7S699EBGdXBB9-yZhm6_1x4sQ1iS-t/exec'
     const form = document.forms['googleSheet']
 
     form.addEventListener('submit', e => {
@@ -402,7 +402,7 @@
                     fetch(scriptMailURL)
                         .then(response => console.log("Successfully")) 
                         .catch(error => console.log("Failed"))
-                }, 250) 
+                }, 50) 
             })
             .catch(error => $("#formAlerts").html('<div class="alert alert-danger"><span lang="jp">エラー!</span><span lang="eng">Error!</div>'))
     })
