@@ -13,6 +13,7 @@
   </style>
 </head>
 <body class="u-body u-xl-mode">
+    <div class="overlay" id="myLoading"><div class="spinner"></div></div>
     {% include header.html %} 
     <section class="u-clearfix u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-section-1" id="carousel_d9a3">
         <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
@@ -88,9 +89,9 @@
                     <span lang="jp">お問い合わせ</span>
                     <span lang="eng">Contact Us</span>
                 </h3>
-                <div id="formAlerts"></div>
             </div>
             <div class="modal-body">
+                <div id="formAlerts"></div>
                 <div class="controls controls-row">
                     <div class="control-group">
                         <label class="input-medium" for="name">
@@ -128,6 +129,7 @@
                             <textarea rows="3" class="input-block-level" id="inputRequirement" name="requirement" autocomplete="off" required></textarea>
                         </div>
                     </div>
+                    <div class="g-recaptcha" data-sitekey="6Lej9kwjAAAAAPav0xBFXmxKZoBLLC_oiO7uE5zi"></div>
                 </div>
             </div>
             <div class="modal-footer">
