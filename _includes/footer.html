@@ -166,6 +166,7 @@
 <script type='text/javascript' src="assets/js/custom.js"></script>
 <script type='text/javascript' src="assets/js/jquery.min.js"></script>
 <script type='text/javascript' src="assets/js/bootstrap.js"></script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
 <script type="text/javascript">
     let langs = ['jp', 'mon', 'eng'];
     let lang = 'jp';
@@ -173,24 +174,55 @@
 
     const scriptURL = 'https://script.google.com/macros/s/AKfycbwSNOPhtU3uQgqk3Y4xbLLonhB3eOF0cPY6uZDwLfFwdDHS8YNsG1M5G2P4H5o_D7t3/exec'
     const scriptMailURL = 'https://script.google.com/macros/s/AKfycbyez1dkI5vw_jSViMzTh6cU_csn1m959LJHA7-xLdo-oupC0v32M51ayajv1YRXhDvu/exec'
+    const scriptMailCustomerURL = 'https://script.google.com/macros/s/AKfycbz3isptYQG8-usZ7Ikd0j3hS0j59wRYGUdZ9y209Y0FQ24EVrJcrE_fqkObtUQDz3Jm/exec'
     const form = document.forms['googleSheet']
 
     form.addEventListener('submit', e => {
         e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                $("#formAlerts").html('<div class="alert alert-success"><span lang="jp">成功!</span><span lang="eng">Successfully!</span></div>');
-                clearForm()
-                setTimeout(function(){
-                    $("#closeBtn").click()
-                    $("#formAlerts").html('')
-                    fetch(scriptMailURL)
-                        .then(response => console.log("Successfully")) 
-                        .catch(error => console.log("Failed"))
-                }, 50) 
-            })
-            .catch(error => $("#formAlerts").html('<div class="alert alert-danger"><span lang="jp">エラー!</span><span lang="eng">Error!</div>'))
+        var recaptcha = $("#g-recaptcha-response").val()
+        if (recaptcha === "") {
+            $("#formAlerts").html('<div class="alert alert-danger"><span lang="jp">リキャプチャを確認してください!</span><span lang="eng">Please check the recaptcha!</span></div>');
+        } else {
+            $("#formAlerts").html('');
+            setLoading(true)
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    $("#formAlerts").html('<div class="alert alert-success"><span lang="jp">成功!</span><span lang="eng">Successfully!</span></div>');
+                    clearForm()
+                    setTimeout(function(){
+                        $("#closeBtn").click()
+                        $("#formAlerts").html('')
+                        setLoading(false)
+                        fetch(scriptMailURL)
+                            .then(response => {
+                                console.log("Successfully")
+                                fetch(scriptMailCustomerURL)
+                                    .then(response => {
+                                        console.log("Successfully send mail for customer")
+                                    }) 
+                                    .catch(error => {
+                                        console.log("Failed send mail for customer")
+                                    })
+                            }) 
+                            .catch(error => {
+                                console.log("Failed")
+                            })
+                    }, 50) 
+                })
+                .catch(error => {
+                    $("#formAlerts").html('<div class="alert alert-danger"><span lang="jp">エラー!</span><span lang="eng">Error!</div>')
+                    setLoading(false)
+                })
+        } 
     })
+
+    function setLoading(loading) {
+        if (loading) {
+            $("#myLoading").css("display", "flex")
+        } else {
+            $("#myLoading").css("display", "none")
+        }
+    }
 
     function setStyles(styles) {
         var elementId = '__lang_styles';
