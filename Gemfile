@@ -8,4 +8,11 @@ gem "github-pages"
 gem "jekyll"
 gem "webrick"
 
+group :jekyll_plugins do
+  # gem "jekyll-archives"
+  gem "jekyll-feed"
+  gem 'jekyll-sitemap'
+  gem 'hawkins'
+end
+
 # gem "rails"
