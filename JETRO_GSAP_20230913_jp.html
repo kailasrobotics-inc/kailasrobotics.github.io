@@ -16,14 +16,42 @@
         padding-right: 15%;
         font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
     }
+
+    @media only screen and (min-width: 1200px) 
+    {
+      .text_position 
+      {
+         text-align: right;
+      }
+    }
+
+    @media only screen and (max-width: 1200px) 
+    {
+      .text_position 
+      {
+         text-align: center;
+      }
+    }
+
+    @media only screen and (min-width: 100px) and (max-width: 1100px) 
+    {
+        br 
+        {
+            display: none;
+        }
+    }
+
     .logo
     {
+        width: 100%;
+    }
+    .logo_img
+    {
         width: 300px;
-        float: right;
     }
     .title
     {
-        margin-top: 10%;
+        margin-top: -3%;
         text-align: center;
 
     }
@@ -36,8 +64,10 @@
 </style> 
 
 <body>
-    <img  class="logo" src="/assets/img/Kailas_logo.png" />
-    <div class="title">
+    <div class="logo text_position"> 
+        <img  class="logo_img" src="/assets/img/Kailas_logo.png" />
+    </div>
+    <div  class="title">
         <p style="font-size: 30px;">Kailas RoboticsがJETROが主催する“グローバル・スタートアップ・<br/>アクセラレーションプログラム（Global Startup Acceleration Program (GSAP)）“の<br/>Deep Tech (IoT/Robotics/Mobility and others) コースに採択されました</p>
     </div>
     <div class="date">
@@ -85,7 +115,7 @@
     
     <div style="margin: 3%;">
         JETROプレスリリース：<br/>
-        <a style="text-decoration:none;" href="https://www.jetro.go.jp/news/releases/2023/0583d34d91103c3d.html">https://www.jetro.go.jp/news/releases/2023/0583d34d91103c3d.html</a>
+        <a style="text-decoration:none;text-wrap: balance;" href="https://www.jetro.go.jp/news/releases/2023/0583d34d91103c3d.html">https://www.jetro.go.jp/news/ releases/2023/0583d34d91103c3d.html</a>
         
         
     </div>
