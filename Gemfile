@@ -4,7 +4,7 @@ source "https://rubygems.org"
 
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
-gem "github-pages", "202"
+gem 'github-pages', '~> 228'
 gem "jekyll"
 gem "webrick"
 
