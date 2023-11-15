@@ -73,12 +73,30 @@
         text-align: right;
         margin-right: 4%;
     }
+    @media only screen and (min-width: 100px) and (max-width: 700px) 
+    {
+        br 
+        {
+            display: none;
+        }
+        body 
+        {
+            padding-top: 30px;
+            padding-left: 1%; 
+            padding-right: 1%; 
+            font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+        }
+        .logo_img {
+            margin-bottom: 3%;
+            width: 200px;
+        }
+    } 
 
 </style> 
 
 <body>
     <div class="logo text_position"> 
-        <img  class="logo_img" src="/assets/img/Kailas_logo.png" />
+        <img  class="logo_img" src="/assets/img/Kailas_logo.svg" />
     </div>
     <div  class="title">
         <p style="font-size: 30px;">Kailas RoboticsがJETROが主催する“グローバル・スタートアップ・<br/>アクセラレーションプログラム（Global Startup Acceleration Program (GSAP)）“の<br/>Deep Tech (IoT/Robotics/Mobility and others) コースに採択されました</p>
