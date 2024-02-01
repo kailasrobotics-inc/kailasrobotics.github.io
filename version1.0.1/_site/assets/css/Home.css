@@ -1,20 +1,42 @@
  .u-section-1 {
-  min-height: 851px;
+  min-height: 755px;
 }
 
 .u-section-1 .u-layout-wrap-1 {
   margin: 0 auto 0 0;
 }
 
-.u-section-1 .u-image-1 {
-  min-height: 841px;
-  background-image: linear-gradient(to top, white, transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent), url("../img/zurag/intror.jpg");
+/*.u-section-1 .u-image-1 {
+  min-height: 755px;
+  background: url("../img/images/header_kailash.jpg");
   background-position: 50% 50%;
+}*/
+
+.u-section-1 .u-image-1 {
+  min-height: 755px;
+  position: relative; /* Needed for absolute positioning of pseudo-element */
+}
+
+.u-section-1 .u-image-1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.3); /* White color with 90% transparency */
+}
+
+.u-section-1 .u-image-1 {
+  background: url("../img/images/kailash_header.jpg");
+  background-position: 30% 50%;
+  background-size: cover; /* Adjust as needed 
+  background-repeat: no-repeat;*/
 }
 
 .u-section-1 .u-image-2 {
   min-height: 841px;
-  background-image: linear-gradient(to top, white, transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent), linear-gradient(to bottom, white, transparent, transparent, transparent, transparent), url("../img/zurag/introbg.jpg");
+  background-image: url("../img/images/drone_1.jpg");
   background-position: 0% 50%;
 }
 
@@ -145,7 +167,7 @@
 
 @media (max-width: 575px) {
    .u-section-1 {
-    min-height: 932px;
+    min-height: 400px;
   }
 
   .u-section-1 .u-layout-wrap-1 {
@@ -180,7 +202,8 @@
     margin-left: 12px;
   }
 } .u-section-2 {
-  min-height: 1015px;
+
+  min-height: 500px;
 }
 
 .u-section-2 .u-image-1 {
@@ -192,8 +215,8 @@
 }
 
 .u-section-2 .u-layout-wrap-1 {
-  width: 1140px;
-  margin: -670px auto 0 calc(((100% - 1140px) / 2) + -1px);
+  width: 1440px;
+  margin: 0 auto 0 calc(((100% - 1440px) / 2) + -1px);
 }
 
 .u-section-2 .u-layout-cell-1 {
@@ -201,12 +224,17 @@
 }
 
 .u-section-2 .u-container-layout-1 {
-  padding-left: 25px;
-  padding-right: 68px;
+  padding-left: 68px;
+  padding-right: 25px;
+}
+
+.u-section-2 .u-container-layout-specs {
+      padding-left: 30%;
+  padding-right: 10px;
 }
 
 .u-section-2 .u-text-1 {
-  font-size: 3.75rem;
+  font-size: 1.75rem;
   font-weight: normal;
   margin: 94px 0 0;
 }
@@ -216,14 +244,82 @@
   margin: 25px 0 0;
 }
 
+.ros {
+  background-image: url('../img/images/back_2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100px; 
+}
+
+
 .u-section-2 .u-image-2 {
-  min-height: 687px;
-  background-image: linear-gradient(to top, white, transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent ), url("../img/zurag/robot2.png");
+  min-height: 870px;
+  background-image: url("../img/images/drone_1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.u-section-2 .u-image-3 {
+  min-height: 750px;
+  background-image:  url("../img/images/arm1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.u-section-2 .u-image-4 {
+  min-height: 750px;
+  background-image:  url("../img/images/arm2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.u-section-2 .u-image-5 {
+  min-height: 500;
+  background-image:  url("../img/images/arm3.jpg");
+   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.u-section-2 .u-image-6 {
+  min-height: 500;
+  background-image:  url("../img/images/arm5.png");
+/*  background-size: cover;*/
+  background-position: center;
+/*  background-repeat: no-repeat;*/
+}
+
+.u-section-2 .u-image-7 {
+  min-height: 500;
+  background-image:  url("../img/images/arm6.png");
+/*  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;*/
+}
+
+.u-section-2 .u-image-en {
+  min-height: 500;
+  background-image:  url("../img/images/en_map.png");
+/*   background-size: cover;*/
+/*  background-position: center;*/
+/*  background-repeat: no-repeat;*/
+}
+
+.u-section-2 .u-image-jp {
+  min-height: 500;
+  background-image:  url("../img/images/jp_map.png");
+/*   background-size: cover;*/
+/*  background-position: center;*/
+/*  background-repeat: no-repeat;*/
 }
 
 .u-section-2 .u-layout-wrap-2 {
-  width: 1111px;
-  margin: 7px auto 0 calc(((100% - 1140px) / 2) + -23px);
+  width: 1211px;
+  margin: 7px auto 0 calc(((100% - 1211px) / 2) + -23px);
 }
 
 .u-section-2 .u-layout-cell-3 {
@@ -286,7 +382,7 @@
 
 @media (max-width: 991px) {
    .u-section-2 {
-    min-height: 1574px;
+    min-height: 945px;
   }
 
   .u-section-2 .u-layout-wrap-1 {
@@ -331,7 +427,7 @@
 
 @media (max-width: 767px) {
    .u-section-2 {
-    min-height: 1775px;
+    min-height: 1075px;
   }
 
   .u-section-2 .u-layout-wrap-1 {
@@ -344,6 +440,7 @@
   }
 
   .u-section-2 .u-container-layout-1 {
+/*    margin-top: -60px;*/
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -366,7 +463,7 @@
 
 @media (max-width: 575px) {
    .u-section-2 {
-    min-height: 1460px;
+    min-height: 1000px;
   }
 
   .u-section-2 .u-layout-wrap-1 {
@@ -377,6 +474,15 @@
   .u-section-2 .u-layout-cell-1 {
     min-height: 480px;
   }
+
+  .u-section-2 .u-image-7 {
+    margin-top: 30px;
+    min-height: 500;
+    background-image:  url("../img/images/arm6.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
   .u-section-2 .u-text-1 {
     font-size: 1.5rem;
