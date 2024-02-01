@@ -1,112 +1,299 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  {% include head.html %}
-  <style type="text/css">
-      img.dev{
+ {% include head.html %}
+  <style  type="text/css">
+    
+    img.dev{
         width: 150px;
         margin-right: 50px;
       }
+    .text-box 
+    {
+      width: 90%; 
+      margin: auto; 
+      padding: 10px; 
+      text-align: justify;
+      white-space: pre-line;
+      font-size: 20px; 
+    }
+
+    .circular-image 
+    {
+        width: 200px; 
+        height: 200px; 
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .circular-image img 
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    .bg-black
+    {
+        background: black;
+    }
+    .font-black
+    {
+        color: black;
+    }
+    .font-white
+    {
+        color: white;
+    }
+    .font-size-25
+    {
+        font-size: 25px;
+    }
+    .table-align
+    {
+        text-align: left;
+    }
+
+    .image-center {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    .table-border{
+        border: 1px solid white;
+        padding: 10px;
+    }
   </style>
 </head>
 <body class="u-body u-xl-mode">
     <div class="overlay" id="myLoading"><div class="spinner"></div></div>
     {% include header.html %} 
-    <section class="u-clearfix u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-section-1" id="carousel_d9a3">
+    <!-- Header image -->
+    <section class="u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-section-1" id="carousel_d9a3">
         <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
             <div class="u-layout">
-              <div class="u-layout-row">
-                <div class="u-container-style u-image u-layout-cell u-left-cell u-size-30 u-image-1">
-                  <div class="u-container-layout"></div>
-                </div>
-                <div class="u-container-style u-image u-layout-cell u-right-cell u-size-30 u-image-2">
-                  <div class="u-container-layout u-container-layout-2">
-                    <div class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-container-style u-group u-group-1">
-                      <div class="u-container-layout u-valign-middle-md u-valign-middle-sm u-container-layout-3">
-                        <h1 class="u-custom-font u-font-arial u-text u-title u-text-1">Make impossible possible</h1>
-                      </div>
+                <div class="u-layout-row">
+                    <div class="u-container-style u-image u-layout-cell u-left-cell u-size-60 u-image-1">
+                        <div class="logo"></div>
+                        <div class="u-container-layout"> 
+                            <div class="centered-text">Make Impossible Possible</div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
             </div>
         </div>
     </section>
-    <section class="u-clearfix u-section-2" id="carousel_6487">
-        <img src="assets/img/zurag/2.jpg" alt="" class="u-image u-image-default u-image-1" data-image-width="693" data-image-height="1080">
-        <div class="u-clearfix u-gutter-30 u-layout-wrap u-layout-wrap-1">
+    <!--Robotic Arm for Moving Platforms -->
+    <section class=" u-section-2" id="carousel_6487">
+        <div class="u-clearfix u-gutter-10 u-layout-wrap u-layout-wrap-1">
             <div class="u-layout">
-                <div class="u-layout-row">
-                    <div class="u-container-style u-layout-cell u-left-cell u-size-28 u-layout-cell-1">
+                <div class="u-layout-row u-size-37">
+                    <div class="u-container-style u-layout-cell u-left-cell u-size-30 u-layout-cell-1">
                         <div class="u-container-layout u-container-layout-1">
-                            <h2 class="u-custom-font u-font-arial u-text u-text-1"> 
-                                <span lang="jp">我々は</span>
-                                <span lang="eng">Introduction</span>
-                            </h2>
-                            <p class="u-custom-font u-font-arial u-text u-text-2">
-                                <span lang="jp">数々の制御ロボット開発を行なってきたモンゴル出身の数学者とソフトウェアエンジニア。<br>ロボティクスの未来を見た日本とアメリカに住む日本人。 日本、モンゴル、アメリカから集まったメンバーがチームを組んで難題に挑んでいく。 神聖な山、Kailasを踏破するように。<br>Kailasは、ヒマラヤ山脈に聳える天空の山。神聖な山であり、非常に険しい山としても知られている。Kailas Robticsはロボットエンジニアリングで難題を解決していきます。</span>
-                                <span lang="eng">A math genius and software engineer from Mongolia who has developed numerous control robots meets a Japanese living in Japan and the U.S. who see the future of robotics. <br>We team up to take on difficult challenges. Like stepping on the sacred mountain, Kailas. <br>Kailas is a mountain in the sky rising in the Himalayas. Kailas Robotics uses robotic engineering to solve the most difficult challenges.</span>
+                          <ul>
+                            {% assign section1 = site.data.sitedata.section1 %}
+                            <h1 class="u-custom-font u-font-roboto u-text u-text-12 font-black"> 
+                                <span >{{section1.title}}</span> 
+                            </h1>
+                            <h3 class="u-custom-font u-font-roboto u-text u-text-12 font-size-25"> 
+                                <span>{{section1.subtitle}}</span>
+                            </h3>
+                            <p class="u-custom-font u-font-roboto u-text u-text-2"> 
+                                <div class="text-box" lang="eng">{{section1.en}}</div>
+                                <div class="text-box" lang="jp">{{section1.jp}}</div> 
                             </p>
-                            <a href="#myModal" class="u-border-none u-btn u-btn-round u-button-style u-hover-palette-3-base u-palette-4-dark-2 u-radius-50 u-btn-1" role="button" data-toggle="modal">
-                                <span lang="jp">お問い合わせ</span>
-                                <span lang="eng">Contact Us</span><br>
-                            </a>
                         </div>
                     </div>
-                    <div class="u-container-style u-image u-layout-cell u-right-cell u-size-32 u-image-2" data-image-width="714" data-image-height="705">
+                    <div class="u-container-style u-image u-layout-cell u-right-cell u-size-30 u-image-2">
                         <div class="u-container-layout"></div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="u-clearfix u-layout-wrap u-layout-wrap-2">
+    </section> 
+    <!-- Key Technology -->
+    <section class=" u-section-2 bg-black" id="carousel_6487" >
+        <div class="u-clearfix u-gutter-10 u-layout-wrap u-layout-wrap-1">
+            <div class="u-layout" >
+                <div class="u-layout-row u-size-37">
+                    <div class="u-container-style u-image u-layout-cell  u-size-28  u-image-3">
+                        <div class="u-container-layout"></div>
+                    </div>
+                    <div class="u-container-style u-layout-cell  u-size-32 u-layout-cell-1">
+                        <div class="u-container-layout u-container-layout-1">
+                            {% assign section2 = site.data.sitedata.section2 %}
+                            <h1 class="u-custom-font u-font-roboto u-text u-text-12 font-white"> 
+                                <span >{{section2.title}}</span>
+                               
+                            </h1>
+                            <p class="u-custom-font u-font-roboto u-text u-text-2" > 
+                                <div class="text-box font-white" lang="eng">{{section2.en}}</div>
+
+                                <div class="text-box font-white" lang="jp">{{section2.jp}}</div> 
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!-- Versatile -->
+    <section class=" u-section-2" id="carousel_6487">
+        <div class="u-clearfix u-gutter-10 u-layout-wrap u-layout-wrap-1">
             <div class="u-layout">
-                <div class="u-layout-row">
-                    <div class="u-container-style u-layout-cell u-size-60 u-layout-cell-3">
-                        <div class="u-container-layout u-container-layout-3">
-                            <h2 class="u-custom-font u-font-arial u-text u-text-3"> 
-                                <span lang="jp">私たちのソリューション</span>
-                                <span lang="eng">Our Solution</span>
-                            </h2>
-                            <p class="u-text u-text-4"> 
-                                <span lang="jp">Kailas Roboticsでは、最先端のSoCベースにFPGAから設計を行う事によって、これまで難しいとされていた分野でのロボティクスのコア技術を開発し、高所や難所作業に最適化されたロボティクス制御システムを実現します。<br>我々の革新的技術によって例えば食品加工ロボットや介護ロボットなど、あらゆる作業ロボットへの展開が可能になります。</span>
-                                <span lang="eng">By designing from an FPGA on a state-of-the-art SoC base, Kailas Robotics develops core robotics technologies in previously considered impossible areas, enabling robotics control systems optimized for high and difficult tasks. <br>Our innovative technology can be deployed in all kinds of work robots, such as food processing and nursing care robots.</span>
+                <div class="u-layout-row u-size-37">
+                    <div class="u-container-style u-image u-layout-cell u-left-cell  u-size-28 u-image-4" >
+                        <div class="u-container-layout"></div>
+                    </div>
+                   <div class="u-container-style u-layout-cell  u-size-32 u-layout-cell-1">
+                        <div class="u-container-layout u-container-layout-1">
+                            {% assign section3 = site.data.sitedata.section3%}
+                            <h1 class="u-custom-font u-font-roboto u-text u-text-12"> 
+                                <span >{{section3.title}}</span>
+                            </h1>
+                            <p class="u-custom-font u-font-roboto u-text u-text-2" > 
+                                <div class="text-box" lang="eng">{{section3.en}}</div>
+                                <div class="text-box" lang="jp">{{section3.jp}}</div> 
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="u-clearfix u-layout-wrap u-layout-wrap-2">
+    </section> 
+    <!-- Modular System & SDK ready -->
+     <section class=" u-section-2 bg-black" id="carousel_6487">
+        <div class="u-clearfix u-gutter-10 u-layout-wrap u-layout-wrap-1">
             <div class="u-layout">
-                <div class="u-layout-row">
-                    <div class="u-container-style u-layout-cell u-size-60 u-layout-cell-3">
-                        <div class="u-container-layout u-container-layout-3">
-                            <h2 class="u-custom-font u-font-arial u-text u-text-4"> 
-                                <span lang="jp">ニュース</span>
-                                <span lang="eng">News</span>
-                            </h2>
-                             <p class="u-text u-text-4" style="margin-top:10px ;border-bottom:1px solid lightgray;"> 
-                                 <a lang="jp" style="color:black" href="/news/JETRO_GSAP_20230913_jp.html">JETROが主催する“グローバル・スタートアップ・アクセラレーションプログラムGSAPのDeep Techコースに<br>採択されました</a>
-                                <a lang="eng" style="color:black" href="/news/JETRO_GSAP_20230913_en.html">Kailas Robotics Selected for JETRO's GSAP Program for Deep Tech Startups</a>
-                                <span style="float: right; font-size: 12px; color: gray;" lang="jp">2023年9月13日 </span>
-                                <span style="float: right;font-size: 12px;color: gray;" lang="eng">September 13, 2023</span>
-                            </p>
-                             <p class="u-text u-text-4" style="margin-top:20px; border-bottom:1px solid lightgray;"> 
-                              <!-- <div style="border-bottom:1px solid lightgray;"> -->
-                                 <a lang="jp" style="color:black" href="/news/japan_innovation_campus_20231114_jp.html">経済産業省が主導する米国・シリコンバレー拠点「Japan Innovation Campus」のコワーキングメンバーに<br>採択されました</a>
-                                
-                                <a lang="eng" style="color:black" href="/news/japan_innovation_campus_20231114_en.html">The Ministry of Economy, Trade and Industry of Japan has selected <br>Kailas Robotics as a co-working member of the "Japan Innovation Campus" in Silicon Valley, USA</a>
-                                <span style="float: right; font-size: 12px; color: gray;" lang="jp">22023年11月14日  </span>
-                                <span style="float: right;font-size: 12px;color: gray;" lang="eng">November 14, 2023 </span>
+                <div class="u-layout-row u-size-37">
+                    
+                   <div class="u-container-style u-layout-cell  u-size-32 u-layout-cell-1">
+                        <div class="u-container-layout u-container-layout-1">
+                            {% assign section4 = site.data.sitedata.section4%}
+                            <h1 class="u-custom-font u-font-roboto u-text u-text-12 font-white"> 
+                                <span >{{section4.title}}</span>
+                            </h1>
+                            <p class="u-custom-font u-font-roboto u-text u-text-2" > 
+                                <div class="text-box font-white" lang="eng">{{section4.en}}</div>
+                                <div class="text-box font-white" lang="jp">{{section4.jp}}</div> 
                             </p>
                         </div>
                     </div>
+                    <div class="u-container-style u-image u-layout-cell u-left-cell  u-size-28 u-image-5" >
+                        <div class="u-container-layout"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+   
+    <!-- ROS2, Unity IOS, Android -->
+    <section class=" u-section-2 ros" id="carousel_6487" >
+        <div class="u-clearfix u-gutter-10 u-layout-wrap u-layout-wrap-1">
+            <div class="u-layout">
+                <div class="u-layout-row u-size-34" style=" height: 700px;">
+                    <div class="u-container-style u-layout-cell u-left-cell u-size-25 u-layout-cell-1">
+                        <div class="u-container-layout u-container-layout-1">
+                            {% assign section5 = site.data.sitedata.section5%}
+                            <h2 class="u-custom-font u-font-arial u-text u-text-1 font-black"> 
+                                <span >{{section5.title}}</span>
+                            </h2>
+                            <div class="text-box font-black" lang="eng">{{section5.en}}</div>
+                            <div class="text-box font-black" lang="jp">{{section5.jp}}</div> 
+                        </div>
+                    </div>
+                    <div class="u-container-style u-image u-layout-cell u-right-cell  u-size-30 u-image-7">
+                        <div class="u-container-layout"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!-- Robotic Arms for Moving Platforms -->
+    <section class=" u-section-2" id="carousel_6487">
+        <div class="u-clearfix u-gutter-10 u-layout-wrap u-layout-wrap-1">
+            <div class="u-layout">
+                <div class="u-layout-row u-size-34" style=" height: 400px;">
+                    <div class="u-container-style u-layout-cell u-center-cell u-size-100 u-layout-cell-1">
+                        <div class="u-container-layout u-container-layout-1">
+                            {% assign section6 = site.data.sitedata.section6%}
+                            <h2 class="u-custom-font u-font-arial u-text u-text-1" > 
+                                <span >{{section6.title}}</span>
+                            </h2>
+                            <div class="text-box font-black" lang="eng">{{section6.en}}</div>
+                            <div class="text-box font-black" lang="jp">{{section6.jp}}</div> 
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!-- Specs -->
+    <section class=" u-section-2 bg-black" id="carousel_6487" >
+        <div class="u-clearfix u-gutter-10 u-layout-wrap u-layout-wrap-1">
+            <div class="u-layout" >
+                <div class="u-layout-row u-size-37">
+                    <div class="u-container-style u-image u-layout-cell u-left-cell u-size-28  u-image-6">
+                        <div class="u-container-layout"></div>
+                    </div>
+                    <div class="u-container-style u-layout-cell u-left-cell u-size-25 u-layout-cell-1">
+                        <div class="u-container-layout u-container-layout-specs">
+                            <h1 class="u-custom-font u-font-arial u-text u-text-1 font-white"> 
+                                <span >Specs</span>
+                            </h1>
+                              <table class="font-white table-align">
+                                {% for specs in site.data.specs %}
+                                <tr>
+                                    <th>{{specs.th}}</th>
+                                    <td>{{specs.td}}</td>
+                                </tr>
+                                {% endfor %}
+                              </table>
+
+                              <p class="font-white">Please note the specs are subject to change without prior notice.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!-- Meet our team -->
+   <section class="u-section-2" id="carousel_6487">
+        <div class="u-clearfix u-gutter-10 u-layout-wrap u-layout-wrap-1">
+            <div class="u-layout">
+                <h2 style="text-align: center;">Meet our team</h2>
+                <div class="u-layout-row u-size-37">
+                    {% for member in site.data.member %}
+                    <div class="team-member-container u-container-style u-image u-layout-cell u-size-20 ">
+                        <div class="u-container-layout u-container-layout-1 image-center">
+                            <div class="u-image circular-image">
+                                <img src="{{member.image}}" alt="Image">
+                            </div>
+
+                            <h2 class="u-custom-font u-font-arial u-text" style="font-size: 1.24rem;">
+                                <span>{{member.name_en}}<br>{{member.name_jp}}<br>{{member.position}}</span>
+                            </h2>
+                            <p class="u-text-2">
+                                {{member.defualt}}<br>
+                                {{member.defualt1}}<br>
+                                {{member.defualt2}}<br>
+                                {{member.defualt3}}
+                            </p>
+                            <div class="u-image" style="width: 50px; margin-top: 50px; margin-bottom: 50px;">
+                                <a href="{{member.link}}" target="_blank">
+                                <img src="assets/img/images/in.svg" alt="LinkedIn Icon">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    {% endfor %}
                 </div>
             </div>
         </div>
     </section>
+
     <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <form id="myForm" name="googleSheet">
             <div class="modal-header">
