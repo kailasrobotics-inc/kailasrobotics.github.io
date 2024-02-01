@@ -1,0 +1,23 @@
+Searching 77 files for "sorako"
+
+/Users/mdamba/dev/kailas/kailasrobotics.github.io/_data/projects.yml:
+  417    # Explanation in
+  418    ExplanationJpIn: 姉妹兄弟のソルポは、モンゴルのおとぎ話から、最愛の小さなお子さんとすべての若い兄弟のためにアプリを収集しています。
+  419:   ExplanationEngIn: Sister brothers Sorako.llc collect app from the Mongolian fairy tales for their beloved little ones and for all the younger siblings. Nowadays, all the fairy tales can be read from one end to the next and it is possible to use your iphone and ipad devices. Read your beloved children, your beloved brothers and sisters.
+  420    ExplanationMonIn: Соракогийн ах эгч нар нь энхрий бяцхан хүүхдүүд, эгэлгүй хөөрхөн дүү нартаа зориулан Монголын үлгэрүүдээс дээжлэн авч  апп-ыг бүтээлээ.Одоо бүх үлгэрүүдийг нэг доороос унших боломжтой болсон төдийгүй iphone болон ipad төхөөрөмжүүдээ ашиглах боломжтой.Хайртай хүүхдүүддээ, хөөрхөн дүү нартаа заавал уншиж өгөөрэй.
+  421  
+
+/Users/mdamba/dev/kailas/kailasrobotics.github.io/_site/index.html:
+    5  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
+    6  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    7: <title>Kailas Robotics .inc</title>
+    8  <link rel="canonical" href="http://localhost:4000/" />
+    9  <meta name="keywords" content="" />
+   ..
+  488  
+  489      <p lang="jp"><b>説明: </b>姉妹兄弟のソルポは、モンゴルのおとぎ話から、最愛の小さなお子さんとすべての若い兄弟のためにアプリを収集しています。</p>
+  490:     <p lang="eng"><b>Explanation: </b>Sister brothers Sorako.llc collect app from the Mongolian fairy tales for their beloved little ones and for all the younger siblings. Nowadays, all the fairy tales can be read from one end to the next and it is possible to use your iphone and ipad devices. Read your beloved children, your beloved brothers and sisters.</p>
+  491      <p lang="mon"><b>Тайлбар: </b>Соракогийн ах эгч нар нь энхрий бяцхан хүүхдүүд, эгэлгүй хөөрхөн дүү нартаа зориулан Монголын үлгэрүүдээс дээжлэн авч  апп-ыг бүтээлээ.Одоо бүх үлгэрүүдийг нэг доороос унших боломжтой болсон төдийгүй iphone болон ipad төхөөрөмжүүдээ ашиглах боломжтой.Хайртай хүүхдүүддээ, хөөрхөн дүү нартаа заавал уншиж өгөөрэй.</p>
+  492    </div>        
+
+3 matches across 2 files

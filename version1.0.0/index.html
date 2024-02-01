@@ -1,0 +1,39 @@
+---
+layout: default
+---
+{% for projects in site.data.projects %}  
+<div class="service-widget">
+  <div class="post-media wow fadeIn">
+      <a href="{{ projects.imageUrl }}" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+      <img src="{{ projects.imageUrl }}" alt="" class="img-responsive img-rounded">
+  </div>
+  <div class="service-dit">
+    <h3>{{ projects.title }}</h3>
+    <table>
+      <tr>
+        <b lang="jp">{{ projects.PlatformJp }}: {{ projects.PlatformJpTit }} </b>
+        <b lang="mon">{{ projects.PlatformMon }}: {{ projects.PlatformMonTit }} </b>
+        <b lang="eng">{{ projects.PlatformEng }}: {{ projects.PlatformEngTit }} </b>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <b lang="jp">{{ projects.technologyJp }}: {{ projects.technologyJpLang }}</b>
+        <b lang="eng"> {{ projects.technologyEng }}: {{ projects.technologyEngLang }}</b>
+        <b lang="mon">{{ projects.technologyMon }}: {{ projects.technologyMonLang }}</b>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <b lang="jp">{{ projects.DatabaseJp }}: {{ projects.DatabaseJpUsed }}</b>
+        <b lang="mon">{{ projects.DatabaseMon }}: {{ projects.DatabaseMonUsed }}</b>
+        <b lang="eng">{{ projects.DatabaseEng }} {{ projects.DatabaseEngUsed }}</b>
+      </tr>
+    </table>
+
+    <p lang="jp"><b>{{ projects.ExplanationJp }}: </b>{{ projects.ExplanationJpIn }}</p>
+    <p lang="eng"><b>{{ projects.ExplanationEng }}: </b>{{ projects.ExplanationEngIn }}</p>
+    <p lang="mon"><b>{{ projects.ExplanationMon }}: </b>{{ projects.ExplanationMonIn }}</p>
+  </div>        
+</div>
+{% endfor %}

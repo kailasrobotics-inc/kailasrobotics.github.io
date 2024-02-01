@@ -1,0 +1,24 @@
+- th: Axis
+  td: 6-axis
+
+- th: Size
+  td: 30cm x 20cm
+
+- th: Weight
+  td: 2.5kg
+
+- th: Max Payload
+  td: 1kg
+
+- th: OS
+  td: Ubuntu
+
+- th: Control
+  td: ROS2, Unity, iOS, Android
+
+- th: Power
+  td: 24V
+
+- th: Communication
+  td: Ethercat
+
