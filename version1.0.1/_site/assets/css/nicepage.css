@@ -4,19 +4,6 @@
  * Copyright 2014-2021 Froala Labs
  */
 
-.logo {
-    position: absolute;
-    background-image: url('../img/images/logo.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 250px; 
-    height: 90px; 
-    top: 7%;
-    left: 20%;
-    transform: translate(-50%, -50%);
-}
-
 .fr-clearfix::after {
   clear: both;
   display: block;
@@ -6779,7 +6766,7 @@ section.u-image:not(.u-hover-box),
     margin-right: 0 !important;
   }
   .u-layout-wrap:not(.u-layout-custom-xs) .u-layout .u-layout-cell {
-    margin-top: -80px;
+   
     border-left: 0 !important;
     border-right: 0 !important;
   }

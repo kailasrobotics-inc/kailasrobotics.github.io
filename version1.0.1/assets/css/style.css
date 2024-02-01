@@ -894,6 +894,102 @@ p.copyright {
   
 /*============== 9. Custom queries ===================*/
 
+.logo-header {
+    position: absolute;
+    background-image: url('../img/images/logo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 250px; 
+    height: 90px; 
+    top: 7%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.centered-text {
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 600; 
+    font-size: 55px; 
+}
+
+img.dev{
+    width: 150px;
+    margin-right: 50px;
+  }
+.text-box 
+{
+  width: 90%; 
+  margin: auto; 
+  padding: 10px; 
+  text-align: justify;
+  white-space: pre-line;
+  font-size: 20px; 
+}
+
+.circular-image 
+{
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.circular-image img 
+{
+    width: 100%;
+    height: 100%;
+}
+
+.bg-black
+{
+    background: black;
+}
+.font-black
+{
+    color: black;
+}
+.font-white
+{
+    color: white;
+}
+.font-size-25
+{
+    font-size: 25px;
+}
+.table-align
+{
+    text-align: left;
+}
+
+.image-center {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.table-border{
+    border: 1px solid white;
+    padding: 10px;
+}
+
+
+.image-top{
+  margin: 0;
+}
+
+.gripper-image{
+  
+}
+
+
+
+
+
 @media(min-width: 768px) and (max-width: 979px) {
   .wrapper {
     width: 735px;
@@ -943,12 +1039,50 @@ p.copyright {
     width: 100%;
     display: block;
   }
-  .logo {
-    float: none;
-    text-align: center;
-    border-bottom: 1px solid #777;
-    padding-bottom: 10px;
+
+  .image-top{
+    margin: -80px;
   }
+
+  
+
+  
+  .logo-header {
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 90px;
+    top: 20%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+  }
+
+  .centered-text {
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    font-weight: 600; 
+    font-size: 35px; 
+  }
+
+  .gripper-image{
+    height: 500px;
+  }
+
+
+  .text-box 
+  {
+    width: 100%; 
+    margin: auto; 
+    padding: 10px; 
+    text-align: justify;
+    white-space: pre-line;
+    font-size: 20px; 
+}
+  
   .phone {
     float: none;
     width: 100%;
