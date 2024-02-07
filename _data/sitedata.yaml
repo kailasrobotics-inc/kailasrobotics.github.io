@@ -1,0 +1,36 @@
+#Robotic Arm for Moving Platforms
+section1:
+  title: Robotic Arm for Moving Platforms
+  subtitle: Ultra Light Weight & Precise Control
+  en: Our robotic arm, with a total system weight of approximately 2.5kg, is lightweight and capable of automatic recognition and catching of objects through its vision system. It can accurately catch targets even while moving on unstable platforms such as drones. This robotic arm defies conventional wisdom, requiring no solid base, and represents a lightweight yet high-speed and precise technology.
+  jp: ロボットアームのシステム全体重量が約2.5kgと軽 量、且つ、ビジョンシステムによる対象物の自動認 識、自動キャッチが可能となっており、ドローンの ような不安定なプラットフォーム上で移動中でも正 確に対象物をキャッチすることができます。これまでロボットアームの常識を覆す、強固な土台を必要としない軽量且つ高速正確なロボットアームです。
+#Key Technology
+section2:
+  title: Key Technology
+  subtitle: Ultra Light Weight & Precise Control
+  en: rom the design phase of the logic board, we  planned and achieved miniaturization and weight reduction, enabling high-speedcomputations. When mounted on mobile platforms such as drones (UAVs) or Unmanned Ground Vehicles (UGVs), it allows for the catching of objects while in motion.(Patent pending)
+  jp: ロジックボードの設計段階から小型軽量化を計画し実現したことで、高速な計算が可能となり、ドローン やUGVのような移動体に搭載した場合でも、移動 しながら対象物のキャッチが可能。（特許申請中）
+#Versatile
+section3:
+  title: Versatile
+  subtitle: Ultra Light Weight & Precise Control
+  en: "Due to the entire system weighing approximately 2.5kg, its lightweight nature makes it versatile for a wide array of applications: from UAVs and UGVs, humanoid robots, to combining with prosthetics or AR for physical augmentation, the possibilities are endless. For instance, mounted on drones, it can easily perform remote sample collection, hazardous material handling, or debris removal from solar panels. Additionally, it is also readily integrated into harvesting robots in farms where there is a shortage of labor."                           
+  jp: 様々な用途に対応全体システムが約2.5kgと軽量なため、ドローンなどのUAVやUGV、人型ロボット（Humanoid)から、義手やARなどと組み合わせた人体拡張など、その可能性は無限大です。例えば、ドローンに搭載し、遠隔地からのサンプル採取や危険物処理、ソーラーパネルの異物除去なども容易に行えます。また、人手不足が叫ばれる農場での収穫作業ロボットへの組み込みなども容易です。
+# Modular System & SDK ready
+section4:
+  title: Modular System & SDK ready
+  subtitle: Ultra Light Weight & Precise Control
+  en: The gripper is designed to be interchangeable, allowing for customization to suit various materials from soft to hard, tailored to the specific objects customers need to catch. Additionally, by utilizing our SDK, it is possible to develop applications aligned with your specific tasks. We also offer further customization, such as motor adjustments, to accommodate the weight of the target objects. Please feel free to contact us for any inquiries.
+  jp: 拡張性とカスタマイズグリッパは交換可能となっており、ソフトなものからハードなものまでお客様のキャッチしたい対象物に合わせてロボットアームのグリッパをカスタマイズできます。また、SDKを利用することでお客様のタスクに合わせたアプリケーション開発も可能です。その他、対象物の重量に合わせてモーターカスタマイズなども別途承ります。お気軽にお問い合わせください。 # ROS2, Unity IOS, Android
+# Modular System & SDK ready
+section5:
+  title: ROS2, Unity IOS, Android
+  subtitle: Ultra Light Weight & Precise Control
+  en: "Thanks to the control provided by ROS2, we are able to expand various functionalities to meet the needs of our customers. In executing tasks, we have established a simulated environment on Unity, enabling arm control on iOS devices such as iPads and iPhones, as well as on Android devices" 
+  jp: ROS2により全体を制御しているためお客様のニーズにあわせて様々な機能を拡張することが可能です。タスクを実行するにあたりUnity上でシミュレート環境を構築できるため、iPadやiPhoneなどのiOSデバイスやAndroidデバイスでアームのコントロールを可能にしています。
+  # Robotic Arms for Moving Platforms
+section6:
+  title: Robotic Arms for Moving Platforms
+  subtitle: Ultra Light Weight & Precise Control
+  en: "In response to the global trends of aging populations in advanced nations and the move towards automation in workplaces, the need for collaboration between robotics and humans is becoming more vital. Our lightweight robotic arms can be attached to moving platforms such as drones. They are capable of grasping objects while in motion, thanks to sophisticated, high-speed computing, precise motor control, and 3D spatial recognition. The potential applications of this technology are immense, ranging from high-altitude tasks with drones to retrieving samples from hazardous locations. Additionally, the technology can be applied to humanoid robots and the development of electronic prosthetic devices." 
+  jp: 先進国の高齢化や職場の自動化といった世界的な流れを受けて、ロボットと人間の協働の必要性はますます高まっています。当社の軽量ロボットアームは、ドローンなどの移動プラットフォームに取り付けることができます。洗練された高速コンピューティング、精密なモーター制御、3D空間認識により、動きながら物体を把持することができるため、この技術の応用の可能性は、ドローンによる高所作業から危険な場所からのサンプル回収まで、多種多様なニーズに応えることが可能です。また、人型ロボットや電子義手、収穫ロボットなどの開発にも応用できます。

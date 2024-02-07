@@ -1,0 +1,29 @@
+- image: "assets/img/member/damba.jpg"
+  name_en:  Dambadarjaa Munkhbayar 
+  name_jp:  ダンバダルジャ ムンフバヤル 
+  position: CEO
+  defualt:  10+yrs Computer Science 
+  defualt1: Engineer
+  defualt2: "Sorako Japan: Founder,"
+  defualt3: Tokai University
+  link:     "https://www.linkedin.com/in/munkhbayar-dambardajaa/"
+
+- image: "assets/img/member/altaa.jpg"
+  name_en:  Adiyasuren Altanbileg 
+  name_jp:  アディヤスレン　アルタンビレグ
+  position: CTO
+  defualt:  10+yrs Robotics Engineer 
+  defualt1: "KSJ: CTO & Board member"
+  defualt2: "Int'l Physics Olympian"
+  defualt3: Tokyo University
+  link:     "https://www.linkedin.com/in/altanbileg-adiyasuren-66515836/"
+
+- image: "assets/img/member/shiomi.jpg"
+  name_en:  Yoshi Shiomi
+  name_jp:  塩見 佳久
+  position: CTO
+  defualt:  "1FLIP FRIDAY, Founder, "
+  defualt1: "Chalk Digital Japan: CEO,"
+  defualt2: "PRODRONE: EVP"
+  defualt3: Tokai University
+  link:     "https://www.linkedin.com/in/yoshi-shiomi-75a8209/"
