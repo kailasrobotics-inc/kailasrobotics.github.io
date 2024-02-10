@@ -1914,15 +1914,23 @@ window["_gaUserPrefs"] = { ioo: function() { return true; } }
     form.addEventListener('submit', e => {
         e.preventDefault()
         var recaptcha = $("#g-recaptcha-response").val()
-        
+        console.log("reCAPTCHA response token:", recaptcha);
         if (recaptcha === "") {
             
             $("#formAlerts").html('<div class="alert alert-danger"><span lang="eng">Please check the recaptcha!</span></div>');
         } else {
-            console.log("test12");
             $("#formAlerts").html('');
             setLoading(true)
-            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            var formData = new FormData(form);
+
+            // Convert FormData to object for logging
+            var formDataObject = {};
+            for (var pair of formData.entries()) {
+                formDataObject[pair[0]] = pair[1];
+            }
+            console.log("Form Data:", formDataObject); 
+            
+            fetch(scriptURL, { method: 'POST', body: formData})
                 .then(response => {
                     $("#formAlerts").html('<div class="alert alert-success"><span lang="eng">Successfully!</span></div>');
                     clearForm()
@@ -1949,6 +1957,7 @@ window["_gaUserPrefs"] = { ioo: function() { return true; } }
                 .catch(error => {
                     $("#formAlerts").html('<div class="alert alert-danger"><span >Error!</div>')
                     setLoading(false)
+                     console.error("Error:", error); 
                 })
         } 
     })
