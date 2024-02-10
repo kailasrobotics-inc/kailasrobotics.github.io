@@ -114,12 +114,12 @@ window["_gaUserPrefs"] = { ioo: function() { return true; } }
         }
         button:focus {outline:0;}
     </style>
-    <!-- <script nonce="">
+    <script nonce="">
         window.C_CAPTCHA_IMPLEMENTATION = 'RECAPTCHA';
     </script>
     <script nonce="">
         window.C_CAPTCHA_KEY = '6Ldk59waAAAAAMPqkICbJjfMivZLCGtTpa6Wn6zO';
-    </script> -->
+    </script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GMW72BQ71V"></script>
     <script>
@@ -1875,88 +1875,88 @@ window["_gaUserPrefs"] = { ioo: function() { return true; } }
             </form>
         </div>
     </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://www.google.com/recaptcha/api.js" async defer></script> 
-<script type="text/javascript">
-    $(document).ready(function() {
-        var modal = $(".modal");
-        var btn = $("#openModal");
-        var span = $(".close");
+<script type='text/javascript' src="assets/js/jquery.min.js"></script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
+    <script type="text/javascript">
+    var modal = document.querySelector(".modal");
 
-        btn.on("click", function() {
-            modal.addClass("show");
-            $("body").css("overflow", "hidden");
-        });
 
-        span.on("click", function() {
-            modal.removeClass("show");
-            $("body").css("overflow", "");
-        });
+    var btn = document.getElementById("openModal");
 
-        $(window).on("click", function(event) {
-            if (event.target == modal.get(0)) {
-                modal.removeClass("show");
-                $("body").css("overflow", "");
-            }
-        });
 
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxOL5Y4T6haZ0YCZFPKNhbJRJMLavYGPUD6hzgBydvIQKAxGQYg647sGRN9cK3KW_7nqQ/exec';
-        const scriptMailURL = 'https://script.google.com/a/macros/kailasrobotics.com/s/AKfycbyX7BUQ5_C_Tcre6QKSH2lAeYSLONg_uzqBAvFxx6SoCXQuZ_odJIJcY2BWyhWf2718Nw/exec';
-        const scriptMailCustomerURL = 'https://script.google.com/macros/s/AKfycbxcAV5zcHYPLERmcYdYEp9zthOCbWgHQDwaTE-CK-O8PiwXS5pgWBIZoiqDQd3SdvTEig/exec';
-        const form = $('#googleSheet');
+    var span = document.querySelector(".close");
 
-        form.on('submit', function(e) {
-            e.preventDefault();
-            var recaptcha = $("#g-recaptcha-response").val();
-            if (recaptcha === "") {
-                $("#formAlerts").html('<div class="alert alert-danger"><span>Please check the recaptcha!</span></div>');
-            } else {
-                $("#formAlerts").html('');
-                setLoading(true);
-                fetch(scriptURL, { method: 'POST', body: new FormData(form[0]) })
-                    .then(response => {
-                        $("#formAlerts").html('<div class="alert alert-success"><span lang="eng">Successfully!</span></div>');
-                        clearForm();
-                        setTimeout(function() {
-                            $("#closeBtn").click();
-                            $("#formAlerts").html('');
-                            setLoading(false);
-                            fetch(scriptMailURL)
-                                .then(response => {
-                                    console.log("Successfully");
-                                    fetch(scriptMailCustomerURL)
-                                        .then(response => {
-                                            console.log("Successfully send mail for customer");
-                                        })
-                                        .catch(error => {
-                                            console.log("Failed send mail for customer");
-                                        });
-                                })
-                                .catch(error => {
-                                    console.log("Failed");
-                                });
-                        }, 50);
-                    })
-                    .catch(error => {
-                        $("#formAlerts").html('<div class="alert alert-danger"><span lang="eng">Error!</div>');
-                        setLoading(false);
-                    });
-            }
-        });
 
-        function setLoading(loading) {
-            if (loading) {
-                $("#myLoading").css("display", "flex");
-            } else {
-                $("#myLoading").css("display", "none");
-            }
+    btn.onclick = function() {
+        modal.classList.add("show");
+        document.body.style.overflow = "hidden";
+    }
+
+    span.onclick = function() {
+        modal.classList.remove("show");
+        document.body.style.overflow = "";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.classList.remove("show");
+            document.body.style.overflow = ""; // Restore scrolling
         }
+    }
 
-        function clearForm() {
-            $('#myForm')[0].reset();
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxOL5Y4T6haZ0YCZFPKNhbJRJMLavYGPUD6hzgBydvIQKAxGQYg647sGRN9cK3KW_7nqQ/exec'
+    const scriptMailURL = 'https://script.google.com/a/macros/kailasrobotics.com/s/AKfycbyX7BUQ5_C_Tcre6QKSH2lAeYSLONg_uzqBAvFxx6SoCXQuZ_odJIJcY2BWyhWf2718Nw/exec'
+    const scriptMailCustomerURL = 'https://script.google.com/macros/s/AKfycbxcAV5zcHYPLERmcYdYEp9zthOCbWgHQDwaTE-CK-O8PiwXS5pgWBIZoiqDQd3SdvTEig/exec'
+    const form = document.forms['googleSheet']
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        var recaptcha = jQuery("#g-recaptcha-response").val();
+        if (recaptcha === "") {
+            $("#formAlerts").html('<div class="alert alert-danger"><span>Please check the recaptcha!</span></div>');
+        } else {
+            $("#formAlerts").html('');
+            setLoading(true)
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    $("#formAlerts").html('<div class="alert alert-success"><span lang="eng">Successfully!</span></div>');
+                    clearForm()
+                    setTimeout(function() {
+                        $("#closeBtn").click()
+                        $("#formAlerts").html('')
+                        setLoading(false)
+                        fetch(scriptMailURL)
+                            .then(response => {
+                                console.log("Successfully")
+                                fetch(scriptMailCustomerURL)
+                                    .then(response => {
+                                        console.log("Successfully send mail for customer")
+                                    })
+                                    .catch(error => {
+                                        console.log("Failed send mail for customer")
+                                    })
+                            })
+                            .catch(error => {
+                                console.log("Failed")
+                            })
+                    }, 50)
+                })
+                .catch(error => {
+                    $("#formAlerts").html('<div class="alert alert-danger"><span lang="eng">Error!</div>')
+                    setLoading(false)
+                })
         }
-    });
-</script>
+    })
+
+    // function setLoading(loading) {
+    //     if (loading) {
+    //         $("#myLoading").css("display", "flex")
+    //     } else {
+    //         $("#myLoading").css("display", "none")
+    //     }
+    // }
+    </script>
 </body>
 <grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open">
         <style>
