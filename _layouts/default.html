@@ -1914,7 +1914,7 @@ window["_gaUserPrefs"] = { ioo: function() { return true; } }
     form.addEventListener('submit', e => {
         e.preventDefault()
         var recaptcha = $("#g-recaptcha-response").val()
-        console.log("reCAPTCHA response token:", recaptcha);
+        // console.log("reCAPTCHA response token:", recaptcha);
         if (recaptcha === "") {
             
             $("#formAlerts").html('<div class="alert alert-danger"><span lang="eng">Please check the recaptcha!</span></div>');
@@ -1923,12 +1923,11 @@ window["_gaUserPrefs"] = { ioo: function() { return true; } }
             setLoading(true)
             var formData = new FormData(form);
 
-            // Convert FormData to object for logging
             var formDataObject = {};
             for (var pair of formData.entries()) {
                 formDataObject[pair[0]] = pair[1];
             }
-            console.log("Form Data:", formDataObject); 
+            // console.log("Form Data:", formDataObject); 
 
             fetch(scriptURL, { method: 'POST', body: formData})
                 .then(response => {
@@ -1951,26 +1950,28 @@ window["_gaUserPrefs"] = { ioo: function() { return true; } }
                             }) 
                             .catch(error => {
                                 console.log("Failed")
+                                console.log("Error:", error); 
                             })
                     }, 50) 
                 })
                 .catch(error => {
                     $("#formAlerts").html('<div class="alert alert-danger"><span >Error!</div>')
                     setLoading(false)
-                     console.log("Error:", error); 
+                    console.log("Error:", error); 
                 })
-        } 
-    })
+            } 
+        })
 
     function setLoading(loading) {
         if (loading) {
-            $("#myLoading").css("display", "flex")
+            $("#myLoading").css("display", "flex");
         } else {
-            $("#myLoading").css("display", "none")
+            $("#myLoading").css("display", "none");
         }
     }
+    
     function clearForm() {
-        $('#myForm').get(0).reset();
+        $('#googleSheet').get(0).reset();
     }
     </script>
 </body>
