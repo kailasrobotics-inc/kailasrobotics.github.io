@@ -1784,7 +1784,7 @@ window["_gaUserPrefs"] = { ioo: function() { return true; } }
                     </button>
                 </div>
             </div>
-            <div class="form-content" id="form_step_captcha" style="display: none;" aria-labelledby="captchaTitle" aria-describedby="captchaDesc" tabindex="0">
+            <!-- <div class="form-content" id="form_step_captcha" style="display: none;" aria-labelledby="captchaTitle" aria-describedby="captchaDesc" tabindex="0">
                 <h2 id="captchaTitle" class="form-title">Report</h2>
                 <p id="captchaDesc" class="form-body">Let's just make sure you're human.</p>
                 <form id="captcha-form">
@@ -1805,7 +1805,7 @@ window["_gaUserPrefs"] = { ioo: function() { return true; } }
                         </button>
                     </div>
                 </form>
-            </div>
+            </div> -->
             <div class="form-content" id="form_step_success" style="display: none;" aria-labelledby="thanksTitle" aria-describedby="thanksDesc" tabindex="0">
                 <h2 id="thanksTitle" class="form-title">Thank you</h2>
                 <p id="thanksDesc" class="form-body">Thanks for flagging this content as inappropriate. Our content review team is on it and will review as soon as possible.</p>
@@ -1914,9 +1914,9 @@ window["_gaUserPrefs"] = { ioo: function() { return true; } }
     form.addEventListener('submit', e => {
         e.preventDefault()
         var recaptcha = $("#g-recaptcha-response").val()
-        console.log("test");
+        
         if (recaptcha === "") {
-            console.log("test1");
+            
             $("#formAlerts").html('<div class="alert alert-danger"><span lang="eng">Please check the recaptcha!</span></div>');
         } else {
             console.log("test12");
