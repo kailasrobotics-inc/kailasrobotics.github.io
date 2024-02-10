@@ -114,12 +114,12 @@ window["_gaUserPrefs"] = { ioo: function() { return true; } }
         }
         button:focus {outline:0;}
     </style>
-    <script nonce="">
+    <!-- <script nonce="">
         window.C_CAPTCHA_IMPLEMENTATION = 'RECAPTCHA';
     </script>
     <script nonce="">
         window.C_CAPTCHA_KEY = '6Ldk59waAAAAAMPqkICbJjfMivZLCGtTpa6Wn6zO';
-    </script>
+    </script> -->
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GMW72BQ71V"></script>
     <script>
@@ -1875,8 +1875,7 @@ window["_gaUserPrefs"] = { ioo: function() { return true; } }
             </form>
         </div>
     </div>
-<script type='text/javascript' src="assets/js/jquery.min.js"></script>
-<script src="https://www.google.com/recaptcha/api.js"></script>
+    <script type='text/javascript' src="assets/js/jquery.min.js"></script>
     <script type="text/javascript">
     var modal = document.querySelector(".modal");
 
@@ -1912,17 +1911,17 @@ window["_gaUserPrefs"] = { ioo: function() { return true; } }
 
     form.addEventListener('submit', e => {
         e.preventDefault()
-        var recaptcha = jQuery("#g-recaptcha-response").val();
+        var recaptcha = $("#g-recaptcha-response").val()
         if (recaptcha === "") {
-            $("#formAlerts").html('<div class="alert alert-danger"><span>Please check the recaptcha!</span></div>');
+            $("#formAlerts").html('<div class="alert alert-danger"><span lang="eng">Please check the recaptcha!</span></div>');
         } else {
             $("#formAlerts").html('');
             setLoading(true)
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                 .then(response => {
                     $("#formAlerts").html('<div class="alert alert-success"><span lang="eng">Successfully!</span></div>');
                     clearForm()
-                    setTimeout(function() {
+                    setTimeout(function(){
                         $("#closeBtn").click()
                         $("#formAlerts").html('')
                         setLoading(false)
@@ -1932,21 +1931,21 @@ window["_gaUserPrefs"] = { ioo: function() { return true; } }
                                 fetch(scriptMailCustomerURL)
                                     .then(response => {
                                         console.log("Successfully send mail for customer")
-                                    })
+                                    }) 
                                     .catch(error => {
                                         console.log("Failed send mail for customer")
                                     })
-                            })
+                            }) 
                             .catch(error => {
                                 console.log("Failed")
                             })
-                    }, 50)
+                    }, 50) 
                 })
                 .catch(error => {
                     $("#formAlerts").html('<div class="alert alert-danger"><span lang="eng">Error!</div>')
                     setLoading(false)
                 })
-        }
+        } 
     })
 
     // function setLoading(loading) {
