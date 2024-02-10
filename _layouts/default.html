@@ -40,8 +40,80 @@ window["_gaUserPrefs"] = { ioo: function() { return true; } }
         }
         </style>
     </noscript>
-    <script nonce="">
-    </script>
+    <style type="text/css">
+        .alert {
+          padding: 8px 35px 8px 14px;
+          margin-bottom: 20px;
+          text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+          background-color: #fcf8e3;
+          border: 1px solid #fbeed5;
+          -webkit-border-radius: 4px;
+             -moz-border-radius: 4px;
+                  border-radius: 4px;
+        }
+        .alert,
+        .alert h4 {
+          color: #c09853;
+        }
+
+        .alert h4 {
+          margin: 0;
+        }
+
+        .alert .close {
+          position: relative;
+          top: -2px;
+          right: -21px;
+          line-height: 20px;
+        }
+
+        .alert-success {
+          color: #468847;
+          background-color: #dff0d8;
+          border-color: #d6e9c6;
+        }
+
+        .alert-success h4 {
+          color: #468847;
+        }
+
+        .alert-danger,
+        .alert-error {
+          color: #b94a48;
+          background-color: #f2dede;
+          border-color: #eed3d7;
+        }
+
+        .alert-danger h4,
+        .alert-error h4 {
+          color: #b94a48;
+        }
+
+        .alert-info {
+          color: #3a87ad;
+          background-color: #d9edf7;
+          border-color: #bce8f1;
+        }
+
+        .alert-info h4 {
+          color: #3a87ad;
+        }
+
+        .alert-block {
+          padding-top: 14px;
+          padding-bottom: 14px;
+        }
+
+        .alert-block > p,
+        .alert-block > ul {
+          margin-bottom: 0;
+        }
+
+        .alert-block p + p {
+          margin-top: 5px;
+        }
+        button:focus {outline:0;}
+    </style>
     <script nonce="">
         window.C_CAPTCHA_IMPLEMENTATION = 'RECAPTCHA';
     </script>
@@ -1794,6 +1866,8 @@ window["_gaUserPrefs"] = { ioo: function() { return true; } }
             </form>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit&hl=en" async defer></script> 
     <script type="text/javascript">
     var modal = document.querySelector(".modal");
 
@@ -1828,16 +1902,17 @@ window["_gaUserPrefs"] = { ioo: function() { return true; } }
     const form = document.forms['googleSheet']
 
     form.addEventListener('submit', e => {
+        console.log("thisT");
         e.preventDefault()
         var recaptcha = $("#g-recaptcha-response").val()
         if (recaptcha === "") {
-            $("#formAlerts").html('<div class="alert alert-danger"><span lang="jp">リキャプチャを確認してください!</span><span lang="eng">Please check the recaptcha!</span></div>');
+            $("#formAlerts").html('<div class="alert alert-danger"><span lang="eng">Please check the recaptcha!</span></div>');
         } else {
             $("#formAlerts").html('');
             setLoading(true)
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                 .then(response => {
-                    $("#formAlerts").html('<div class="alert alert-success"><span lang="jp">成功!</span><span lang="eng">Successfully!</span></div>');
+                    $("#formAlerts").html('<div class="alert alert-success"><span lang="jp">done!</span><span lang="eng">Successfully!</span></div>');
                     clearForm()
                     setTimeout(function() {
                         $("#closeBtn").click()
