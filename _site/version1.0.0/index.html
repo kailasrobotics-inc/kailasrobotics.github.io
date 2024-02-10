@@ -1914,21 +1914,19 @@ window["_gaUserPrefs"] = { ioo: function() { return true; } }
     form.addEventListener('submit', e => {
         e.preventDefault()
         var recaptcha = $("#g-recaptcha-response").val()
-        console.log("reCAPTCHA response token:", recaptcha);
-        // if (recaptcha === "") {
-            
-        //     $("#formAlerts").html('<div class="alert alert-danger"><span lang="eng">Please check the recaptcha!</span></div>');
-        // } else {
+        // console.log("reCAPTCHA response token:", recaptcha);
+        if (recaptcha === "") {
+            $("#formAlerts").html('<div class="alert alert-danger"><span lang="eng">Please check the recaptcha!</span></div>');
+        } else {
             $("#formAlerts").html('');
             setLoading(true)
             var formData = new FormData(form);
 
-            // Convert FormData to object for logging
             var formDataObject = {};
             for (var pair of formData.entries()) {
                 formDataObject[pair[0]] = pair[1];
             }
-            console.log("Form Data:", formDataObject); 
+            // console.log("Form Data:", formDataObject); 
 
             fetch(scriptURL, { method: 'POST', body: formData})
                 .then(response => {
@@ -1956,12 +1954,13 @@ window["_gaUserPrefs"] = { ioo: function() { return true; } }
                     }, 50) 
                 })
                 .catch(error => {
+                    console.log("Error:", error); 
                     $("#formAlerts").html('<div class="alert alert-danger"><span >Error!</div>')
                     setLoading(false)
-                    console.log("Error:", error); 
+                    
                 })
-            // } 
-        })
+        } 
+    })
 
     function setLoading(loading) {
         if (loading) {
@@ -1972,8 +1971,13 @@ window["_gaUserPrefs"] = { ioo: function() { return true; } }
     }
     
     function clearForm() {
-        $('#googleSheet').get(0).reset();
+    var form = document.getElementById('googleSheet');
+    if (form) {
+        form.reset();
+    } else {
+        console.error('Form element not found or inaccessible.');
     }
+}
     </script>
 </body>
 <grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open">
