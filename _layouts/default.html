@@ -1902,17 +1902,16 @@ window["_gaUserPrefs"] = { ioo: function() { return true; } }
     const form = document.forms['googleSheet']
 
     form.addEventListener('submit', e => {
-        console.log("thisT");
         e.preventDefault()
-        var recaptcha = $("#g-recaptcha-response").val()
+        var recaptcha = jQuery("#g-recaptcha-response").val();
         if (recaptcha === "") {
-            $("#formAlerts").html('<div class="alert alert-danger"><span lang="eng">Please check the recaptcha!</span></div>');
+            $("#formAlerts").html('<div class="alert alert-danger"><span>Please check the recaptcha!</span></div>');
         } else {
             $("#formAlerts").html('');
             setLoading(true)
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                 .then(response => {
-                    $("#formAlerts").html('<div class="alert alert-success"><span lang="jp">done!</span><span lang="eng">Successfully!</span></div>');
+                    $("#formAlerts").html('<div class="alert alert-success"><span lang="eng">Successfully!</span></div>');
                     clearForm()
                     setTimeout(function() {
                         $("#closeBtn").click()
