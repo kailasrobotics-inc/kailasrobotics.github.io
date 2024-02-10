@@ -1,8 +1,8 @@
-:root {
+/*:root {
     --ffsd: 0px;
     --1vw: calc((100vw - var(--sbw, 0px)) / 100);
     --1vh: var(--inner1Vh, 1vh);
-}
+}*/
 
 .contact-button {
     border: transparent;
@@ -79,378 +79,378 @@ img {
 
 @font-face {
     font-family: YACkoButpeE-0;
-/*    src: url(fonts/85cae02634f058f57a670eeb6caf84a9.woff2);*/
+    src: url(fonts/85cae02634f058f57a670eeb6caf84a9.woff2);
     font-style: normal;
     font-weight: 400;
 }
 
 @font-face {
     font-family: YACkoButpeE-0;
-/*    src: url(fonts/3215dd28592b9e3fe76992fe81ad8c32.woff2);*/
+    src: url(fonts/3215dd28592b9e3fe76992fe81ad8c32.woff2);
     font-style: normal;
     font-weight: 700;
 }
 
 @font-face {
     font-family: YACkoButpeE-0;
-/*    src: url(fonts/85cae02634f058f57a670eeb6caf84a9.woff2);*/
+    src: url(fonts/85cae02634f058f57a670eeb6caf84a9.woff2);
     font-style: italic;
     font-weight: 400;
 }
 
 @font-face {
     font-family: YACkoButpeE-0;
-/*    src: url(fonts/3215dd28592b9e3fe76992fe81ad8c32.woff2);*/
+    src: url(fonts/3215dd28592b9e3fe76992fe81ad8c32.woff2);
     font-style: italic;
     font-weight: 700;
 }
 
 @font-face {
     font-family: YACkoButpeE-0;
-/*    src: url(fonts/85cae02634f058f57a670eeb6caf84a9.woff2);*/
+    src: url(fonts/85cae02634f058f57a670eeb6caf84a9.woff2);
     font-style: normal;
     font-weight: 100;
 }
 
 @font-face {
     font-family: YACkoButpeE-0;
-/*    src: url(fonts/85cae02634f058f57a670eeb6caf84a9.woff2);*/
+    src: url(fonts/85cae02634f058f57a670eeb6caf84a9.woff2);
     font-style: italic;
     font-weight: 100;
 }
 
 @font-face {
     font-family: YACkoButpeE-0;
-/*    src: url(fonts/85cae02634f058f57a670eeb6caf84a9.woff2);*/
+    src: url(fonts/85cae02634f058f57a670eeb6caf84a9.woff2);
     font-style: normal;
     font-weight: 200;
 }
 
 @font-face {
     font-family: YACkoButpeE-0;
-/*    src: url(fonts/85cae02634f058f57a670eeb6caf84a9.woff2);*/
+    src: url(fonts/85cae02634f058f57a670eeb6caf84a9.woff2);
     font-style: italic;
     font-weight: 200;
 }
 
 @font-face {
     font-family: YACkoButpeE-0;
-/*    src: url(fonts/85cae02634f058f57a670eeb6caf84a9.woff2);*/
+    src: url(fonts/85cae02634f058f57a670eeb6caf84a9.woff2);
     font-style: normal;
     font-weight: 300;
 }
 
 @font-face {
     font-family: YACkoButpeE-0;
-/*    src: url(fonts/85cae02634f058f57a670eeb6caf84a9.woff2);*/
+    src: url(fonts/85cae02634f058f57a670eeb6caf84a9.woff2);
     font-style: italic;
     font-weight: 300;
 }
 
 @font-face {
     font-family: YACkoButpeE-0;
-/*    src: url(fonts/85cae02634f058f57a670eeb6caf84a9.woff2);*/
+    src: url(fonts/85cae02634f058f57a670eeb6caf84a9.woff2);
     font-style: normal;
     font-weight: 500;
 }
 
 @font-face {
     font-family: YACkoButpeE-0;
-/*    src: url(fonts/85cae02634f058f57a670eeb6caf84a9.woff2);*/
+    src: url(fonts/85cae02634f058f57a670eeb6caf84a9.woff2);
     font-style: italic;
     font-weight: 500;
 }
 
 @font-face {
     font-family: YACkoButpeE-0;
-/*    src: url(fonts/3215dd28592b9e3fe76992fe81ad8c32.woff2);*/
+    src: url(fonts/3215dd28592b9e3fe76992fe81ad8c32.woff2);
     font-style: normal;
     font-weight: 600;
 }
 
 @font-face {
     font-family: YACkoButpeE-0;
-/*    src: url(fonts/3215dd28592b9e3fe76992fe81ad8c32.woff2);*/
+    src: url(fonts/3215dd28592b9e3fe76992fe81ad8c32.woff2);
     font-style: italic;
     font-weight: 600;
 }
 
 @font-face {
     font-family: YACkoButpeE-0;
-/*    src: url(fonts/3215dd28592b9e3fe76992fe81ad8c32.woff2);*/
+    src: url(fonts/3215dd28592b9e3fe76992fe81ad8c32.woff2);
     font-style: normal;
     font-weight: 800;
 }
 
 @font-face {
     font-family: YACkoButpeE-0;
-/*    src: url(fonts/3215dd28592b9e3fe76992fe81ad8c32.woff2);*/
+    src: url(fonts/3215dd28592b9e3fe76992fe81ad8c32.woff2);
     font-style: italic;
     font-weight: 800;
 }
 
 @font-face {
     font-family: YACkoButpeE-0;
-/*    src: url(fonts/3215dd28592b9e3fe76992fe81ad8c32.woff2);*/
+    src: url(fonts/3215dd28592b9e3fe76992fe81ad8c32.woff2);
     font-style: normal;
     font-weight: 900;
 }
 
 @font-face {
     font-family: YACkoButpeE-0;
-/*    src: url(fonts/3215dd28592b9e3fe76992fe81ad8c32.woff2);*/
+    src: url(fonts/3215dd28592b9e3fe76992fe81ad8c32.woff2);
     font-style: italic;
     font-weight: 900;
 }
 
 @font-face {
     font-family: YAD1aU3sLnI-0;
-/*    src: url(fonts/8f7934b3d45567e9cf1f541e008969a9.woff2);*/
+    src: url(fonts/8f7934b3d45567e9cf1f541e008969a9.woff2);
     font-style: normal;
     font-weight: 400;
 }
 
 @font-face {
     font-family: YAD1aU3sLnI-0;
-/*    src: url(fonts/9340013c7d177c83df1edab0cf96ac10.woff2);*/
+    src: url(fonts/9340013c7d177c83df1edab0cf96ac10.woff2);
     font-style: normal;
     font-weight: 700;
 }
 
 @font-face {
     font-family: YAD1aU3sLnI-0;
-/*    src: url(fonts/e005df7c7c34fefde116ba9b5a0e51e1.woff2);*/
+    src: url(fonts/e005df7c7c34fefde116ba9b5a0e51e1.woff2);
     font-style: italic;
     font-weight: 400;
 }
 
 @font-face {
     font-family: YAD1aU3sLnI-0;
-/*    src: url(fonts/83b37f2dcbb18c810da7cfa915708210.woff2);*/
+    src: url(fonts/83b37f2dcbb18c810da7cfa915708210.woff2);
     font-style: italic;
     font-weight: 700;
 }
 
 @font-face {
     font-family: YAD1aU3sLnI-0;
-/*    src: url(fonts/8f7934b3d45567e9cf1f541e008969a9.woff2);*/
+    src: url(fonts/8f7934b3d45567e9cf1f541e008969a9.woff2);
     font-style: normal;
     font-weight: 100;
 }
 
 @font-face {
     font-family: YAD1aU3sLnI-0;
-/*    src: url(fonts/e005df7c7c34fefde116ba9b5a0e51e1.woff2);*/
+    src: url(fonts/e005df7c7c34fefde116ba9b5a0e51e1.woff2);
     font-style: italic;
     font-weight: 100;
 }
 
 @font-face {
     font-family: YAD1aU3sLnI-0;
-/*    src: url(fonts/8f7934b3d45567e9cf1f541e008969a9.woff2);*/
+    src: url(fonts/8f7934b3d45567e9cf1f541e008969a9.woff2);
     font-style: normal;
     font-weight: 200;
 }
 
 @font-face {
     font-family: YAD1aU3sLnI-0;
-/*    src: url(fonts/e005df7c7c34fefde116ba9b5a0e51e1.woff2);*/
+    src: url(fonts/e005df7c7c34fefde116ba9b5a0e51e1.woff2);
     font-style: italic;
     font-weight: 200;
 }
 
 @font-face {
     font-family: YAD1aU3sLnI-0;
-/*    src: url(fonts/8f7934b3d45567e9cf1f541e008969a9.woff2);*/
+    src: url(fonts/8f7934b3d45567e9cf1f541e008969a9.woff2);
     font-style: normal;
     font-weight: 300;
 }
 
 @font-face {
     font-family: YAD1aU3sLnI-0;
-/*    src: url(fonts/e005df7c7c34fefde116ba9b5a0e51e1.woff2);*/
+    src: url(fonts/e005df7c7c34fefde116ba9b5a0e51e1.woff2);
     font-style: italic;
     font-weight: 300;
 }
 
 @font-face {
     font-family: YAD1aU3sLnI-0;
-/*    src: url(fonts/8f7934b3d45567e9cf1f541e008969a9.woff2);*/
+    src: url(fonts/8f7934b3d45567e9cf1f541e008969a9.woff2);
     font-style: normal;
     font-weight: 500;
 }
 
 @font-face {
     font-family: YAD1aU3sLnI-0;
-/*    src: url(fonts/e005df7c7c34fefde116ba9b5a0e51e1.woff2);*/
+    src: url(fonts/e005df7c7c34fefde116ba9b5a0e51e1.woff2);
     font-style: italic;
     font-weight: 500;
 }
 
 @font-face {
     font-family: YAD1aU3sLnI-0;
-/*    src: url(fonts/9340013c7d177c83df1edab0cf96ac10.woff2);*/
+    src: url(fonts/9340013c7d177c83df1edab0cf96ac10.woff2);
     font-style: normal;
     font-weight: 600;
 }
 
 @font-face {
     font-family: YAD1aU3sLnI-0;
-/*    src: url(fonts/83b37f2dcbb18c810da7cfa915708210.woff2);*/
+    src: url(fonts/83b37f2dcbb18c810da7cfa915708210.woff2);
     font-style: italic;
     font-weight: 600;
 }
 
 @font-face {
     font-family: YAD1aU3sLnI-0;
-/*    src: url(fonts/9340013c7d177c83df1edab0cf96ac10.woff2);*/
+    src: url(fonts/9340013c7d177c83df1edab0cf96ac10.woff2);
     font-style: normal;
     font-weight: 800;
 }
 
 @font-face {
     font-family: YAD1aU3sLnI-0;
-/*    src: url(fonts/83b37f2dcbb18c810da7cfa915708210.woff2);*/
+    src: url(fonts/83b37f2dcbb18c810da7cfa915708210.woff2);
     font-style: italic;
     font-weight: 800;
 }
 
 @font-face {
     font-family: YAD1aU3sLnI-0;
-/*    src: url(fonts/9340013c7d177c83df1edab0cf96ac10.woff2);*/
+    src: url(fonts/9340013c7d177c83df1edab0cf96ac10.woff2);
     font-style: normal;
     font-weight: 900;
 }
 
 @font-face {
     font-family: YAD1aU3sLnI-0;
-/*    src: url(fonts/83b37f2dcbb18c810da7cfa915708210.woff2);*/
+    src: url(fonts/83b37f2dcbb18c810da7cfa915708210.woff2);
     font-style: italic;
     font-weight: 900;
 }
 
 @font-face {
     font-family: YACgEZ1cb1Q-0;
-/*    src: url(fonts/f8f199f09526f79e87644ed227e0f651.woff2);*/
+    src: url(fonts/f8f199f09526f79e87644ed227e0f651.woff2);
     font-style: normal;
     font-weight: 400;
 }
 
 @font-face {
     font-family: YACgEZ1cb1Q-0;
-/*    src: url(fonts/98c4d2c0223fc8474641c77f923528e9.woff2);*/
+    src: url(fonts/98c4d2c0223fc8474641c77f923528e9.woff2);
     font-style: normal;
     font-weight: 700;
 }
 
 @font-face {
     font-family: YACgEZ1cb1Q-0;
-/*    src: url(fonts/d257a7100844bc3f98c9021168b6249e.woff2);*/
+    src: url(fonts/d257a7100844bc3f98c9021168b6249e.woff2);
     font-style: italic;
     font-weight: 400;
 }
 
 @font-face {
     font-family: YACgEZ1cb1Q-0;
-/*    src: url(fonts/1060345c54d396e76d73f1da7ee200bd.woff2);*/
+    src: url(fonts/1060345c54d396e76d73f1da7ee200bd.woff2);
     font-style: italic;
     font-weight: 700;
 }
 
 @font-face {
     font-family: YACgEZ1cb1Q-0;
-/*    src: url(fonts/f8f199f09526f79e87644ed227e0f651.woff2);*/
+    src: url(fonts/f8f199f09526f79e87644ed227e0f651.woff2);
     font-style: normal;
     font-weight: 100;
 }
 
 @font-face {
     font-family: YACgEZ1cb1Q-0;
-/*    src: url(fonts/d257a7100844bc3f98c9021168b6249e.woff2);*/
+    src: url(fonts/d257a7100844bc3f98c9021168b6249e.woff2);
     font-style: italic;
     font-weight: 100;
 }
 
 @font-face {
     font-family: YACgEZ1cb1Q-0;
-/*    src: url(fonts/f8f199f09526f79e87644ed227e0f651.woff2);*/
+    src: url(fonts/f8f199f09526f79e87644ed227e0f651.woff2);
     font-style: normal;
     font-weight: 200;
 }
 
 @font-face {
     font-family: YACgEZ1cb1Q-0;
-/*    src: url(fonts/d257a7100844bc3f98c9021168b6249e.woff2);*/
+    src: url(fonts/d257a7100844bc3f98c9021168b6249e.woff2);
     font-style: italic;
     font-weight: 200;
 }
 
 @font-face {
     font-family: YACgEZ1cb1Q-0;
-/*    src: url(fonts/f8f199f09526f79e87644ed227e0f651.woff2);*/
+    src: url(fonts/f8f199f09526f79e87644ed227e0f651.woff2);
     font-style: normal;
     font-weight: 300;
 }
 
 @font-face {
     font-family: YACgEZ1cb1Q-0;
-/*    src: url(fonts/d257a7100844bc3f98c9021168b6249e.woff2);*/
+    src: url(fonts/d257a7100844bc3f98c9021168b6249e.woff2);
     font-style: italic;
     font-weight: 300;
 }
 
 @font-face {
     font-family: YACgEZ1cb1Q-0;
-/*    src: url(fonts/f8f199f09526f79e87644ed227e0f651.woff2);*/
+    src: url(fonts/f8f199f09526f79e87644ed227e0f651.woff2);
     font-style: normal;
     font-weight: 500;
 }
 
 @font-face {
     font-family: YACgEZ1cb1Q-0;
-/*    src: url(fonts/d257a7100844bc3f98c9021168b6249e.woff2);*/
+    src: url(fonts/d257a7100844bc3f98c9021168b6249e.woff2);
     font-style: italic;
     font-weight: 500;
 }
 
 @font-face {
     font-family: YACgEZ1cb1Q-0;
-/*    src: url(fonts/98c4d2c0223fc8474641c77f923528e9.woff2);*/
+    src: url(fonts/98c4d2c0223fc8474641c77f923528e9.woff2);
     font-style: normal;
     font-weight: 600;
 }
 
 @font-face {
     font-family: YACgEZ1cb1Q-0;
-/*    src: url(fonts/1060345c54d396e76d73f1da7ee200bd.woff2);*/
+    src: url(fonts/1060345c54d396e76d73f1da7ee200bd.woff2);
     font-style: italic;
     font-weight: 600;
 }
 
 @font-face {
     font-family: YACgEZ1cb1Q-0;
-/*    src: url(fonts/98c4d2c0223fc8474641c77f923528e9.woff2);*/
+    src: url(fonts/98c4d2c0223fc8474641c77f923528e9.woff2);
     font-style: normal;
     font-weight: 800;
 }
 
 @font-face {
     font-family: YACgEZ1cb1Q-0;
-/*    src: url(fonts/1060345c54d396e76d73f1da7ee200bd.woff2);*/
+    src: url(fonts/1060345c54d396e76d73f1da7ee200bd.woff2);
     font-style: italic;
     font-weight: 800;
 }
 
 @font-face {
     font-family: YACgEZ1cb1Q-0;
-/*    src: url(fonts/98c4d2c0223fc8474641c77f923528e9.woff2);*/
+    src: url(fonts/98c4d2c0223fc8474641c77f923528e9.woff2);
     font-style: normal;
     font-weight: 900;
 }
 
 @font-face {
     font-family: YACgEZ1cb1Q-0;
-/*    src: url(fonts/1060345c54d396e76d73f1da7ee200bd.woff2);*/
+    src: url(fonts/1060345c54d396e76d73f1da7ee200bd.woff2);
     font-style: italic;
     font-weight: 900;
 }
