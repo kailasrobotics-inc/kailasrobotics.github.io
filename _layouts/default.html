@@ -1916,7 +1916,6 @@ window["_gaUserPrefs"] = { ioo: function() { return true; } }
         var recaptcha = $("#g-recaptcha-response").val()
         // console.log("reCAPTCHA response token:", recaptcha);
         if (recaptcha === "") {
-            
             $("#formAlerts").html('<div class="alert alert-danger"><span lang="eng">Please check the recaptcha!</span></div>');
         } else {
             $("#formAlerts").html('');
@@ -1929,7 +1928,7 @@ window["_gaUserPrefs"] = { ioo: function() { return true; } }
             }
             // console.log("Form Data:", formDataObject); 
 
-            fetch(scriptURL, { method: 'POST', body: formData})
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                 .then(response => {
                     $("#formAlerts").html('<div class="alert alert-success"><span lang="eng">Successfully!</span></div>');
                     clearForm()
@@ -1959,8 +1958,8 @@ window["_gaUserPrefs"] = { ioo: function() { return true; } }
                     setLoading(false)
                     console.log("Error:", error); 
                 })
-            } 
-        })
+        } 
+    })
 
     function setLoading(loading) {
         if (loading) {
