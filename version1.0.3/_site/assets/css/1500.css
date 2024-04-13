@@ -1,0 +1,57 @@
+@media only screen and (min-width: 1400px) and (max-width: 1500px)
+{
+  
+  
+  .grid-container {
+    display: inline-grid;
+    grid-template-columns:1fr 3fr 3fr 1fr; 
+  }
+  
+  .grid-container-product {
+    display: inline-grid;
+    grid-template-columns:1fr 3fr 3fr 1fr; 
+  }
+  
+  .flex-row-cf {
+    width: 95%;
+  }
+  
+  #mc_embed_signup .button:hover {
+    display :none;
+    background-color: #222;
+  }
+
+  .privacy-policy {
+    left: calc(47% - -232.5px);
+  }
+  .term-of-use {
+    left: calc(48% - -350.5px);
+  }
+  .ethics-statement {
+    left: calc(49% - -467.5px);
+  }
+
+  #mc_embed_signup h2 {
+    right: -284px;
+  }
+  
+  #mc_embed_signup .mc-field-group input {
+    left: 96px;
+  }
+  
+  #mc_embed_signup .mc-field-group label {
+    display: none;
+    margin-bottom: 3px;
+  }
+  
+  #mc_embed_signup .button {
+    left: 369px;
+  }
+  
+  ::placeholder {
+    text-align: left;
+    color: #D9D9D9;
+    font-size: 1.5em;
+    padding: 20px;
+  } 
+}  
