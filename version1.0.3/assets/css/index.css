@@ -6,6 +6,11 @@
     "Source Han Sans CN", sans-serif;
 }
 
+a { 
+  color: black; 
+  text-decoration: none; 
+}
+
 body {
   display: block;
   margin: 0px;
@@ -203,8 +208,8 @@ button {
 
 .rectangle-2 {
   width: 100%;
-  height: 110.693431vh;
-  margin: 0;
+  height: 90.693431vh;
+  margin-top: 74px;
   font-size: 0px;
   background: url(../images/41b93c6080475e1ba10e6d1884c2e8b5.jpg) no-repeat center;
   background-size: cover; /* Change to cover */
@@ -271,17 +276,16 @@ button {
 /* news */
 .news-section
 {
-  margin-left:10% ; 
-  margin-right:10%; 
-  margin-top:10%; 
- 
-  text-align: center;
+    /* margin-left: 10%; */
+    /* margin-right: 10%; */
+    margin-top: 100px;
+    text-align: center;
 }
 .flex-row-bfa {
   width: 100%;
   position: relative;
   height: 169px;
-  margin: -51px 0 0 204px;
+  /* margin: -51px 0 0 204px; */
   z-index: 116;
 }
 .news {
@@ -497,8 +501,21 @@ button {
   z-index: 12;
   overflow: hidden;
 }
-.axis-info {
+
+.table-info {
   position: absolute;
+  width: 457px;
+  height: 205px;
+  top: 214px;
+  left: calc(55% - -3px);
+  text-align: left;
+}
+.table-info td{
+  width: 200px;
+}
+
+.axis-info {
+  /* position: absolute; */
   width: 220px;
   height: 205px;
   top: 214px;
@@ -514,7 +531,7 @@ button {
   overflow: hidden;
 }
 .axis-info-10 {
-  position: absolute;
+  /* position: absolute; */
   width: 147px;
   height: 205px;
   top: 214px;
@@ -540,20 +557,21 @@ button {
 
 .grid-container {
   display: inline-grid;
-  grid-template-columns:1fr 3fr 3fr 1fr; 
+  grid-template-columns:0fr 3fr 3fr 0fr; 
 }
 
 .grid-container-product {
   display: inline-grid;
-  grid-template-columns:1fr 3fr 3fr 1fr; 
+  grid-template-columns:0fr 3fr 3fr 0fr; 
 }
 
 
-.grid-item {
-  justify-self: center;
+.grid-item-left {
+  /* justify-self: center; */
   text-align: left;
   /* width: 600px; */
 }
+
 .grid-item-image-1 {
   justify-self: center;
   text-align: -webkit-right;
@@ -561,7 +579,7 @@ button {
 }
 
 .grid-item-image-2 {
-  justify-self: center;
+  justify-self: right;
   text-align: -webkit-left;
   /* width: 600px; */
 }
@@ -574,12 +592,64 @@ button {
   border: 1px solid #F5F5F5;
 }
 
-.screenshot-11 {
+
+.ultra {
   width: 595px;
   height: 500px;
-  background: url(../images/2a8ced68-2b7f-472d-8872-18efef3f7e3a.png) no-repeat center;
-  background-size: cover;
+  overflow: hidden;
+  position: relative;
 }
+
+.ultra img {
+  position: absolute;
+  bottom: -144px;
+  left: -513px;
+} 
+
+.key-image {
+  width: 595px;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+
+.key-image img {
+  width: auto;
+  height: 500px;
+  position: absolute;
+  bottom: 0;
+  left: -71px;
+  top: 27px;
+} 
+
+.versatile-image {
+  width: 595px;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+
+.versatile-image img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  top: -225px;
+} 
+
+.container-width{
+  text-align: center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.main-width{
+  text-align: center;
+  /* border: 1px solid red; */
+  width: 70%;
+}
+
 .ultra-light-weight {
   margin-top: 80px;
   display: flex;
@@ -646,6 +716,7 @@ button {
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
+  text-align: left;
 }
 .screenshot-17 {
   width: 595px;
@@ -819,8 +890,8 @@ button {
   position: absolute;
   width: 180px;
   height: 104px;
-  top: 50px;
-  left: 80px;
+  top: 62px;
+  /* left: 80px; */
   color: #2b3a83;
   font-family: Roboto, var(--default-font-family);
   font-size: 40px;
@@ -836,7 +907,7 @@ button {
   width: 1px;
   height: 275px;
   top: 52px;
-  left: 40%;
+  left: 401px;
   background: url(../images/ad077cdd-62a2-416a-9c79-2a22ef141fac.png)
     no-repeat center;
   background-size: cover;
@@ -844,10 +915,9 @@ button {
 }
 .kailas-robotics-inc-saitec-room {
     position: absolute;
-    
     height: 233px;
     top: 62px;
-    left: 48%;
+    left: 450px;
     font-family: Noto Sans, var(--default-font-family);
     font-size: 20px;
     font-weight: 500;
@@ -916,31 +986,31 @@ button {
 }
 .vector-23 {
   position: absolute;
-  width: 5.26%;
-  height: 52.52%;
-  top: 27.32%;
-  left: 20.31%;
-  background: url(../images/40cb2132-8ba5-4a5d-bd5e-67dd73dc6a42.png)
-    no-repeat center;
+  width: 50px;
+  height: 200px;
+  top: 130px;
+  left: 171px;
+  background: url(../images/40cb2132-8ba5-4a5d-bd5e-67dd73dc6a42.png) no-repeat center;
   background-size: 100% 100%;
   z-index: 124;
 }
 .vector-24 {
   position: absolute;
-  width: 10.53%;
-  height: 51.44%;
-  top: 28.4%;
-  left: 26.47%;
-  background: url(../images/2d939c0a-5e77-4c87-b62d-b550f3937ef7.png)
-    no-repeat center;
+  width: 122px;
+  height: 199px;
+  top: 130px;
+  left: 229px;
+  background: url(../images/2d939c0a-5e77-4c87-b62d-b550f3937ef7.png) no-repeat center;
   background-size: 100% 100%;
   z-index: 125;
 }
+
 .founders {
   display: block;
   position: relative;
   height: 47px;
-  margin: 50px 0 0 80px;
+  /* margin: 50px 0 0 80px; */
+  margin: 0%;
   color: #2b3a83;
   font-family: Roboto, var(--default-font-family);
   font-size: 40px;
@@ -958,17 +1028,17 @@ button {
 
   .grid-item-about {
     justify-self: center;
-    text-align: left;
+    text-align: center;
   }
 
 .flex-row-baa {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   position: relative;
   /* width: 1108px; */
   height: 303px;
-  margin: 26px 91px 0 86px;
+  margin: 26px 0 0 0;
   z-index: 76;  
   /* display: flex;
   align-items: center;
@@ -1018,11 +1088,11 @@ button {
 .flex-row-27 {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: left;
   position: relative;
   /* width: 957px; */
   height: 30px;
-  margin: 45px 15% -2px 79px;
+  margin: 50px 0% 0px 45px;
   z-index: 48;
 }
 .dambadarjaa-munkhbayar {
@@ -1071,7 +1141,7 @@ button {
   position: relative;
   /* width: 844px; */
   height: 23px;
-  margin: 45px 15% -2px 79px;
+  margin: 50px 0% 0px 45px;
   z-index: 51;
 }
 .ceo {
@@ -1096,7 +1166,7 @@ button {
   position: relative;
   /* width: 1119px; */
   height: 116px;
-  margin: 25px 15% 0 81px;
+  margin: 50px 0% 0px 45px;
   z-index: 54;
 }
 .computer-science-engineer {
@@ -1126,7 +1196,7 @@ button {
   position: relative;
   /* width: 1120px; */
   height: 50px;
-  margin: 25px 5% 0 80px;
+  margin: 25px 5% 0 0;
   z-index: 45;
 }
 
@@ -1138,13 +1208,13 @@ button {
   background: #f5f5f5;
   z-index: 43;
   border-radius: 2px;
-  margin: 25px 15% 0 81px;
+  margin: 50px 0% 0px 45px;
 }
 .linkedin {
   position: relative;
   width: 48px;
   height: 48px;
-  margin: 1px 0 0 134px;
+  /* margin: 1px 0 0 134px; */
   cursor: pointer;
   background: transparent;
   border: none;
@@ -2131,3 +2201,6 @@ button.close {
 .top-news-product a {
   margin: 0 10px; /* Adjust spacing between links */
 }
+
+
+
