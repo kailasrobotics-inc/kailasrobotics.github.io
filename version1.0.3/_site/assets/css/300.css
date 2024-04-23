@@ -2,8 +2,8 @@
 {
   .line
   {
-    margin-top: 40px; 
-    margin-bottom: 40px; 
+    margin-top: 10px;
+    margin-bottom: 10px;
     width: 98%;
     border: 1px solid #ffffff;
   }
@@ -94,16 +94,47 @@
     justify-content: center;
   }
 
-  .response-global-trends 
-  {
+  .response-global-trends {
     width: 100%;
-    height: 142px;
+    height: 104px;
     font-size: 15px;
     font-weight: 400;
     line-height: 20px;
-    margin-bottom: 22%;
-  }
+}
 
+.w3-content-heigth{
+  height: 250px;
+}
+
+.main-width {
+  text-align: center;
+  /* border: 1px solid red; */
+  width: 92%;
+}
+
+.ultra,
+.key-image,
+.versatile-image {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  margin-top: 40px;
+}
+
+.ultra img {
+  position: absolute;
+  bottom: -144px;
+  left: -607px;
+}
+.key-image img {
+  width: auto;
+  height: 400px;
+  position: absolute;
+  bottom: 0;
+  left: -95px;
+  top: 5px;
+}
   .make-impossible-possible 
   {
     width: 207px;
@@ -113,7 +144,6 @@
     font-weight: 500;
     line-height: 46.875px;
     text-align: left;
-    text-wrap: wrap;
     white-space: normal;
   }
 
@@ -143,11 +173,12 @@
   {
     display: block;
   }
-  .screenshot {
+  .screenshot 
+  {
     margin-top: 46px;
-    width: 111px;
-    height: 135px;
-}
+    width: 136px;
+    height: 176px;
+  }
 
   .rectangle-d {
     height: 50px;
@@ -182,7 +213,7 @@
   .robotic-arms {
     width: 172px;
     height: 52px;
-    margin: -59px 0 0 -45px;
+    margin: -59px 0 0 -60px;
     font-size: 20px;
     font-weight: 500;
     line-height: 21.094px;
@@ -195,7 +226,7 @@
     height: 136px;
     font-size: 12px;
     font-weight: 400;
-    margin: -116px 0 0 -44px;
+    margin: -122px 0 0 -59px;
   }
 
   .axis-info {
@@ -241,7 +272,7 @@
     width: 100%;
     height: 56px;
     margin: 24px 0 0 10%;
-    font-size: 23px;
+    font-size: 21px;
     line-height: 25.781px;
   }
 
@@ -252,7 +283,7 @@
   .ros2-unity-ios-android {
     width: 81%;
     height: 1%;
-    margin: 10px 0 0 10%;
+    margin: -7px 0 0 10%;
     font-size: 17px;
     line-height: 24px;
   }
@@ -270,18 +301,18 @@
   width: 180px;
   height: 104px;
   top: 50px;
-  left: 15px;
-  font-size: 23px;
+  left: 18px;
+  font-size: 29px;
 }
 .line-1f {
     display: none;
 }
 
 .vector-23 {
-  width: 14.26%;
-  height: 29.52%;
-  top: 5.32%;
-  left: 42.31%;
+  width: 50px;
+  height: 150px;
+  top: 59px;
+  left: 187px;
   background-size: 100% 100%;
   z-index: 124;
 }
@@ -300,7 +331,7 @@
   position: absolute;
   height: 233px;
   top: 240px;
-  left: 8%;
+  left: 14%;
   font-size: 20px;
   font-weight: 500;
   line-height: 27.24px;
@@ -377,11 +408,11 @@ border: none;
   align-items: center;
   justify-content: space-between;
   position: block;
-  height: 193px;
-  margin: 16px 1px 0 25%;
+  height: 197px;
+  margin: 0px 91px 0 25%;
   padding: auto;
   z-index: 76;
-}
+} 
 .group,
 .group-25,
 .group-26 {
@@ -390,30 +421,22 @@ border: none;
 }
 
 
-.vector-2a {
-  position: relative;
-  width: 36px;
-  height: 36px;
-  margin: 0px 0 0 0px;
-  z-index: 101;
-}
-
 .flex-row-27 {
   height: 30px;
-  margin: 44px 17% -2px 4%;
+  margin: 44px 17% -2px 16%;
   z-index: 48;
 }
 
 .flex-row-28 {
   height: 23px;
-  margin: 45px 15% -2px 10%;
+  margin: 45px 15% -2px 16%;
   z-index: 51;
 }
 
 .flex-row-b {
   position: relative;
   height: 116px;
-  margin: 25px 15% 0 10%;
+  margin: 45px 15% -2px 16%;
   z-index: 54;
 }
 
@@ -423,8 +446,9 @@ border: none;
   background: #f5f5f5;
   z-index: 43;
   border-radius: 2px;
-  margin: 25px 15% 0 2%;
+  margin: 17px 10% 55px 13%;
 }
+
 .rectangle-31 { 
   position: relative;
   width: 100%;
@@ -442,7 +466,7 @@ border: none;
   width: 100px;
   height: 30px;
   font-weight: 400;
-  margin: -49px 0 0 33px;
+  margin: -49px 0 0 58px;
   font-size: 26px;
   text-align: center;
 }
@@ -458,10 +482,10 @@ border: none;
 }
 .mail-outline {
   position: absolute;
-  width: 30px;
-  height: 31px;
-  top: 78px;
-  left: 13%;
+  width: 27px;
+  height: 26px;
+  top: 80px;
+  left: 99px;
 }
 .main-container, .main-container * {
   box-sizing: border-box;
@@ -487,9 +511,6 @@ border: none;
 }
 
 .navigation {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 97px;
   height: 23px;
   color: #000000;
@@ -510,6 +531,7 @@ border: none;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
   width: 126px;
   height: 150px;
   color: #2b3a83;
@@ -729,7 +751,7 @@ gap: 0px;
   margin: 0 auto;
   margin-top: 100px;
   z-index: 116;
-  width: 80%;
+  width: 92%;
 }
 
 .news {
@@ -762,12 +784,14 @@ gap: 0px;
   left: 0;
 }
 
-.between_space {
-  margin-left: 10px;
-  margin-right: 10px;
-  font-size: 8px;
-  padding-top: 0px;
-}
+.vector-24 {
+  width: 100px;
+  height: 150px;
+  top: 57px;
+  left: 249px;
+  background-size: 100% 100%;
+  z-index: 125;
+} 
 
 .xponential-expo-mou {
   display: flex;
@@ -802,26 +826,25 @@ gap: 0px;
   width: 300px;
   height: 70px;
   position: absolute;
-  top: 35%;
+  top: 41%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .rectangle-32{
 position: relative;
 width: 100%;
-height: 800px;
+height: 679px;
 margin: 0 0 0 0;
 background: #f9fafb;
 z-index: 55;
 overflow: hidden;
 }
 
-
 .flex-row-c {
   position: relative;
   width: 100%;
   height: 32px;
-  margin: 47px 0 0 56px;
+  margin: 34px 0 0 81px;
   z-index: 93;
 }
 
@@ -847,7 +870,7 @@ overflow: hidden;
   width: 63%;
   height: 32px;
   top: 313px;
-  left: 0;
+  left: -17px;
   z-index: 93;
 }
 
@@ -875,11 +898,11 @@ overflow: hidden;
   font-weight: bold;
   padding: 0;
   margin: -10px 0;
-  font-size: 1.4em;
+  font-size: 20px;
   margin-top: 0;
   height: 14px;
   top: 28px;
-  left: -269px;
+  left: -255px;
   gap: 0px;
   opacity: 0px;
 }
@@ -929,7 +952,7 @@ margin-bottom: 3px;
   padding: 8px 0;
   text-indent: 2%;
   height: 28px;
-  left: -54px;
+  left: -52px;
   gap: 0px;
 
 }   
@@ -943,12 +966,13 @@ display: none;
   background-color: #F1A556;
   border: 0 none;
   font-size: 22px;
-  width: 146px;
+
+  width: 186px;
   height: 34px;
-  left: 2px;
+  left: -9px;
   gap: 0px;
   border-radius: 5px 5px 5px 5px;
-  margin-top: 137px;
+  margin-top: 50px;
 }
 
 ::placeholder {
@@ -959,14 +983,16 @@ display: none;
 }
 
 
+
 .flex-row-bfa {
   position: relative;
   height: 277px;
   margin: 0 auto;
-  margin-top: 10px;
+  margin-top: 75px;
   z-index: 116;
-  width: 94%;
+  width: 100%;
 }
+
 
 .news {
   display: flex;
@@ -975,11 +1001,11 @@ display: none;
   position: absolute;
   width: 100%;
   height: 30px;
-  top: 50;
+  top: -49px;
   left: 0;
   color: #2b3a83;
   font-family: Roboto, var(--default-font-family);
-  font-size: 21px;
+  font-size: 48px;
   font-weight: 400;
   line-height: 30px;
   text-align: left;
@@ -997,9 +1023,8 @@ display: none;
   left: 1%;
   text-align: left;
   z-index: 116;
-  font-size: 10px;
+  font-size: 17px;
 }
-  
 
 .news-section {
   margin: 0 auto;
@@ -1010,7 +1035,7 @@ display: none;
 .between_space{
   margin-left: 10px;
   margin-right: 10px;
-  font-size: 8px;
+  font-size: 12px;
   padding-top: 4px;
 }
 
@@ -1043,7 +1068,8 @@ display: none;
   width: 65px;
   height: 14px;
   top: 420px;
-  left: calc(-77% - -316.5px);
+  left: calc(-62% - -316.5px);
+
   color: #2b3a83;
   font-family: Roboto, var(--default-font-family);
   font-size: 12px;
@@ -1058,7 +1084,7 @@ display: none;
   display: block;
   position: absolute;
   top: 420px;
-  left: -45px;
+  left: -68px;
   font-size: 12px;
   font-weight: 400;
   line-height: 14px;
@@ -1072,7 +1098,7 @@ display: none;
   width: 92px;
   height: 14px;
   top: 420px;
-  left: calc(-69% - -390.5px);
+  left: calc(-46% - -390.5px);
   color: #2b3a83;
   font-family: Roboto, var(--default-font-family);
   font-size: 12px;
@@ -1081,6 +1107,24 @@ display: none;
   text-align: right;
   white-space: nowrap;
   z-index: 60;
+}
+
+.vector-2a {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  margin: -1px 0 0 -6px;
+  background-size: 100% 100%;
+  z-index: 101;
+}
+
+.table-info {
+  position: absolute;
+  width: 210px;
+  height: 192px;
+  top: 78px;
+  left: calc(55% - -3px);
+  text-align: left;
 }
 
 }
