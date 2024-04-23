@@ -1,0 +1,6 @@
+defaults:
+  - scope:
+      path: 'http://localhost:4000/news/japan_innovation_campus_20231114_en.html'
+      type: pages
+    values:
+      permalink: /:test
