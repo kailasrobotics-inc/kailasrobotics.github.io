@@ -1,0 +1,7 @@
+# This is a comment
+title: My Jekyll Site
+author: John Doe
+url: "https://example.com"
+exclude:
+  - Gemfile
+  - Gemfile.lock
