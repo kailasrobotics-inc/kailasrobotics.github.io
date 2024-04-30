@@ -116,7 +116,7 @@
 .key-image,
 .versatile-image {
   width: 100%;
-  height: 302px;
+  height: 263px;
   overflow: hidden;
   position: relative;
   margin-top: 40px;
@@ -268,7 +268,7 @@
   .modular-system-sdk-ready ,
   .ros-unity-ios-android  {
     width: 100%;
-    height: 56px;
+    height: 44px;
     margin: 24px 0 0 10%;
     font-size: 20px;
     line-height: 25.781px;
@@ -1022,6 +1022,7 @@ display: none;
   text-align: left;
   z-index: 116;
   font-size: 17px;
+  line-height: 18px;
 }
 
 .news-section {
