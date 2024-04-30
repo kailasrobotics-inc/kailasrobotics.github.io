@@ -1,5 +1,0 @@
-collections:
-  my_collection:
-    path: "/news/japan_innovation_campus_20231114_en.html"
-    output: true
-    permalink: /:collection/:name

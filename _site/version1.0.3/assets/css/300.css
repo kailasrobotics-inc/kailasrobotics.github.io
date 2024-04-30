@@ -116,7 +116,7 @@
 .key-image,
 .versatile-image {
   width: 100%;
-  height: 400px;
+  height: 302px;
   overflow: hidden;
   position: relative;
   margin-top: 40px;
@@ -135,18 +135,16 @@
   left: -95px;
   top: 5px;
 }
-  .make-impossible-possible 
-  {
-    width: 207px;
-    height: 119px;
-    margin: 128px 0 0 19px;
-    font-size: 40px;
-    font-weight: 500;
-    line-height: 46.875px;
-    text-align: left;
-    white-space: normal;
-  }
-
+.make-impossible-possible {
+  width: 228px;
+  height: 148px;
+  margin: 184px 0 0 32px;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 55.875px;
+  text-align: left;
+  white-space: normal;
+}
   .robotic-arms-for-moving-platform 
   {
     width: 100px;
@@ -155,7 +153,7 @@
     margin: 15px 0 0 22px;
     color: #2b3a83;
     font-family: Roboto, var(--default-font-family);
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 14px;
     text-align: left;
@@ -166,7 +164,7 @@
 
   .grid-container 
   {
-      grid-template-columns: 1fr 5fr 5fr 5fr;
+      grid-template-columns: -27 5fr 5fr 5fr;
   }
 
   .grid-container-product 
@@ -204,7 +202,7 @@
   }
   
   .robotics {
-      height: 300px;
+      height: 327px;
   }
   .rectangle-f {
     height: 300px;
@@ -213,7 +211,7 @@
   .robotic-arms {
     width: 172px;
     height: 52px;
-    margin: -59px 0 0 -60px;
+    margin: -66px 0 0 -53px;
     font-size: 20px;
     font-weight: 500;
     line-height: 21.094px;
@@ -226,7 +224,7 @@
     height: 136px;
     font-size: 12px;
     font-weight: 400;
-    margin: -122px 0 0 -59px;
+    margin: -122px 0 0 -97px;
   }
 
   .axis-info {
@@ -235,7 +233,7 @@
     height: 166px;
     font-size: 12px;
     font-weight: 400;
-    margin: -113px 0 0 20px;
+    margin: -95px 0 0 0px
   }
   
   .screenshot-11,
@@ -272,7 +270,7 @@
     width: 100%;
     height: 56px;
     margin: 24px 0 0 10%;
-    font-size: 21px;
+    font-size: 20px;
     line-height: 25.781px;
   }
 
@@ -312,7 +310,7 @@
   width: 50px;
   height: 150px;
   top: 59px;
-  left: 187px;
+  left: 180px;
   background-size: 100% 100%;
   z-index: 124;
 }
@@ -423,20 +421,20 @@ border: none;
 
 .flex-row-27 {
   height: 30px;
-  margin: 44px 17% -2px 16%;
+  margin: 44px 17% -2px 49px;
   z-index: 48;
 }
 
 .flex-row-28 {
   height: 23px;
-  margin: 45px 15% -2px 16%;
+  margin: 45px 15% -2px 49px;
   z-index: 51;
 }
 
 .flex-row-b {
   position: relative;
   height: 116px;
-  margin: 45px 15% -2px 16%;
+  margin: 45px 15% -2px 49px;
   z-index: 54;
 }
 
@@ -446,7 +444,7 @@ border: none;
   background: #f5f5f5;
   z-index: 43;
   border-radius: 2px;
-  margin: 17px 10% 55px 13%;
+  margin: 17px 10% 55px 41px;
 }
 
 .rectangle-31 { 
@@ -485,7 +483,7 @@ border: none;
   width: 27px;
   height: 26px;
   top: 80px;
-  left: 99px;
+  left: 92px;
 }
 .main-container, .main-container * {
   box-sizing: border-box;
@@ -495,7 +493,7 @@ border: none;
   flex-shrink: 0;
   position: relative;
   height: 13px;
-  margin-left: -117px;
+  margin-left: -98px;
   font-size: 18px;
   font-weight: 500;
   line-height: 19px;
@@ -788,7 +786,7 @@ gap: 0px;
   width: 100px;
   height: 150px;
   top: 57px;
-  left: 249px;
+  left: 238px;
   background-size: 100% 100%;
   z-index: 125;
 } 
@@ -986,7 +984,7 @@ display: none;
 
 .flex-row-bfa {
   position: relative;
-  height: 277px;
+  height: 318px;
   margin: 0 auto;
   margin-top: 75px;
   z-index: 116;
@@ -1068,7 +1066,7 @@ display: none;
   width: 65px;
   height: 14px;
   top: 420px;
-  left: calc(-62% - -316.5px);
+  left: calc( -68% - -316.5px);
 
   color: #2b3a83;
   font-family: Roboto, var(--default-font-family);
@@ -1098,7 +1096,7 @@ display: none;
   width: 92px;
   height: 14px;
   top: 420px;
-  left: calc(-46% - -390.5px);
+  left: calc(-58% - -390.5px);
   color: #2b3a83;
   font-family: Roboto, var(--default-font-family);
   font-size: 12px;
@@ -1123,8 +1121,24 @@ display: none;
   width: 210px;
   height: 192px;
   top: 78px;
-  left: calc(55% - -3px);
+  left: calc(65% - -3px);
   text-align: left;
+}
+
+#mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
+  position: absolute;
+  width: 200px;
+  margin: 97px 0 2em 0;
+  background-color: rgba(255, 255, 255, 0.85);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: normal;
+  z-index: 1;
+  color: #e85c41;
+  left: -51px;
+  margin-top: 92px;
 }
 
 }
