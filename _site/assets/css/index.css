@@ -2269,5 +2269,9 @@ button.close {
   margin: 0 10px; /* Adjust spacing between links */
 }
 
+.mobile-interview{
+  display: none;
+}
+
 
 

@@ -2268,6 +2268,8 @@ button.close {
 .top-news-product a {
   margin: 0 10px; /* Adjust spacing between links */
 }
-
+.its_mobile{
+  display: none;
+}
 
 
