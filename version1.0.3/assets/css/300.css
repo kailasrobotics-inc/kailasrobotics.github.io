@@ -1142,4 +1142,8 @@ display: none;
   margin-top: 92px;
 }
 
+.its_mobile{
+  display: block;
+}
+
 }

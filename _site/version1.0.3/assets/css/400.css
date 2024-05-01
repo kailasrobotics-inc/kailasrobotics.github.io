@@ -1142,5 +1142,8 @@ display: none;
   left: -51px;
   margin-top: 92px;
 }
+.its_mobile{
+  display: block;
+}
 
 }

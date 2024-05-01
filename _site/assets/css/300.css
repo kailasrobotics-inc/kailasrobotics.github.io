@@ -868,7 +868,7 @@ overflow: hidden;
   width: 63%;
   height: 32px;
   top: 313px;
-  left: -17px;
+  left: 35px;
   z-index: 93;
 }
 
@@ -1141,5 +1141,7 @@ display: none;
   left: -51px;
   margin-top: 92px;
 }
-
+.mobile-interview{
+  display: block;
+}
 }
