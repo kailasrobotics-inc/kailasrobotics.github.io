@@ -21,6 +21,10 @@
 
 </head>
 <style>
+    .space_bet
+    {
+        padding-left: 61%;
+    }
     body 
     {
         padding-top:   30px;
@@ -36,6 +40,13 @@
          text-align: right;
       }
     }
+    @media only screen and (min-width: 1200px) and (max-width: 1500px) 
+    {
+        .space_bet
+        {
+            padding-left: 50%;
+        }
+    }
 
     @media only screen and (max-width: 1200px) 
     {
@@ -47,9 +58,14 @@
 
     @media only screen and (min-width: 100px) and (max-width: 1100px) 
     {
+        
         br 
         {
-            display: none;
+            /* display: none; */
+        }
+        .space_bet
+        {
+            padding-left: 0%;
         }
     }
 
@@ -57,7 +73,7 @@
     {
         br 
         {
-            display: none;
+            /* display: none; */
         }
         body 
         {
@@ -98,18 +114,31 @@
         text-align: right;
         margin-right: 4%;
     }
+    .logo {
+  display: flex;
+  align-items: center; /* Align items vertically centered */
+}
+
+.logo_img {
+  max-width: 100%; /* Ensure images scale down appropriately */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.space_bet {
+  margin-left: 1em; /* Adjust spacing between the images */
+}
 
 </style> 
 
 <body>
-    <div class="logo text_position"  > 
-        <img   class="logo_img" src="/assets/img/MDF.png" />
-        <img style="padding-left: 51%;" class="logo_img" src="/assets/img/Kailas_logo.svg" />
+    <div class="logo text_position">
+        <img class="logo_img" src="/assets/img/MDF.png" />
+        <img class="logo_img space_bet" src="/assets/img/Kailas_logo.svg" />
     </div>
 
     <div  class="title">
         <p style="font-size: 30px;">
-            Kailas Robotics to Collaborate with MD-Farm's Strawberry Plant Factory<br>
+            Kailas Robotics to Collaborate with MD-Farm's Strawberry Plant Factory<br/>
             on Advanced Robotic Arms Development
     </div>
     <div class="date">
@@ -152,29 +181,30 @@
         globally.
     </div>
     <div style="margin: 3%;">
-        About MD-Farm Corporation<br>
+        About MD-Farm Corporation<br/>
         MD-Farm is committed to leading the way in advanced strawberry plant factories, aiming to realize a 
         sustainable world and enhance corporate value. Moving beyond traditional agriculture that focuses on 
         crop production, MD-Farm seeks to software-ize cultivation know-how, promoting a new form of agricul-
-        ture, AgrI-DX, that allows "anytime, anywhere, and anyone" to cultivate crops. <br>
-        Address:t 2-9-22 Jonan-cho, Shibata, Niigata Prefecture, 957-0051, Japan, <br>
-        CEO Yuki Matsuda.<br>
-        For more information about MD-Farm, please visit: https://www.md.farm/<br>
+        ture, AgrI-DX, that allows "anytime, anywhere, and anyone" to cultivate crops. <br/>
+        Address:t 2-9-22 Jonan-cho, Shibata, Niigata Prefecture, 957-0051, Japan, <br/>
+        CEO Yuki Matsuda.<br/>
+        For more information about MD-Farm, please visit: <a style="text-decoration:none;" href="https://www.md.farm/om">https://www.md.farm/</a><br/><br/>
     </div>
     <div style="margin: 3%;">
-        About Kailas Robotics Co., Ltd.<br>
+        About Kailas Robotics Co., Ltd.<br/>
         Kailas Robotics' robotic arms are developed based on cutting-edge SoC (System on Chip) and designed 
         from FPGA (Field Programmable Gate Array), achieving miniaturization. The core technology involves a 
         gripping technique that ensures the arm can securely grasp objects even when the pivot moves. The 
         company develops innovative arms essential for various robots, optimizing control systems and actuators 
-        for drones, UGVs, humanoids, and prosthetic hands. <br>
-        Address: SAITEC 506, 3-12-18 Kamiaoki, Kawaguchi, Saitama Prefecture, 333-0844, Japan,<br>
-        CEO Dambadarjaa Munkhbayar.<br>
-        For more information about Kailas Robotics, please visit: https://www.kailasrobotics.com/<br>
+        for drones, UGVs, humanoids, and prosthetic hands. <br/>
+        Address: SAITEC 506, 3-12-18 Kamiaoki, Kawaguchi, Saitama Prefecture, 333-0844, Japan,<br/>
+        CEO Dambadarjaa Munkhbayar.<br/>
+        For more information about Kailas Robotics, please visit: <a style="text-decoration:none;" href="https://www.kailasrobotics.com/">https://www.kailasrobotics.com/</a><br/>
     </div>
-    <div style="margin: 3%;white-space: pre;">
-        Contact<br>
-                MD-Farm: info@md.farm                                Kailas Robotics: public-relation@kailasrobotics.com
+    <div style="margin: 3%; white-space: pre-wrap;">
+        Contact<br/>
+            MD-Farm: info@md.farm  <br>             
+            Kailas Robotics: public-relation@kailasrobotics.com
     </div>
 
     
