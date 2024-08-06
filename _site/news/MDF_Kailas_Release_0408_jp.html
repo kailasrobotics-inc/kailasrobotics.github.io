@@ -21,6 +21,10 @@
 
 </head>
 <style>
+    .space_bet
+    {
+        padding-left: 61%;
+    }
     body 
     {
         padding-top:   30px;
@@ -36,6 +40,13 @@
          text-align: right;
       }
     }
+    @media only screen and (min-width: 1200px) and (max-width: 1500px) 
+    {
+        .space_bet
+        {
+            padding-left: 50%;
+        }
+    }
 
     @media only screen and (max-width: 1200px) 
     {
@@ -47,9 +58,14 @@
 
     @media only screen and (min-width: 100px) and (max-width: 1100px) 
     {
+        
         br 
         {
-            display: none;
+            /* display: none; */
+        }
+        .space_bet
+        {
+            padding-left: 0%;
         }
     }
 
@@ -57,7 +73,7 @@
     {
         br 
         {
-            display: none;
+            /* display: none; */
         }
         body 
         {
@@ -98,13 +114,26 @@
         text-align: right;
         margin-right: 4%;
     }
+    .logo {
+  display: flex;
+  align-items: center; /* Align items vertically centered */
+}
+
+.logo_img {
+  max-width: 100%; /* Ensure images scale down appropriately */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.space_bet {
+  margin-left: 1em; /* Adjust spacing between the images */
+}
 
 </style> 
 
 <body>
-    <div class="logo text_position"  > 
-        <img   class="logo_img" src="/assets/img/MDF.png" />
-        <img style="padding-left: 51%;" class="logo_img" src="/assets/img/Kailas_logo.svg" />
+    <div class="logo text_position">
+        <img class="logo_img" src="/assets/img/MDF.png" />
+        <img class="logo_img space_bet" src="/assets/img/Kailas_logo.svg" />
     </div>
 
     <div  class="title">
@@ -152,7 +181,8 @@
         所在地： 〒957-0051  新潟県新発田市城北町２－９－２２<br>
         代表取締役： 松田 祐樹<br><br>
         MD-Farmに関するより詳しい情報は、以下をご覧ください。<br>
-        https://www.md.farm/
+        <a style="text-decoration:none;" href="https://www.md.farm/om">https://www.md.farm/</a><br/>
+        
     </div>
     <div style="margin: 3%;">
         株式会社Kailas Robotics（カイラスロボティクス）について<br>
@@ -163,11 +193,13 @@
         所在地： 〒333-0844 埼玉県川口市上青木3-12-18 埼玉県産業技術総合センター 506<br>
         代表取締役： ダンバダルジャ・ムンフバヤル<br><br>
         Kailas Roboticsに関するより詳しい情報は、以下をご覧ください。<br>
-        https://www.kailasrobotics.com/
+        <a style="text-decoration:none;" href="https://www.kailasrobotics.com/">https://www.kailasrobotics.com/</a><br/>
+        
     </div>
-    <div style="margin: 3%;white-space: pre;">
-        問い合わせ<br>
-                MD-Farm: info@md.farm                                                                   Kailas Robotics: public-relation@kailasrobotics.com
+    <div style="margin: 3%; white-space: pre-wrap;">
+        Contact<br/>
+            MD-Farm: info@md.farm  <br>             
+            Kailas Robotics: public-relation@kailasrobotics.com
     </div>
 
     
