@@ -743,14 +743,6 @@ gap: 0px;
   gap: 0px;
 }
 
-.flex-row-bfa {
-  position: relative;
-  height: 277px;
-  margin: 0 auto;
-  margin-top: 100px;
-  z-index: 116;
-  width: 92%;
-}
 
 .news {
   display: flex;
@@ -810,14 +802,6 @@ gap: 0px;
   left: 50%;
 }
 
-.flex-row-bfa {
-  position: relative;
-  height: 277px;
-  margin: 0 auto;
-  margin-top: 20px;
-  z-index: 116;
-  width: 80%;
-}
 
 
 .screenshot-33 {
@@ -984,7 +968,7 @@ display: none;
 
 .flex-row-bfa {
   position: relative;
-  height: 318px;
+  height: 440px;
   margin: 0 auto;
   margin-top: 75px;
   z-index: 116;

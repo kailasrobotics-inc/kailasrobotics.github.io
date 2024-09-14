@@ -292,7 +292,7 @@ button {
 .flex-row-bfa {
   width: 100%;
   position: relative;
-  height: 330px;
+  height: 400px;
   margin: 6px 0 0 204px;
   z-index: 116;
 }
@@ -346,6 +346,12 @@ button {
   line-height: 30px;
   text-align: left;
   z-index: 116;
+}
+
+.seven{
+  margin-top: 300px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #F5F5F5;
 }
 
 .six{
