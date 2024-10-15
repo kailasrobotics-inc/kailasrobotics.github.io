@@ -196,6 +196,113 @@
 <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script> 
 <script>
+
+function getBrowserLang() {
+    
+    const browserLang = navigator.language || navigator.userLanguage; 
+    console.log("Detected browser language:", browserLang);
+    if (browserLang.startsWith('ja')) 
+    {
+        return 'jp'; // Japanese
+    } 
+     else 
+    {
+        return 'eng'; // Default to English
+    }
+}
+
+let langs = ['jp', 'mon', 'eng'];
+let lang = getBrowserLang(); 
+setLangStyles(lang);
+
+
+
+function setStyles(styles) {
+    var elementId = '__lang_styles';
+    var element = document.getElementById(elementId);
+    if (element) {
+        element.remove();
+    }
+
+    let style = document.createElement('style');
+    style.id = elementId;
+    style.type = 'text/css';
+
+    if (style.styleSheet) {
+        style.styleSheet.cssText = styles;
+    } else {
+        style.appendChild(document.createTextNode(styles));
+    }
+    document.getElementsByTagName('head')[0].appendChild(style);
+}
+
+function setLang(lang) {
+    setLangStyles(lang);
+}
+
+function setLangStyles(lang) {
+    let styles = langs
+        .filter(function (l) {
+            return l != lang;
+        })
+        .map(function (l) {
+            return ':lang(' + l + ') { display: none; }';
+        })
+        .join(' ');
+
+    setStyles(styles);
+}
+
+// let langs = ['jp', 'mon', 'eng'];
+// let lang = 'eng';
+// setLangStyles(lang);
+
+// function setStyles(styles) 
+// {
+//     var elementId = '__lang_styles';
+//     var element = document.getElementById(elementId);
+//     if (element) 
+//     {
+//         element.remove();
+//     }
+
+//     let style = document.createElement('style');
+//     style.id = elementId;
+//     style.type = 'text/css';
+
+//     if (style.styleSheet) 
+//     {
+//         style.styleSheet.cssText = styles;
+//     } 
+//     else 
+//     {
+//         style.appendChild(document.createTextNode(styles));
+//     }
+//     document.getElementsByTagName('head')[0].appendChild(style);
+// }
+
+// function setLang(lang) 
+// {
+//     setLangStyles(lang);
+// }
+
+// function setLangStyles(lang) 
+// {
+//     let styles = langs
+//     .filter(function(l) 
+//     {
+//         return l != lang;
+//     })
+//     .map(function(l) 
+//     {
+//         return ':lang(' + l + ') { display: none; }';
+//     })
+//     .join(' ');
+
+//     setStyles(styles);
+// }
+
+
 (function($) {
 window.fnames = new Array();
 window.ftypes = new Array();
@@ -223,12 +330,6 @@ if (!menu.contains(target) && target !== toggle && target.parentNode !== toggle 
     toggle.checked = false;
 }
 })
-
-
-
-let langs = ['jp', 'mon', 'eng'];
-let lang = 'eng';
-setLangStyles(lang);
 
 function handleSmoothScrollToTop(event) {
 event.preventDefault(); 
@@ -353,50 +454,7 @@ else
 }
 }
 
-function setStyles(styles) 
-{
-var elementId = '__lang_styles';
-var element = document.getElementById(elementId);
-if (element) 
-{
-    element.remove();
-}
 
-let style = document.createElement('style');
-style.id = elementId;
-style.type = 'text/css';
-
-if (style.styleSheet) 
-{
-    style.styleSheet.cssText = styles;
-} 
-else 
-{
-    style.appendChild(document.createTextNode(styles));
-}
-document.getElementsByTagName('head')[0].appendChild(style);
-}
-
-function setLang(lang) 
-{
-setLangStyles(lang);
-}
-
-function setLangStyles(lang) 
-{
-let styles = langs
-    .filter(function(l) 
-    {
-        return l != lang;
-    })
-    .map(function(l) 
-    {
-        return ':lang(' + l + ') { display: none; }';
-    })
-    .join(' ');
-
-setStyles(styles);
-}
 
 function clearForm() 
 {
