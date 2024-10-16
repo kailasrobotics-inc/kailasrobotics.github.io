@@ -94,7 +94,7 @@
                 </a>
             </li>
             <li class="language" >
-                <a href="#" class=" english active" onclick="handleActiveTab(this); setLang('eng');" >ENG</a>
+                <a href="#" class="english active" onclick="handleActiveTab(this); setLang('eng');" >ENG</a>
                 <span class="space">/</span>
                 <a  href="#" class="jp" onclick="handleActiveTab(this); setLang('jp');">日本語</a>
             </li>
@@ -1401,357 +1401,357 @@
 <script src="https://www.google.com/recaptcha/api.js" async defer></script> 
 <script>
 
-function getBrowserLang() {
+    function getBrowserLang()
+    {   
+        const browserLang = navigator.language || navigator.userLanguage; 
+        
+        console.log("Detected browser language:", browserLang);
+        if (browserLang.startsWith('ja')) 
+        {
+            return 'jp';
+        } 
+        else 
+        {
+            return 'eng';
+        }
+    }
+
+    let langs = ['jp', 'mon', 'eng'];
+    let lang = getBrowserLang(); 
     
-    const browserLang = navigator.language || navigator.userLanguage; 
-    console.log("Detected browser language:", browserLang);
-    if (browserLang.startsWith('ja')) 
-    {
-        return 'jp'; // Japanese
-    } 
-     else 
-    {
-        return 'eng'; // Default to English
-    }
-}
-
-let langs = ['jp', 'mon', 'eng'];
-let lang = getBrowserLang(); 
-setLangStyles(lang);
-
-
-
-function setStyles(styles) {
-    var elementId = '__lang_styles';
-    var element = document.getElementById(elementId);
-    if (element) {
-        element.remove();
-    }
-
-    let style = document.createElement('style');
-    style.id = elementId;
-    style.type = 'text/css';
-
-    if (style.styleSheet) {
-        style.styleSheet.cssText = styles;
-    } else {
-        style.appendChild(document.createTextNode(styles));
-    }
-    document.getElementsByTagName('head')[0].appendChild(style);
-}
-
-function setLang(lang) {
     setLangStyles(lang);
-}
 
-function setLangStyles(lang) {
-    let styles = langs
-        .filter(function (l) {
-            return l != lang;
-        })
-        .map(function (l) {
-            return ':lang(' + l + ') { display: none; }';
-        })
-        .join(' ');
+    function setStyles(styles) 
+    {
+        var elementId = '__lang_styles';
+        var element = document.getElementById(elementId);
+        if (element) {
+            element.remove();
+        }
 
-    setStyles(styles);
-}
+        let style = document.createElement('style');
+        style.id = elementId;
+        style.type = 'text/css';
 
-// let langs = ['jp', 'mon', 'eng'];
-// let lang = 'eng';
-// setLangStyles(lang);
+        if (style.styleSheet) {
+            style.styleSheet.cssText = styles;
+        } else {
+            style.appendChild(document.createTextNode(styles));
+        }
+        document.getElementsByTagName('head')[0].appendChild(style);
+    }
 
-// function setStyles(styles) 
-// {
-//     var elementId = '__lang_styles';
-//     var element = document.getElementById(elementId);
-//     if (element) 
-//     {
-//         element.remove();
-//     }
+    function setLang(lang) 
+    {
+        setLangStyles(lang);
+    }
 
-//     let style = document.createElement('style');
-//     style.id = elementId;
-//     style.type = 'text/css';
+    function setLangStyles(lang) 
+    {
+        let styles = langs
+            .filter(function (l) 
+            {
+                return l != lang;
+            })
+            .map(function (l) 
+            {
+                return ':lang(' + l + ') { display: none; }';
+            })
+            .join(' ');
 
-//     if (style.styleSheet) 
-//     {
-//         style.styleSheet.cssText = styles;
-//     } 
-//     else 
-//     {
-//         style.appendChild(document.createTextNode(styles));
-//     }
-//     document.getElementsByTagName('head')[0].appendChild(style);
-// }
+        setStyles(styles);
+    }
 
-// function setLang(lang) 
-// {
-//     setLangStyles(lang);
-// }
+    (function($) 
+    {
+        window.fnames = new Array();
+        window.ftypes = new Array();
+        fnames[0] = 'EMAIL';
+        ftypes[0] = 'email';
+        fnames[1] = 'FNAME';
+        ftypes[1] = 'text';
+        fnames[2] = 'LNAME';
+        ftypes[2] = 'text';
+        fnames[3] = 'ADDRESS';
+        ftypes[3] = 'address';
+        fnames[4] = 'PHONE';
+        ftypes[4] = 'phone';
+        fnames[5] = 'BIRTHDAY';
+        ftypes[5] = 'birthday';
+    }(jQuery));
+    var $mcj = jQuery.noConflict(true);
 
-// function setLangStyles(lang) 
-// {
-//     let styles = langs
-//     .filter(function(l) 
-//     {
-//         return l != lang;
-//     })
-//     .map(function(l) 
-//     {
-//         return ':lang(' + l + ') { display: none; }';
-//     })
-//     .join(' ');
+    document.addEventListener('click', function(event) 
+    {
+        var menu = document.querySelector('.menu');
+        var toggle = document.getElementById('checkbox_toggle');
+        var target = event.target;
 
-//     setStyles(styles);
-// }
+        if (!menu.contains(target) && target !== toggle && target.parentNode !== toggle && !target.closest('.nav-links')) 
+        {
+            toggle.checked = false;
+        }
+    })
 
+    function handleSmoothScrollToTop(event) 
+    {
+        event.preventDefault(); 
 
-(function($) {
-window.fnames = new Array();
-window.ftypes = new Array();
-fnames[0] = 'EMAIL';
-ftypes[0] = 'email';
-fnames[1] = 'FNAME';
-ftypes[1] = 'text';
-fnames[2] = 'LNAME';
-ftypes[2] = 'text';
-fnames[3] = 'ADDRESS';
-ftypes[3] = 'address';
-fnames[4] = 'PHONE';
-ftypes[4] = 'phone';
-fnames[5] = 'BIRTHDAY';
-ftypes[5] = 'birthday';
-}(jQuery));
-var $mcj = jQuery.noConflict(true);
+        window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+    }
 
-document.addEventListener('click', function(event) {
-var menu = document.querySelector('.menu');
-var toggle = document.getElementById('checkbox_toggle');
-var target = event.target;
+    var modal = document.querySelector(".modal");
 
-if (!menu.contains(target) && target !== toggle && target.parentNode !== toggle && !target.closest('.nav-links')) {
-    toggle.checked = false;
-}
-})
+    var btn = document.getElementById("openModal");
 
-function handleSmoothScrollToTop(event) {
-event.preventDefault(); 
+    var span = document.querySelector(".close");
 
+    btn.onclick = function() 
+    {
+        modal.classList.add("show");
+        document.body.style.overflow = "hidden";
+    }
 
-window.scrollTo({
-top: 0,
-behavior: 'smooth'
-});
-}
+    span.onclick = function() 
+    {
+        modal.classList.remove("show");
+        document.body.style.overflow = "";
+    }
 
-var modal = document.querySelector(".modal");
+    window.onclick = function(event) 
+    {
+        if (event.target == modal) 
+        {
+            modal.classList.remove("show");
+            document.body.style.overflow = ""; 
+        }
+    }
 
+    function handleSmoothScroll(event) 
+    {
+        event.preventDefault();
 
-var btn = document.getElementById("openModal");
+        const targetId = event.currentTarget.getAttribute('href');
+        const targetElement = document.querySelector(targetId); 
 
-
-var span = document.querySelector(".close");
-
-
-btn.onclick = function() {
-modal.classList.add("show");
-document.body.style.overflow = "hidden";
-}
-
-span.onclick = function() {
-modal.classList.remove("show");
-document.body.style.overflow = "";
-}
-
-window.onclick = function(event) {
-if (event.target == modal) {
-modal.classList.remove("show");
-document.body.style.overflow = ""; 
-}
-}
-
-function handleSmoothScroll(event) {
-event.preventDefault();
-
-const targetId = event.currentTarget.getAttribute('href');
-const targetElement = document.querySelector(targetId); 
-
-if (targetElement) {
-const offset = 150;
-const targetOffsetTop = targetElement.offsetTop - offset; 
+        if (targetElement) 
+        {
+            const offset = 150;
+            const targetOffsetTop = targetElement.offsetTop - offset; 
 
 
-window.scrollTo({
-    top: targetOffsetTop,
-    behavior: 'smooth'
-});
-}
-}
+            window.scrollTo(
+                {
+                    top: targetOffsetTop,
+                    behavior: 'smooth'
+                }
+            );
+        }
+    }
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxOL5Y4T6haZ0YCZFPKNhbJRJMLavYGPUD6hzgBydvIQKAxGQYg647sGRN9cK3KW_7nqQ/exec'
-const scriptMailURL = 'https://script.google.com/a/macros/kailasrobotics.com/s/AKfycbyX7BUQ5_C_Tcre6QKSH2lAeYSLONg_uzqBAvFxx6SoCXQuZ_odJIJcY2BWyhWf2718Nw/exec'
-const scriptMailCustomerURL = 'https://script.google.com/macros/s/AKfycbxcAV5zcHYPLERmcYdYEp9zthOCbWgHQDwaTE-CK-O8PiwXS5pgWBIZoiqDQd3SdvTEig/exec'
-const form = document.forms['googleSheet']
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxOL5Y4T6haZ0YCZFPKNhbJRJMLavYGPUD6hzgBydvIQKAxGQYg647sGRN9cK3KW_7nqQ/exec'
+    const scriptMailURL = 'https://script.google.com/a/macros/kailasrobotics.com/s/AKfycbyX7BUQ5_C_Tcre6QKSH2lAeYSLONg_uzqBAvFxx6SoCXQuZ_odJIJcY2BWyhWf2718Nw/exec'
+    const scriptMailCustomerURL = 'https://script.google.com/macros/s/AKfycbxcAV5zcHYPLERmcYdYEp9zthOCbWgHQDwaTE-CK-O8PiwXS5pgWBIZoiqDQd3SdvTEig/exec'
+    const form = document.forms['googleSheet']
 
 
-form.addEventListener('submit', e => {
-e.preventDefault()
-var recaptcha = $("#g-recaptcha-response").val()
-// console.log("reCAPTCHA response token:", recaptcha);
-if (recaptcha === "") {
-$("#formAlerts").html('<div class="alert alert-danger"><span lang="eng">Please check the recaptcha!</span></div>');
-} else {
-$("#formAlerts").html('');
-setLoading(true)
-var formData = new FormData(form);
+    form.addEventListener('submit', e => 
+    {
+        e.preventDefault()
+        var recaptcha = $("#g-recaptcha-response").val()
+        // console.log("reCAPTCHA response token:", recaptcha);
+        if (recaptcha === "") 
+        {
+            $("#formAlerts").html('<div class="alert alert-danger"><span lang="eng">Please check the recaptcha!</span></div>');
+        } 
+        else 
+        {
+        $("#formAlerts").html('');
+        setLoading(true)
+        var formData = new FormData(form);
 
-var formDataObject = {};
-for (var pair of formData.entries()) {
-    formDataObject[pair[0]] = pair[1];
-}
-// console.log("Form Data:", formDataObject); 
+        var formDataObject = {};
+        for (var pair of formData.entries()) 
+        {
+            formDataObject[pair[0]] = pair[1];
+        }
+        // console.log("Form Data:", formDataObject); 
 
-fetch(scriptURL, { method: 'POST', body: formData})
-    .then(response => {
-        $("#formAlerts").html('<div class="alert alert-success"><span lang="eng">Successfully!</span></div>');
-        clearForm()
-        setTimeout(function(){
-            $("#closeBtn").click()
-            $("#formAlerts").html('')
-            setLoading(false)
-            fetch(scriptMailURL)
-                .then(response => {
-                    console.log("Successfully")
-                    fetch(scriptMailCustomerURL)
+        fetch(scriptURL, { method: 'POST', body: formData})
+            .then(response => 
+            {
+                $("#formAlerts").html('<div class="alert alert-success"><span lang="eng">Successfully!</span></div>');
+                clearForm()
+                setTimeout(function()
+                {
+                    $("#closeBtn").click()
+                    $("#formAlerts").html('')
+                    setLoading(false)
+                    fetch(scriptMailURL)
                         .then(response => {
-                            console.log("Successfully send mail for customer")
+                            console.log("Successfully")
+                            fetch(scriptMailCustomerURL)
+                                .then(response => 
+                                {
+                                    console.log("Successfully send mail for customer")
+                                }) 
+                                .catch(error => 
+                                {
+                                    console.log("Failed send mail for customer")
+                                })
                         }) 
                         .catch(error => {
-                            console.log("Failed send mail for customer")
+                            console.log("Failed")
+                            console.log("Error:", error); 
                         })
-                }) 
-                .catch(error => {
-                    console.log("Failed")
-                    console.log("Error:", error); 
-                })
-        }, 50) 
+                }, 50) 
+            })
+            .catch(error => {
+                console.log("Error:", error); 
+                $("#formAlerts").html('<div class="alert alert-danger"><span >Error!</div>')
+                setLoading(false)
+                
+            })
+        } 
     })
-    .catch(error => {
-        console.log("Error:", error); 
-        $("#formAlerts").html('<div class="alert alert-danger"><span >Error!</div>')
-        setLoading(false)
+
+    function setLoading(loading) 
+    {
+        if (loading) 
+        {
+            $("#myLoading").css("display", "flex")
+        } 
+        else 
+        {
+            $("#myLoading").css("display", "none")
+        }
+    }
+
+    function clearForm() 
+    {
+        $('#myForm').get(0).reset()
+    }
+
+    window.onload = function() 
+    {
+        const userLang = navigator.language || navigator.userLanguage; 
+        if (userLang.startsWith('ja')) 
+        {
+            // Set Japanese as default
+            document.querySelector('.jp').classList.add('active');
+            document.querySelector('.english').classList.remove('active');
+            setLang('jp');
+        } 
+        else 
+        {
+            // Set English as default
+            document.querySelector('.english').classList.add('active');
+            document.querySelector('.jp').classList.remove('active');
+            setLang('eng');
+        }
+    };
+
+    const handleActiveTab = (element)=>
+    {
+        var menu = document.querySelector('.menu');
+        var toggle = document.getElementById('checkbox_toggle');
+        var target = event.target;
+        toggle.checked = false;
+
+        Array.from(document.querySelectorAll('a')).forEach((el) => el.classList.remove('active'));
+        element.classList.add('active')
+    }
+
+    $(window).load(function() 
+    {
+        $(".btn-nav").on("click tap", function() 
+        {
+            $(".nav-content").toggleClass("showNav hideNav").removeClass("hidden");
+            $(this).toggleClass("animated");
+        });
+    });
+
+    function openLinkedInA() 
+    {
+        window.open('https://www.linkedin.com/in/altanbileg-adiyasuren-66515836/', '_blank');
+    }
+
+    function openLinkedInM() 
+    {
+        window.open('https://www.linkedin.com/in/mdamba/', '_blank');
+    }
+
+    function openLinkedInSH() 
+    {
+        window.open('https://www.linkedin.com/in/yoshi-shiomi-75a8209/', '_blank');
+    }
+
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) 
+    {
+        showDivs(slideIndex += n);
+    }
+    
+    function currentDiv(n) 
+    {
+        showDivs(slideIndex = n);
+    }
+    
+    function showDivs(n) 
+    {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("slideimage");
+        if (n > x.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = x.length}
         
-    })
-} 
-})
+        for (i = 0; i < x.length; i++) 
+        {
+            x[i].style.display = "none";  
+        }
+        
+        for (i = 0; i < dots.length; i++)
+        {
+            dots[i].className = dots[i].className.replace(" list", "");
+        }
+        x[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " list";
+    }
 
-function setLoading(loading) 
-{
-if (loading) 
-{
-    $("#myLoading").css("display", "flex")
-} 
-else 
-{
-    $("#myLoading").css("display", "none")
-}
-}
-
-
-
-function clearForm() 
-{
-$('#myForm').get(0).reset()
-}
-
-const handleActiveTab = (element)=>{
-
-var menu = document.querySelector('.menu');
-var toggle = document.getElementById('checkbox_toggle');
-var target = event.target;
-toggle.checked = false;
-
-Array.from(document.querySelectorAll('a')).forEach((el) => el.classList.remove('active'));
-element.classList.add('active')
-}
-
-$(window).load(function() {
-$(".btn-nav").on("click tap", function() {
-$(".nav-content").toggleClass("showNav hideNav").removeClass("hidden");
-$(this).toggleClass("animated");
-});
-});
-
-function openLinkedInA() {
-
-window.open('https://www.linkedin.com/in/altanbileg-adiyasuren-66515836/', '_blank');
-}
-
-function openLinkedInM() {
-window.open('https://www.linkedin.com/in/mdamba/', '_blank');
-}
-
-function openLinkedInSH() {
-window.open('https://www.linkedin.com/in/yoshi-shiomi-75a8209/', '_blank');
-}
+    var slideIndex = 1;
+    showDivs1(slideIndex);
+    
+    function plusDivs1(n) 
+    {
+        showDivs1(slideIndex += n);
+    }
+    
+    function currentDiv1(n) 
+    {
+        showDivs1(slideIndex = n);
+    }
+    
+    function showDivs1(n) 
+    {
+        var i;
+        var x = document.getElementsByClassName("mySlidess");
+        var dots = document.getElementsByClassName("slideimages");
+        if (n > x.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" list", "");
+        }
+        x[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " list";
+    }
 </script>
-    <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
-        
-        function plusDivs(n) {
-          showDivs(slideIndex += n);
-        }
-        
-        function currentDiv(n) {
-          showDivs(slideIndex = n);
-        }
-        
-        function showDivs(n) {
-          var i;
-          var x = document.getElementsByClassName("mySlides");
-          var dots = document.getElementsByClassName("slideimage");
-          if (n > x.length) {slideIndex = 1}    
-          if (n < 1) {slideIndex = x.length}
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-          }
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" list", "");
-          }
-          x[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " list";
-        }
-
-        var slideIndex = 1;
-        showDivs1(slideIndex);
-        
-        function plusDivs1(n) {
-          showDivs1(slideIndex += n);
-        }
-        
-        function currentDiv1(n) {
-          showDivs1(slideIndex = n);
-        }
-        
-        function showDivs1(n) {
-          var i;
-          var x = document.getElementsByClassName("mySlidess");
-          var dots = document.getElementsByClassName("slideimages");
-          if (n > x.length) {slideIndex = 1}    
-          if (n < 1) {slideIndex = x.length}
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-          }
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" list", "");
-          }
-          x[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " list";
-        }
-
-        
-        </script>
     </div>    
 </html>
