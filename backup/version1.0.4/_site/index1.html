@@ -1,0 +1,2219 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+
+<meta name="description" content="Kailas Roboticsは、精密な制御技術を活かしたロボットアームの開発に特化し、製造、農業、物流などさまざまな業界向けに革新的な自動化ソリューションを提供しています。最先端のロボット技術で効率化を実現します。">
+
+<meta name="keywords" content="robot,robotics,arm,Agriculture,Harvest,cobot,picking,DRONE,UGV,AGV,hight-speed,gripper,SDK,ros,ros2,unity,android,ios,automation,EtherCAT,EtherCAT®,zero,backlash,free,harmonic,drive,harmonic,solution,lightweight,Kailas Robotic, Technology Revolution,Introduction,​Our Solution">
+
+<title>Kailas Robotics INC</title>
+<link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+<meta name="theme-color" content="#478ac9">
+<meta property="og:title" content="Home">
+<meta property="og:type" content="website">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kailas Robotics INC</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="//cdn-images.mailchimp.com/embedcode/classic-061523.css"  type="text/css">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": ""
+    }
+</script>
+    
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GMW72BQ71V"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-GMW72BQ71V');
+</script>
+
+<style>
+        .rectangle-2 
+        {
+            position: relative;
+            height: 100vh; /* Full viewport height */
+            overflow: hidden; /* Hide overflow */
+        }
+
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Cover the area while maintaining aspect ratio */
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent overlay */
+        }
+        .content {
+            position: relative;
+            z-index: 1; /* Ensure content is above the video */
+            margin-top: 184px; /* Adjust as needed */
+            margin-left: 5%;
+            color: white; /* Make sure text is readable over the video */
+        }
+</style>
+<body>
+    <header class="rectangle">
+    <nav class="navbar navbar-expand-lg bg-light fixed-top" style="border-bottom: 1px solid rgb(214, 203, 203);">
+        <a class="navbar-brand" href="#">
+            <img src="../assets/kailas_images/kailaslogo.png" alt="kailas_logo" style="height: 45px; margin-right: 0;">
+            <img src="../assets/kailas_images/kailaslogo1.png" alt="kailas_logo" style="height: 35px; margin-top: 7px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#news" onclick="handleLinkClick(event, this); closeNavbar();" aria-label="Go to News Section">
+                        <span lang="eng">NEWS</span>
+                        <span lang="jp">ニュース</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#product" onclick="handleLinkClick(event, this); closeNavbar();" aria-label="Go to Products Section">
+                        <span lang="eng">PRODUCTS</span>
+                        <span lang="jp">プロダクト</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about" onclick="handleLinkClick(event, this); closeNavbar();" aria-label="Go to About Us Section">
+                        <span lang="eng">ABOUT US</span>
+                        <span lang="jp">会社について</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact" onclick="handleLinkClick(event, this); closeNavbar();" aria-label="Go to Contact Section">
+                        <span lang="eng">CONTACT</span>
+                        <span lang="jp">お問合せ</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-link">
+                        <a href="#" id="englishLink" style="text-decoration: none; cursor: pointer;" class="language desactive_lang" onclick="setLang('eng'); toggleActiveLang('eng'); closeNavbar();">ENG</a>
+                        <span class="nav-separator" style=" text-decoration: none; cursor: default;"> / </span>
+                        <a href="#" id="japaneseLink" style=" text-decoration: none; cursor: pointer;" class="language desactive_lang" onclick="setLang('jp'); toggleActiveLang('jp'); closeNavbar();">日本語</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+    <!-- <div class="rectangle-2 bg-light mx-auto position-relative" style="height: 100vh; overflow: hidden; margin-top: 70px;">
+        <video id="video1" autoplay muted  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+            <source src="../assets/video/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <video id="video2" autoplay muted  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: none;">
+            <source src="../assets/video/video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.3);"></div>
+       
+        <div class="d-flex flex-column h-100 position-relative" style="margin-top:184px; margin-left: 5%;">
+            <h1 class="header_image_txt_1">
+                Make Impossible Possible
+            </h1>
+            <p  class="header_image_txt_2">
+                ROBOTIC ARMS FOR MOVING PLATFORMS
+            </p>
+        </div>
+    </div> -->
+    <div class="rectangle-2" style="background-color: gray;">
+        <!-- <video id="video1" autoplay muted loop>
+            <source src="../assets/video/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <video id="video2" muted loop style="display: none;">
+            <source src="../assets/video/video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video> -->
+        <video id="videoPlayer" autoplay muted></video>
+        <div class="overlay"></div>
+       
+        <div class="content">
+            <h1 class="header_image_txt_1">
+                Make Impossible Possible
+            </h1>
+            <p class="header_image_txt_2">
+                ROBOTIC ARMS FOR MOVING PLATFORMS
+            </p>
+        </div>
+    </div>
+    
+    <section id="global-trends" class="global-section">
+        <div class="container text-center ">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-12 col-sm-12">
+                    <div class="header_interview">
+                        <span class="header_interview">
+                            <span lang="eng">
+                                In response to aging populations and workplace automation trends, 
+                                human-robot collaboration is essential. Our lightweight robotic arms easily attach to 
+                                drones and other moving platforms.
+                
+                            </span>
+                            <span style="text-wrap: wrap;" lang="jp">
+                                ドローンのような不安定なプラットフォームでもビジョンシステムによる対象物の自動認識、自動キャッチが可能。
+                                ロボットアームの常識を覆す、 強固な土台が不要な軽量且つ高速正確なロボットアーム。    
+                                       
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <Style>
+    .news_title
+    {
+        color: #2b3a83;
+        font-family: Roboto, var(--default-font-family);
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: center;
+        padding-bottom:50px ;
+        white-space: nowrap;
+    }
+
+    .news_date 
+    {
+        color: #000000;
+        font-family: Roboto, var(--default-font-family);
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+    
+    .space
+    {
+        margin-left: 10px;
+    }
+
+    .space_top
+    {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    @media only screen and (max-width: 999px) 
+    {
+      
+        .news_title
+        {
+            font-size: 38px;
+            font-weight: 400;
+        }
+        .news_date 
+        {
+            font-size: 20px;
+        }
+    }
+
+    @media only screen and (max-width: 760px) 
+    {
+        .space
+        {
+            margin-left: 0px;
+        }
+        .news_title
+        {
+            font-size: 38px;
+            font-weight: 400;
+        }
+        .news_date 
+        {
+            font-size: 20px;
+        }
+    }
+
+    @media only screen and (max-width: 699px) 
+    {
+        .news_title
+        {
+            font-size: 38px;
+            font-weight: 400;
+        }
+        .news_date 
+        {
+            font-size: 17px;
+        }
+    }
+
+</Style>
+<section id="news" class="news-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 news_title">
+                <div style="padding-bottom: 20px;border-bottom: 2px solid darkblue;">
+                    <span lang="eng">NEWS</span>
+                    <span lang="jp">ニュース</span>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-9 ">
+                <div id="news-items" class="news-items">
+                    
+                    <a id="dynamic-link" style="text-decoration: none;" href="/news/CES2025_Release_1101_en.html" target="_blank"
+                       data-link-en="/news/CES2025_Release_1101_en.html" data-link-jp="/news/CES2025_Release_1101_jp.html">
+                        <div class="row news_date" style="border-bottom:1px solid lightgray;">
+                            <div class="col-md-2  space_top d-flex justify-content-center align-items-center">
+                                <span>2024.11.01</span>
+                            </div>
+                            
+                            <div class="col-md-10  space_top">
+                                <span lang="eng" class="eng ">Kailas Robotics to Exhibit at CES 2025 Japan Pavilion.</span>
+                                <span lang="jp" class="jp ">Kailas RoboticsがCES2025 Japanパビリオンに出展決定。</span>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a id="dynamic-link" style="text-decoration: none;" href="/news/J-StarX-Boston_Robotics-PRG_1023_2024_en.html" target="_blank"
+                       data-link-en="/news/J-StarX-Boston_Robotics-PRG_1023_2024_en.html" data-link-jp="/news/J-StarX-Boston_Robotics-PRG_1023_2024_jp.html">
+                        <div class="row news_date" style="border-bottom:1px solid lightgray;">
+                            <div class="col-md-2  space_top d-flex justify-content-center align-items-center">
+                                <span>2024.10.23</span>
+                            </div>
+                            
+                            <div class="col-md-10  space_top">
+                                <span lang="eng" class="eng ">Kailas Robotics Selected for JETRO “CIC 2024 J-StarX Boston Robotics Program“.</span>
+                                <span lang="jp" class="jp ">JETRO ”2024 J-StarX Boston Robotics Program"にKailas Roboticsが採択されました。</span>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a id="dynamic-link" style="text-decoration: none;" href="/news/AICHI_Manufacturing_0910_2024_en.html" target="_blank"
+                       data-link-en="/news/AICHI_Manufacturing_0910_2024_en.html" data-link-jp="/news/AICHI_Manufacturing_0910_2024_jp.html">
+                        <div class="row news_date" style="border-bottom:1px solid lightgray;">
+                            <div class="col-md-2  space_top d-flex justify-content-center align-items-center">
+                                <span>2024.09.10</span>
+                            </div>
+                            
+                            <div class="col-md-10  space_top">
+                                <span lang="eng" class="eng ">Kailas Robotics Selected for Aichi Prefecture’s Startup Support Program “AICHI Manufacturing Acceleration Program“.</span>
+                                <span lang="jp" class="jp ">愛知県のスタートアップ支援プログラム`AICHI Manufacturing Acceleration Program`にKailas Roboticsが採択されました。</span>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a id="dynamic-link" style="text-decoration: none;" href="/news/SHIP-Saitama_0827_2024_en.html" target="_blank"
+                       data-link-en="/news/SHIP-Saitama_0827_2024_en.html" data-link-jp="/news/SHIP-Saitama_0827_2024_jp.html">
+                        <div class="row news_date" style="border-bottom:1px solid lightgray;">
+                            <div class="col-md-2  space_top d-flex justify-content-center align-items-center">
+                                <span>2024.08.06</span>
+                            </div>
+                            
+                            <div class="col-md-10  space_top">
+                                <span lang="eng" class="eng ">Kailas Robotics Selected for Saitama Prefecture’s “Saitama Hands-on Innovation Program for Funding“.</span>
+                                <span lang="jp" class="jp ">埼玉県の『SHIP for Funding』支援プログラムに採択されました。</span>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a id="dynamic-link" style="text-decoration: none;" href="/news/Japan-US_Research_WK_0805_2024_en.html" target="_blank"
+                       data-link-en="/news/Japan-US_Research_WK_0805_2024_en.html" data-link-jp="/news/Japan-US_Research_WK_0805_2024_jp.html">
+                        <div class="row news_date" style="border-bottom:1px solid lightgray;">
+                            <div class="col-md-2  space_top d-flex justify-content-center align-items-center">
+                                <span>2024.08.05</span>
+                            </div>
+                            
+                            <div class="col-md-10  space_top">
+                                <span lang="eng" class="eng "> Our CSO Yoshi Shiomi delivered a presentation at the Japan-US Research Collaboration Week.</span>
+                                <span lang="jp" class="jp ">Japan-US Research Collaboration WeekにCSOの塩見が登壇。</span>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a id="dynamic-link" style="text-decoration: none;" href="/news/IP_granted-Kailas_Release_0422_en.html" target="_blank"
+                       data-link-en="/news/IP_granted-Kailas_Release_0422_en.html" data-link-jp="/news/IP_granted-Kailas_Release_0422_jp.html">
+                        <div class="row news_date" style="border-bottom:1px solid lightgray;">
+                            <div class="col-md-2  space_top d-flex justify-content-center align-items-center">
+                                <span>2024.04.23</span>
+                            </div>
+                            
+                            <div class="col-md-10  space_top">
+                                <span lang="eng" class="eng ">Patent granted : for 6-axis robotic arm.</span>
+                                <span lang="jp" class="jp ">6軸ロボットアームの基本特許を取得 。</span>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a id="dynamic-link" style="text-decoration: none;" href="/news/XPONENTIAL_2024-Kailas_Release_0423_en.html" target="_blank"
+                       data-link-en="/news/XPONENTIAL_2024-Kailas_Release_0423_en.html" data-link-jp="/news/XPONENTIAL_2024-Kailas_Release_0423_jp.html">
+                        <div class="row news_date" style="border-bottom:1px solid lightgray;">
+                            <div class="col-md-2  space_top d-flex justify-content-center align-items-center">
+                                <span>2024.04.22</span>
+                            </div>
+                            
+                            <div class="col-md-10  space_top">
+                                <span lang="eng" class="eng ">XPONENTIAL EXPO. </span>
+                                <span lang="jp" class="jp ">XPONENTIAL 初展示会 。</span>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a id="dynamic-link" style="text-decoration: none;" href="/news/MDF_Kailas_Release_0408_en.html" target="_blank"
+                       data-link-en="/news/MDF_Kailas_Release_0408_en.html" data-link-jp="/news/MDF_Kailas_Release_0408_jp.html">
+                        <div class="row news_date" style="border-bottom:1px solid lightgray;">
+                            <div class="col-md-2  space_top d-flex justify-content-center align-items-center">
+                                <span>2024.04.08</span>
+                            </div>
+                            
+                            <div class="col-md-10  space_top">
+                                <span lang="eng" class="eng ">MD-Farm & MOU.</span>
+                                <span lang="jp" class="jp ">MD-Farm & MOU。</span>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a id="dynamic-link" style="text-decoration: none;" href="/news/japan_innovation_campus_20231114_en.html" target="_blank"
+                       data-link-en="/news/japan_innovation_campus_20231114_en.html" data-link-jp="/news/japan_innovation_campus_20231114_jp.html">
+                        <div class="row news_date" style="border-bottom:1px solid lightgray;">
+                            <div class="col-md-2  space_top d-flex justify-content-center align-items-center">
+                                <span>2024.04.01</span>
+                            </div>
+                            
+                            <div class="col-md-10  space_top">
+                                <span lang="eng" class="eng ">Selected for Japan Innovation Campus co-working.</span>
+                                <span lang="jp" class="jp "> Japan Innovation Campus コワーキングメンバーにKailas Roboticsが採択されました。</span>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a id="dynamic-link" style="text-decoration: none;" href="/news/JETRO_GSAP_20230913_en.html" target="_blank"
+                       data-link-en="/news/JETRO_GSAP_20230913_en.html" data-link-jp="/news/JETRO_GSAP_20230913_jp.html">
+                        <div class="row news_date" style="border-bottom:1px solid lightgray;">
+                            <div class="col-md-2  space_top d-flex justify-content-center align-items-center">
+                                <span>2023.09.13 </span>
+                            </div>
+                            
+                            <div class="col-md-10  space_top">
+                                <span lang="eng" class="eng ">Kailas Robotics Selected for JETRO's GSAP Program for Deep Tech Startups.</span>
+                                <span lang="jp" class="jp ">JETROが主催する“グローバル・スタートアップ・アクセラレーションプログラムGSAPのDeep Techコースに<br>採択されました。</span>
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 py-5">
+                <div class=" d-flex justify-content-center align-items-center">
+                    <button class="less_button" id="toggle-button" class="btn btn-primary" onclick="toggleNews()"> 
+                        <span lang="eng">View more</span>
+                        <span lang="jp">詳しく見る</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <style>
+    .products-e 
+    {
+        flex-shrink: 0;
+        position: relative;
+        cursor: pointer;
+        color: #ffffff;
+        font-family: Roboto, var(--default-font-family);
+        font-size: 1vw;
+        font-weight: 500;
+        line-height: 3vw;
+        white-space: nowrap;
+        background: transparent;
+        border: none;
+        z-index: 30;
+    }
+
+    .title_product 
+    {
+        text-align: left;
+        color: #2b3a83;
+        font-family: Roboto, var(--default-font-family);
+        font-size: 2vw;
+        font-weight: 500;
+        padding-bottom: 1rem !important;
+        overflow: hidden;
+    }
+
+    .product_txt 
+    {
+        text-align: left;
+        color: #000000;
+        font-family: Roboto, var(--default-font-family);
+        font-size: 1vw;
+        font-weight: 400;
+    }
+
+    .table 
+    {
+        border: none;
+    }
+
+    .table th, .table td
+    {
+        padding: 0.1vw;
+        border: none; 
+    }
+
+    /* show slide image */
+
+    .slide_image1, .slide_image2, .slide_image3, .slide_image4
+    {
+        width: 21vw;
+        height: 24vw;
+        background-size: 108%;
+        background-repeat: no-repeat;
+    }
+
+    .slide_image1 
+    {
+        background-image: url('../assets/images/slide/1.png');
+    }
+    .slide_image2 
+    {
+        background-image: url('../assets/images/slide/2.png');
+    }
+    .slide_image3 
+    {
+        background-image: url('../assets/images/slide/3.png');
+    }
+    .slide_image4
+    {
+        background-image: url('../assets/images/slide/4.png');
+    }
+
+    .display_hide
+    {
+        display: none;
+    }
+
+    .display_show
+    {
+        display: block;
+    }
+ 
+    .slide_button 
+    {
+        background-color: rgb(165, 163, 163); 
+        width: 30px; 
+        height: 30px; 
+        margin: 5px; 
+        border: none;
+    }
+
+    .robotic_ams_title 
+    {
+        color: #2b3a83;
+        font-family: Roboto, var(--default-font-family);
+        font-size: 2.1vw;
+        font-weight: 500;
+        line-height: 46.875px;
+    }
+
+    .product_one, .product_two, .product_three, .product_four 
+    {
+        border-bottom: 1px solid #F5F5F5; 
+    }
+
+    .product_one_image, .product_two_image, .product_three_image, .product_four_image, .product_five_image 
+    {
+        width: 100%;  
+        height: 420px;
+        background-size: 100%; 
+        background-repeat: no-repeat;
+    }
+
+    .product_one_image 
+    {
+        background-image: url('../assets/images/product/product1.jpg');
+    }
+    .product_two_image 
+    {
+        background-image: url('../assets/images/product/product2.jpg');
+        
+    }
+    .product_three_image 
+    {
+        background-image: url('../assets/images/product/product3.png');
+        
+    }
+    .product_four_image 
+    {
+        background-image: url('../assets/images/product/product4.jpg');
+        
+    }
+    .product_five_image 
+    {
+        background-image: url('../assets/images/product/product5.png');
+        
+    }
+
+      
+    @media (max-width: 1500px) 
+    {
+        .title_product 
+        {
+            font-size: 2vw;
+            line-height: 2.7vw;
+        }
+
+        .product_txt 
+        {
+            font-size: 1.5vw;
+        }
+    }
+
+  
+    @media (max-width: 1200px) 
+    {
+        .product_one_image, .product_two_image, .product_three_image, .product_four_image, .product_five_image 
+        {
+            height: 350px;
+        }
+        .slide_image1, .slide_image2, .slide_image3, .slide_image4
+        {
+            width: 412px;
+            height: 380px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+    }
+
+
+    @media (max-width: 1000px) 
+    {
+        .robotic_ams_title 
+        {
+            font-size: 3.1vw;
+            line-height: 5vw;
+        }
+
+        .slide_image1, .slide_image2, .slide_image3, .slide_image4 
+        {
+            width: 250;
+            height: 300px;
+            background-size: 100%;
+            text-align: center;
+            background-repeat: no-repeat;
+        }
+
+        .product_one_image, .product_two_image, .product_three_image, .product_four_image, .product_five_image 
+        {
+            height: 281px;
+        }
+        .product_txt 
+        {
+            font-size: 14px;
+        }
+
+        .title_product 
+        {
+            line-height: 26.875px;
+            font-size: 20px;
+        }
+    }
+
+     @media (max-width: 765px) 
+    {
+        .display_hide
+        {
+            display: block;
+        }
+
+        .display_show
+        {
+            display: none;
+        }
+        .robotic_ams_title 
+        {
+            margin-top: 40px;
+            font-size:24px;
+            line-height: 40px;
+        }
+        .text_margin
+        {
+            
+            margin-right: 0px;
+        }
+        .product_txt 
+        {
+            padding-left: 1rem !important;
+            padding-right: 1rem !important;
+            font-size: 14px;
+            padding-bottom: 3rem !important;
+        }
+
+        .title_product 
+        {
+            padding-left: 1rem !important;
+            padding-right: 1rem !important;
+           
+        }
+    }
+    @media (max-width: 480px) 
+    {
+        .grid-container 
+        {
+            grid-template-columns: 1fr; 
+        }
+    } 
+</style>
+  
+<div id="product" class="d-flex justify-content-center align-items-center border rounded p-3" style="background: #2b3a83;">
+    <span class="text-center products-e">
+        <h1 class="fw-bold" style="font-weight: 900;">
+            <span lang="eng" class="d-block">PRODUCTS</span> 
+        </h1>
+    </span>
+</div>
+
+<section class="product-section windows">
+    <div class="container-fluid" style="background: #f5f5f5;">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-md-5">
+                    <div id="roboticsCarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="slide_image1"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="slide_image2"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="slide_image3"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="slide_image4"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-2">
+                        <button class="btn slide_button" data-slide-to="0" onclick="changeSlide(0)"></button>
+                        <button class="btn slide_button" data-slide-to="1" onclick="changeSlide(1)"></button>
+                        <button class="btn slide_button" data-slide-to="2" onclick="changeSlide(2)"></button>
+                        <button class="btn slide_button" data-slide-to="3" onclick="changeSlide(3)"></button>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-6 d-flex flex-column justify-content-center">
+                    <span class="robotic_ams_title">
+                        Robotic Arms for Moving Platforms
+                    </span>
+                    <table class="table mx-auto mt-4" style="font-size: 20px;">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Axis</th>
+                                <td>6 axis</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Size</th>
+                                <td>30cm x 20cm</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Weight</th>
+                                <td>2.5kg</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Max Payload</th>
+                                <td>1kg</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">OS</th>
+                                <td>Ubuntu</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <span lang="eng">Control:</span> 
+                                    <span lang="jp">コントロール:</span> 
+                                </th>
+                                <td>ROS2, Unity, iOS,<br> Android</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <span lang="eng">Power:</span> 
+                                    <span lang="jp">パワー:</span>
+                                </th>
+                                <td>24V</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <span lang="eng">Communication:</span> 
+                                    <span lang="jp">コミュニケーション:</span> 
+                                </th>
+                                <td>Ethercat</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>   
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <!-- one -->
+            <div class="col-md-12 pb-4 product_one">
+                <div class="row">
+                    <div class="col-md-5 d-flex flex-column justify-content-center text-center py-5">
+                        <div class="title_product">
+                            <span lang="eng">Ultra Light Weight & <br> Precise Control</span> 
+                            <span lang="jp">超軽量 &<br>正確なコントロール</span>  
+                        </div>
+                        <div class="product_txt ">
+                            <span lang="eng"> 
+                                Our robotic arm, with a total system weight of approximately 5.5lbs,
+                                is lightweight and capable of automatic recognition and catching of
+                                objects through its vision system. It can accurately catch targets
+                                even while moving on unstable platforms such as drones. This robotic
+                                arm defies conventional wisdom, requiring no solid base, and
+                                represents a lightweight yet high-speed and precise technology.
+                            </span> 
+                            <span lang="jp"> 
+                                ロボットアームのシステム全体重量が約2.5kgと軽量、且つ、ビジョンシステムによる対象物の自動認識、
+                                自動キャッチが可能となっており、ドローンのような不安定なプラットフォーム上で移動中でも正確に対象物をキャッチすることができます。
+                                これまでロボットアームの常識を覆す、強固な土台を必要としない軽量且つ高速正確なロボットアームです。
+                            </span>              
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-6 product_one_image"></div>
+                </div>
+            </div>
+            <!-- two -->
+            <div class="col-md-12 py-5 product_two">
+                <div class="row">
+                    <div class="col-md-6 product_two_image display_show"></div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-5 d-flex flex-column justify-content-center">
+                        <div class="title_product text_margin">
+                            <span >Key Technologies</span> 
+                        </div>
+                        <div class="product_txt text_margin">
+                            <span lang="eng">
+                                From the design phase of the logic board, <br />we planned and
+                                achieved miniaturization and weight reduction, enabling high-speed
+                                computations. When mounted on mobile platforms such as drones (UAVs)
+                                or Unmanned Ground Vehicles (UGVs), it allows for the catching of
+                                objects while in motion. <br />(Patent Granted)
+                            </span> 
+                            <span lang="jp">
+                                ロジックボードの設計段階から小型軽量化を計画し実現したことで、
+                                高速な計算が可能となり、ドローンやUGVのような移動体に搭載した場合でも、
+                                移動しながら対象物のキャッチが可能。<br>(特許申請中)
+                            </span>
+                        </div>
+                        <div class="col-md-6 product_two_image display_hide"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- three -->
+            <div class="col-md-12 py-5 product_three">
+                <div class="row">
+                    <div class="col-md-5 d-flex flex-column justify-content-center">
+                        <div class="title_product">
+                            <span lang="eng">Versatile</span> 
+                            <span lang="jp">様々な用途に対応</span> 
+                        </div>
+                        <div class="product_txt">
+                            <span lang="eng">
+                                Due to the entire system weighing approximately 5.5lbs, its
+                                lightweight nature makes it versatile for a wide array of
+                                applications: from UAVs and UGVs, humanoid robots, to combining with
+                                prosthetics or AR for physical augmentation, the possibilities are
+                                endless. For instance, mounted on drones, it can easily perform remote
+                                sample collection, hazardous material handling, or debris removal from
+                                solar panels. Additionally, it is also readily integrated into
+                                harvesting robots in farms where there is a shortage of labor.
+                            </span> 
+                            <span lang="jp">
+                                全体システムが約2.5kgと軽量なため、ドローンなどのUAVやUGV、
+                                人型ロボット(Humanoid)から、義手やARなどと組み合わせた人体拡張など、
+                                その可能性は無限大です。例えば、ドローンに搭載し、遠隔地からのサンプル採取や危険物処理、
+                                ソーラーパネルの異物除去なども容易に行えます。また、人手不足が叫ばれる農場での収穫作業ロボットへの組み込みなども容易です。
+                            </span> 
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-6 product_three_image"></div>
+                </div>
+            </div>
+            <!-- four -->
+            <div class="col-md-12 py-5 product_four">
+                <div class="row">
+                    <div class="col-md-6 product_four_image display_show"></div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-5 d-flex flex-column justify-content-center">
+                        <div class="title_product">
+                            <span lang="eng">Modular System & <br>SDK ready</span> 
+                            <span lang="jp">モジュラーシステム&<br> SDKに対応</span>  
+                        </div>
+                        <div class="product_txt">
+                            <span lang="eng">
+                                The gripper is designed to be interchangeable, allowing for
+                                customization to suit various materials from soft to hard, tailored to
+                                the specific objects customers need to catch. Additionally, by
+                                utilizing our SDK, it is possible to develop applications aligned with
+                                your specific tasks. We also offer further customization, such as
+                                motor adjustments, to accommodate the weight of the target objects.
+                                <br />Please feel free to contact us for any inquiries.
+                            </span> 
+                            <span lang="jp">
+                                拡張性とカスタマイズグリッパは交換可能となっており、
+                                ソフトなものからハードなものまでお客様のキャッチしたい対象物に合わせてロボットアームのグリッパをカスタマイズできます。
+                                また、SDKを利用することでお客様のタスクに合わせたアプリケーション開発も可能です。
+                                その他、対象物の重量に合わせてモーターカスタマイズなども別途承ります。
+                                お気軽にお問い合わせください。
+                            </span>   
+                        </div>
+                    </div>
+                    <div class="col-md-6 product_four_image display_hide"></div>
+                </div>
+            </div>
+            <!-- five -->
+            <div class="col-md-12 py-5 product_five">
+                <div class="row">
+                    <div class="col-md-5 d-flex flex-column justify-content-center">
+                        <div class="title_product">
+                            <span class="ros-unity-ios-android">ROS2, Unity iOS, Android</span>
+                        </div>
+                        <div class="product_txt">
+                            <span lang="eng">
+                                Thanks to the control provided by ROS2, we are able to expand various
+                                functionalities to meet the needs of our customers.<br />In executing
+                                tasks, we have established a simulated environment on Unity, enabling
+                                arm control on iOS devices such as iPads and iPhones, as well as on
+                                Android devices
+                            </span> 
+                            <span lang="jp">
+                                ROS2により全体を制御しているためお客様のニーズにあわせて様々な機能を拡張することが可能です。<br />
+                                タスクを実行するにあたりUnity上でシミュレート環境を構築できるため、
+                                iPadやiPhoneなどのiOSデバイスやAndroidデバイスでアームのコントロールを可能にしています。
+                            </span> 
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-6 product_five_image"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    const handleActiveButton = (index) => 
+    {
+        const buttons = document.querySelectorAll('.text-center .btn');
+        buttons.forEach((button, i) => {
+            button.style.backgroundColor = 'rgb(165, 163, 163)'; 
+        });
+        // Set active button color
+        buttons[index].style.backgroundColor = 'rgb(0, 123, 255)'; 
+    };
+</script>
+    <style>
+    .about_us
+    {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-shrink: 0;
+        position: relative;
+        width: 228px;
+        height: 56px;
+        color: #ffffff;
+        font-family: Roboto, var(--default-font-family);
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 56px;
+        text-align: center;
+        white-space: nowrap;
+        z-index: 79;
+    }
+
+    .about_profile_logo
+    {
+        width: 400px;
+        height: 250px;
+        background-image: url(../assets/kailas_images/about_logo1.png);
+        background-size: 404px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .about_profile_table
+    {
+        position: relative;
+        color: #000000;
+        font-family: Roboto, var(--default-font-family);
+        font-size: 1.1vw;
+        font-weight: 400;
+        margin-top: 0px;
+        text-align: left;  
+    }
+
+    .about_profile_table_td
+    {
+        margin-left: 100px;
+        position: relative;
+        color: #000000;
+        font-family: Roboto, var(--default-font-family);
+        font-size: 1.1vw;
+        font-weight: 400;
+        text-align: left; 
+    }
+
+    .about_founder_txt
+    {
+        height: 47px;
+        color: #2b3a83;
+        font-family: Roboto, var(--default-font-family);
+        font-size: 40px;
+        font-weight: 500;
+        text-align: center;
+        white-space: nowrap;
+        text-align: left;
+    }
+
+    .about_founder_image1
+    {
+        flex-shrink: 0;
+        position: relative;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        border: 5px solid #2b3a83;
+        background: url(../assets/images/8af3f18907723a60b47748376c807c85.jpg) no-repeat center;
+        background-size: cover;
+    }
+    .about_founder_image2
+    {
+        flex-shrink: 0;
+        position: relative;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        border: 5px solid #2b3a83;
+        background: url(../assets/images/4f008da777343f965f1b754ba522038d.jpg) no-repeat center;
+        background-size: cover;
+    }
+    .about_founder_image3
+    {
+        flex-shrink: 0;
+        position: relative;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        border: 5px solid #2b3a83;
+        background: url(../assets/images/3f37de8f7abc6f8b65008b8c755a54eb.jpg) no-repeat center;
+        background-size: cover;
+    }
+    .about_founder_name
+    {
+        color: #2b3a83;
+        font-family: Roboto, var(--default-font-family);
+        font-size: 26px;
+        font-weight: 500;
+        line-height: 30px;
+        white-space: nowrap;
+    }
+
+    .about_founder_position
+    {
+        text-align: left;
+        color: #2b3a83;
+        font-family: Roboto, var(--default-font-family);
+        font-size: 20px;
+        font-weight: 500;
+        white-space: nowrap;
+    }
+    
+    .about_founder_description
+    {
+        color: #000000;
+        font-family: Roboto, var(--default-font-family);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 27.438px;
+        text-align: left;
+        height: 160px;
+    }
+
+    .about_founder_social_btn
+    {
+        width: 100%;
+        height: 50px;
+        background: #f5f5f5;
+        border-radius: 5px;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about_founder_social_icon
+    {
+        background: url(../assets/images/bb0b0979-fb07-4ccc-a186-696c9ef127c9.png) no-repeat center;
+        width: 30px;
+        height: 30px;
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    @media (max-width: 1500px) 
+    {
+       
+        .about_profile_table
+        {
+            font-size: 1.6vw; 
+        }
+
+        .about_profile_table_td
+        {
+            font-size: 1.6vw; 
+        }
+    }
+
+    @media (max-width: 1000px) 
+    {
+        .about_founder_image1
+        {
+            width: 200px;
+            height: 200px;
+        }
+        .about_founder_image2
+        {
+            width: 200px;
+            height: 200px;
+        }
+        .about_founder_image3
+        {
+            width: 200px;
+            height: 200px;
+        }
+        .about_profile_logo {
+            width: 400px;
+            height: 250px;
+            background-size: 30vw;
+        } 
+
+        .about_founder_name {
+            font-size: 18px;
+        }
+
+        .about_founder_position {
+            font-size: 17px;
+        }
+
+        .about_founder_description {
+            font-size: 15px;
+        }
+
+        .about_profile_table
+        {
+            font-size: 2.1vw 
+        }
+
+        .about_profile_table_td
+        {
+            font-size: 2.1vw
+        }
+    }
+
+    @media only screen and (max-width: 766px) 
+    {
+        .about_profile_logo {
+            width: 400px;
+            height: 250px;
+            background-size: 340px;
+        } 
+        .about_profile_table
+        {
+            font-size: 18px; 
+        }
+
+        .about_profile_table_td
+        {
+            font-size: 18px;
+        }
+
+        .about_founder_name
+        {
+            font-size: 26px;
+        }
+
+        .about_founder_position
+        {
+            font-size: 20px;
+        }
+        
+        .about_founder_description
+        {
+            font-size: 20px;
+            line-height: 27.438px;
+        }
+    }
+
+
+    .col-md-3 {
+        display: flex;
+        justify-content: center;  /* Centers horizontally */
+        align-items: center;      /* Centers vertically */
+        border-color: black;      /* Keeping the existing border */
+    }
+    @media only screen and (max-width: 699px) 
+    {
+        .about_profile_logo {
+            width: 400px;
+            height: 250px;
+            background-size: 340px;
+        } 
+        .about_profile_table
+        {
+            font-size: 14px; 
+        }
+
+        .about_profile_table_td
+        {
+            font-size: 14px;
+        }
+    }
+</style>
+
+<div id="product" class="d-flex justify-content-center align-items-center border rounded p-3" style="background: #2b3a83;">
+    <span class="text-center products-e">
+        <h1 class=" about_us">
+            <span lang="eng">ABOUT US</span> 
+            <span lang="jp">会社概要</span> 
+        </h1>
+    </span>
+</div>
+
+<section id="about" >
+    <div class="container-fluid">
+        <div class="py-5" style="background-color: #f9fafb;">
+            <div class="row py-5">
+                <div class="col-md-1"></div>
+    
+                <div class="col-md-4 border-color-black">
+                    <div class="about_profile_logo"></div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-5 d-flex py-4 flex-column justify-content-center">
+                    <table class="table about_profile_table"> 
+                        <tbody>
+                            <tr>
+                                <td>Company Name</td>
+                                <td class="about_profile_table_td">Kailas Robotics Inc.</td>
+                            </tr>
+                            <tr>
+                                <td>Inception</td>
+                                <td class="about_profile_table_td">2022.09</td>
+                            </tr>
+                            <tr>
+                                <td>Japan Office (Head office)</td>
+                                <td class="about_profile_table_td">
+                                    <span lang="eng"> Room 506, 3-12-18 Kamiaoki, Kawaguchi-shi, Saitama, 333-0844, Japan</span>
+                                    <span lang="jp"> 〒333-0844 埼玉県川口市上青木 3-12-18 埼玉県産業技術総合センター506号室</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>USA Office</td>
+                                <td class="about_profile_table_td">212-214 Homer Ave, Palo Alto, CA 94301, (Japan Innovation Campus), USA</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container d-flex justify-content-center ">
+        <div class="col-md-6   ">
+            <span class="about_founder_txt">Founders</span>
+        </div>
+        <div class="col-md-6 "></div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 ">
+                <div class="card-body ">
+                    <div class="row d-flex justify-content-center">
+                        <div class="about_founder_image1"></div>
+                    </div>
+                    <div class="row">
+                        <span class="py-5 about_founder_name container">
+                            <span lang="eng">Dambadarjaa Munkhbayar</span>
+                            <span lang="jp">ダンバダルジャ ムンフバヤル</span>
+                        </span>
+                    </div>
+                    <div class="row">
+                        <p class="py-1 about_founder_position container">CEO</p>
+                    </div>
+                    <div class="row">
+                        <p class="py-1 about_founder_description container">
+                        10+yrs Computer Science Engineer<br>Sorako Japan: Founder<br>Tokai University</p>
+                    </div>
+                    <div class="row">
+                        <button class="btn btn-link about_founder_social_btn" onclick="openLinkedInM()">
+                            <div class="about_founder_social_icon"></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="card-body ">
+                    <div class="row d-flex justify-content-center">
+                        <div class="about_founder_image2"></div>
+                    </div>
+                    <div class="row">
+                        <span class="py-5 about_founder_name  container" style="width: 100%;">
+                            <span lang="eng">Adiyasuren Altanbileg</span>
+                            <span lang="jp">アデイヤスレン アルタンビレグ</span>
+                        </span>
+                    </div>
+                    <div class="row">
+                        <p class="py-1 about_founder_position  container" style="width: 100%;">CTO</p>
+                    </div>
+                    <div class="row " >
+                        <p class="py-1 about_founder_description  container" style="width: 100%;">
+                        10+yrs Robotics Engineer<br>KSJ: CTO & Board member<br>Int'l Physics Olympian<br>Tokyo university</p>
+                    </div>
+                    <div class="row">
+                        <button class="btn btn-link about_founder_social_btn" onclick="openLinkedInA()">
+                            <div class="about_founder_social_icon"></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="card-body">
+                    <div class="row d-flex justify-content-center">
+                        <div class="about_founder_image3"></div>
+                    </div>
+                    <div class="row">
+                        <span class="py-5 about_founder_name container">
+                            <span lang="eng">Yoshi Shiomi</span>
+                            <span lang="jp">塩見 佳久</span>
+                        </span>
+                    </div>
+                    <div class="row">
+                        <p class="py-1 about_founder_position container">CSO</p>
+                    </div>
+                    <div class="row">
+                        <p class="py-1 about_founder_description container">
+                        FLIP FRIDAY Founder<br>Chalk Digital Japan: CEO<br>Prodrone: EVP<br>Yoshimoto Kogyo: Producer</p>
+                    </div>
+                    <div class="row">
+                        <button class="btn btn-link about_founder_social_btn" style="outline: none;" onclick="openLinkedInSH()">
+                            <div class="about_founder_social_icon"></div>
+                        </button>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+</section> 
+
+    <style>
+ 
+ .mc-field-group input {
+
+  width: 100%;
+  height: 45px;
+  text-indent: 2%;
+}
+
+#mc-embedded-subscribe {
+    background-color: #F1A556;
+    border: 0 none;
+    color: white;
+    font-size: 18px;
+    width: 167px;
+    height: 44px;
+    border-radius: 5px 5px 5px 5px;
+    margin: 0 0 0 0;
+}
+
+.mc-field-group-right{
+    text-align: right;
+}
+
+.mce_inline_error {
+    width: 200px;
+    
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #e85c41;
+}
+
+
+    .contact_bg
+    {
+        height: 200px;
+        margin: 50px 0 0 0;
+        background: #2b3a83;
+    }
+    .contact_txt
+    {
+        color: rgb(255, 255, 255);
+        font-family: Roboto, var(--default-font-family);
+        font-size: 48px;
+        font-weight: 500;
+    }
+    .contact_arrow
+    {
+        background: url(../assets/kailas_images/arrow1.png) no-repeat center;
+        background-size: 40%; 
+        transform: rotate(180deg); 
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .contact_email
+    {
+        width: 30px;
+        height: 30px;
+        background: url(../assets/images/20bd31f5-b945-4876-a382-59050689d5b9.png) no-repeat center;
+        background-size: cover;
+    }
+    .contact_email_txt
+    {
+        color: rgb(255, 255, 255);
+        font-family: Roboto, var(--default-font-family);
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28px;
+    }
+
+    .footer_kailas_logo
+    {
+        width: 254px;
+        height: 86px;
+        background: url(../assets/images/d823eeb3677b9d2b0946e52551de6c1247f188f9.png)no-repeat center;
+        background-size: cover;
+    }
+    .footer_navigation_title
+    {
+        margin-bottom: 10px;
+    
+        color: #000000;
+        font-family: Roboto, var(--default-font-family);
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 23px;
+        white-space: nowrap;
+    }
+
+    .footer_navigation_link
+    {
+        text-decoration: none !important; 
+        color: #2b3a83; 
+        margin-bottom: 10px;
+    }
+
+    .left_style_img {
+        justify-content: left;
+        align-items: start;
+    }
+
+    .left_style {
+        justify-content: left;
+    }
+
+    .header_text
+    {
+        font-weight: bold;  
+        font-size: 20px; 
+    }
+
+    .footer_twiter
+    {
+        width: 25px;
+        height: 24px;
+        background: url(../assets/images/7239d900-ebe7-47da-a205-63b5aaeb9df5.png) no-repeat center;
+        background-size: 100% 100%;
+    }
+    .footer_fb
+    {
+        width: 25px;
+        height: 24px;
+        background: url(../assets/images/cb13c364-3876-409a-b851-c2076d04ddc6.png) no-repeat center;
+        background-size: 100% 100%;
+    }
+
+    .mac_range
+    {
+        margin-top: 0px;
+    }
+
+    @media only screen and (max-width: 844px) 
+    {
+        .footer_kailas_logo 
+        {
+            margin-top: 50px;
+            width: 100%;
+            background-size:250px;
+        }
+
+        .left_style_img 
+        {
+            height: 100%; 
+        }
+        .left_style_img {
+            justify-content: center;
+        }
+
+        .left_style {
+            margin-top: 100px;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .header_text
+        {
+            margin-top: 50px;
+            font-weight: bold;  
+            text-align: center;
+            font-size: 20px; 
+        }
+        .mc-field-group-right{
+            text-align: center;
+        }
+
+       
+
+        #mc-embedded-subscribe 
+        {
+            
+            border: 0 none;
+            color: white;
+            font-size: 18px;
+            width: 167px;
+            height: 44px;
+            border-radius: 5px 5px 5px 5px;
+            margin-top: 40px;
+        }
+        #mc-embedded-subscribe 
+        {
+            margin: 1em auto; 
+        }
+        .mac_range
+        {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .mce_inline_error {
+            width: 100%;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            font-size: 14px;
+            font-weight: normal;
+            color: #e85c41;
+        }
+    }
+    @media only screen and (max-width: 767px) 
+    {
+        .mc-field-group input 
+        {
+            margin-top: 50px;
+            text-align: center;
+            width: 300px;
+            height: 45px;
+            text-indent: 2%;
+        }
+    }
+</style>
+
+<section id="contact" style="background-color: #f9fafb;">
+    <div class="border d-flex justify-content-center align-items-center contact_bg">
+        <div class="container">
+            <div class="row"> 
+                <div class="col-md-4  d-flex justify-content-center align-items-center contact_txt">
+                    <span lang="eng">CONTACT US</span> 
+                    <span lang="jp">お問合わせ</span> 
+                </div>
+                <div class="col-md-4  d-flex justify-content-center align-items-center contact_arrow"></div>
+                <div class="col-md-4  d-flex justify-content-center align-items-center">
+                    <div class="contact_email"></div>
+                    <span class="contact_email_txt" href="#myModal" data-toggle="modal"  data-target="#exampleModal">
+                        info@kailasrobotics.com
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-5">
+        <div class="row"> 
+            <div class="col-md-1"></div>
+            <div class="col-md-4 left_style_img ">
+                <div class="d-flex flex-column"> 
+                    <div class="footer_kailas_logo"></div>
+                </div>
+            </div>
+            <div class="col-md-2 left_style">
+                <div class="d-flex flex-column"> 
+                    <div class="footer_navigation_title mb-3">
+                        <span>Navigation</span>
+                    </div>
+                    <a href="#news" class="footer_navigation_link mb-2" onclick="handleSmoothScrollToTop(event);">
+                        <span lang="eng">Top</span> 
+                        <span lang="jp">Top</span>  
+                    </a>
+                    <a href="#news" class="footer_navigation_link mb-2" onclick="handleSmoothScroll(event);">
+                        <span lang="eng">NEWS</span> 
+                        <span lang="jp">ニュース</span>  
+                    </a>
+                    <a href="#product" class="footer_navigation_link mb-2" onclick="handleSmoothScroll(event);">                    
+                        <span lang="eng">PRODUCTS</span> 
+                        <span lang="jp">プロダクト</span>   
+                    </a>
+                    <a href="#about" class="footer_navigation_link mb-2" onclick="handleSmoothScroll(event);">
+                        <span lang="eng">ABOUT US</span> 
+                        <span lang="jp">会社概要</span> 
+                    </a>
+                    <a href="#contact" class="footer_navigation_link mb-2" onclick="handleSmoothScroll(event);"> 
+                        <span lang="eng">CONTACT</span> 
+                        <span lang="jp">お問合せ</span> 
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 left_style_img">
+                
+                <form action="https://kailasrobotics.us11.list-manage.com/subscribe/post?u=4b664da3e16931171aec5e14b&amp;id=87521d5634&amp;f_id=0027a0e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                    <div style="width: 100%;">
+                        <div class="row " >
+                            <div class="col-md-12">
+                                <h2 class="header_text">
+                                    <span lang="eng">Sign up to our Newsletter</span>
+                                    <span lang="jp">ニュースレターに登録</span>
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mc-field-group mc-field-group-right ">
+                                    <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="" placeholder="E-mail">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input  type="submit" name="subscribe" id="mc-embedded-subscribe" class="button subscr_button"  value="Subscribe">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mc-field-group">
+                                    <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+                                    <div class="response" id="mce-error-response" style="display: none;"></div>
+                                    <div class="response" id="mce-success-response" style="display: none;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+                <script type="text/javascript">
+                (function($) {
+                    window.fnames = new Array();
+                    window.ftypes = new Array();
+                    fnames[0] = 'EMAIL';
+                    ftypes[0] = 'email';
+                    fnames[1] = 'FNAME';
+                    ftypes[1] = 'text';
+                    fnames[2] = 'LNAME';
+                    ftypes[2] = 'text';
+                    fnames[3] = 'ADDRESS';
+                    ftypes[3] = 'address';
+                    fnames[4] = 'PHONE';
+                    ftypes[4] = 'phone';
+                    fnames[5] = 'BIRTHDAY';
+                    ftypes[5] = 'birthday';
+                }(jQuery));
+                var $mcj = jQuery.noConflict(true);
+                </script>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="container" style="margin-top: 50px; border-top: 1px solid lightgray;">
+            <div class="row"style="margin-top: 50px">
+                <div class="col-md-4" style="display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <a target="_blank" href="https://www.linkedin.com/company/97391393/">
+                            <div class="footer_twiter"></div>
+                        </a>
+                    </div>
+                    <div>
+                        <a target="_blank" href="https://www.youtube.com/channel/UCn9Qw-gqk9xa18vCEAuvYAw">
+                            <div class="footer_fb"></div>   
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 mac_range">
+                    <div style="text-align: center;" style="margin-top: 40px;">   
+                        <span style="
+                        
+                        color: #000000;
+                        font-family: Roboto, var(--default-font-family);
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 14px;
+                        text-align: center;"
+                        >©2024 Kailas Robotics. All rights reserved.</span>
+                    </div>
+                </div>
+                <div class="col-md-4 " style="display: flex; justify-content: space-between; align-items: center;"> 
+                    <div style="text-align: start;"  style="margin-top: 40px;">
+                        <span style="
+                        color: #2b3a83;
+                        font-family: Roboto, var(--default-font-family);
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 14px;
+                        white-space: nowrap;">Privacy Policy</span>
+                    </div>
+                    <div style="text-align: center;"  style="margin-top: 40px;">
+                        <span  style="
+                        color: #2b3a83;
+                        font-family: Roboto, var(--default-font-family);
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 14px;
+                        white-space: nowrap;">Term of Use</span>
+                    </div>
+                    <div style="text-align: end;">
+                        <span style="
+                        color: #2b3a83;
+                        font-family: Roboto, var(--default-font-family);
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 14px;
+                        white-space: nowrap;">Ethics Statement</span>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form id="myForm" name="googleSheet">
+                <div class="modal-header">
+                    <h3>
+                        <span lang="eng">CONTACT US</span> 
+                        <span lang="jp">お問合わせ</span>  
+                    </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="formAlerts"></div>
+                    <div class="controls controls-row">
+                        <div class="control-group">
+                            <label class="input-medium" for="name">
+                                <span lang="jp">お名前</span>
+                                <span lang="eng">Name</span>
+                            </label>
+                            <div class="controls">
+                                <input class="input-block-level" type="text" id="inputName" name="name" autocomplete="off" required style="width: 100%;">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="input-medium" for="phone">
+                                <span lang="jp">電話番号</span>
+                                <span lang="eng">Telephone</span>
+                            </label>
+                            <div class="controls">
+                                <input class="input-block-level" type="number" id="inputTelephone" name="phone" autocomplete="off" required style="width: 100%;">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="input-medium" for="mail">
+                                <span lang="jp">メールアドレス</span>
+                                <span lang="eng">Email</span>
+                            </label>
+                            <div class="controls">
+                                <input class="input-block-level" type="email" id="inputEmail" name="mail" autocomplete="off" required style="width: 100%;">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="input-medium" for="requirement">
+                                <span lang="jp">内容</span>
+                                <span lang="eng">Requirement</span>
+                            </label>
+                            <div class="controls">
+                                <textarea rows="3" class="input-block-level" id="inputRequirement" name="requirement" autocomplete="off" required style="width: 100%;"></textarea>
+                            </div>
+                        </div>
+                        <div class="g-recaptcha" data-sitekey="6Lej9kwjAAAAAPav0xBFXmxKZoBLLC_oiO7uE5zi" style="margin-top: 30px;"></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" type="reset">
+                        <span lang="jp">リセット</span>
+                        <span lang="eng">Reset</span>
+                    </button>
+                    <button class="btn btn-success" type="submit">
+                        <span lang="jp">送信</span>
+                        <span lang="eng">Send</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Optional JavaScript -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<!-- <script type='text/javascript' src="assets/js/jquery.min.js"></script> -->
+<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script> 
+
+<script>
+  
+    const videos = ['./assets/video/video.mp4', './assets/video/video1.mp4']; 
+        let currentVideo = 0; 
+        const videoPlayer = document.getElementById('videoPlayer');
+      
+        videoPlayer.src = videos[currentVideo];
+       
+        videoPlayer.addEventListener('ended', () => {
+            currentVideo = (currentVideo + 1) % videos.length; 
+            videoPlayer.src = videos[currentVideo]; 
+            videoPlayer.play();
+        });
+</script>
+
+<script>
+
+    function handleSmoothScroll(event) 
+    {
+        event.preventDefault();
+
+        const targetId = event.currentTarget.getAttribute('href');
+        const targetElement = document.querySelector(targetId); 
+
+        if (targetElement) 
+        {
+            const offset = 150;
+            const targetOffsetTop = targetElement.offsetTop - offset; 
+
+
+            window.scrollTo(
+                {
+                    top: targetOffsetTop,
+                    behavior: 'smooth'
+                }
+            );
+        }
+    }
+
+    function getBrowserLang()
+    {   
+        const browserLang = navigator.language || navigator.userLanguage; 
+
+        if (browserLang.startsWith('ja')) 
+        {
+            return 'jp';
+        } 
+        else 
+        {
+            return 'eng';
+        }
+    }
+
+    let langs = ['jp', 'mon', 'eng'];
+    let lang = getBrowserLang(); 
+
+    switchLanguage(lang);
+    
+    setLangStyles(lang);
+
+    function setStyles(styles) 
+    {
+        var elementId = '__lang_styles';
+        var element = document.getElementById(elementId);
+        if (element) {
+            element.remove();
+        }
+
+        let style = document.createElement('style');
+        style.id = elementId;
+        style.type = 'text/css';
+
+        if (style.styleSheet) {
+            style.styleSheet.cssText = styles;
+        } else {
+            style.appendChild(document.createTextNode(styles));
+        }
+        document.getElementsByTagName('head')[0].appendChild(style);
+    }
+
+    function setLang(lang) 
+    {
+        setLangStyles(lang);
+        switchLanguage(lang);
+    }
+
+    function setLangStyles(lang) 
+    {
+        let styles = langs
+            .filter(function (l) 
+            {
+                return l != lang;
+            })
+            .map(function (l) 
+            {
+                return ':lang(' + l + ') { display: none; }';
+            })
+            .join(' ');
+
+        setStyles(styles);
+    }
+
+    function handleLinkClick(event, element) 
+    {
+        event.preventDefault();
+
+        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+        });
+
+        element.classList.add('active');
+
+        const targetId = element.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) 
+        {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', function() 
+    {
+        var currentLang = 'en'; 
+
+        var newsItems = document.querySelectorAll('a[id^="dynamic-link-"]');
+        newsItems.forEach(function(link, index) {
+            var linkEn = ''; 
+            var linkJp = '';
+
+            if (currentLang === 'jp') {
+                link.href = linkJp;
+            } else {
+                link.href = linkEn;
+            }
+        });
+    });
+
+    function toggleActiveLang(lang) 
+    {
+        const englishLink = document.getElementById('englishLink');
+        const japaneseLink = document.getElementById('japaneseLink');
+
+        
+        if (lang === 'eng') 
+        {
+            englishLink.classList.add('active_lang');
+            englishLink.classList.remove('desactive_lang');
+            japaneseLink.classList.remove('active_lang');
+            japaneseLink.classList.add('desactive_lang');  
+        } 
+        else if (lang === 'jp') 
+        {
+            japaneseLink.classList.add('active_lang');
+            japaneseLink.classList.remove('desactive_lang');
+            englishLink.classList.add('active_lang');
+            englishLink.classList.remove('active_lang');
+            englishLink.classList.add('desactive_lang');
+        }
+    }
+
+    window.onload = function() 
+    {
+        const userLang = navigator.language || navigator.userLanguage; 
+        if (userLang.startsWith('ja')) 
+        {        
+            japaneseLink.classList.add('active_lang');
+            japaneseLink.classList.remove('desactive_lang');
+            englishLink.classList.add('active_lang');
+            englishLink.classList.remove('active_lang');
+            setLang('jp');
+        } 
+        else 
+        {
+            englishLink.classList.add('active_lang');
+            englishLink.classList.remove('desactive_lang');
+            japaneseLink.classList.remove('active_lang');
+            japaneseLink.classList.add('desactive_lang');
+            setLang('eng');
+        }
+    };
+
+    function closeNavbar() 
+    {
+        const navbarCollapse = document.getElementById('navbarNav');
+        const navbarToggler = document.querySelector('.navbar-toggler');
+
+        if (navbarCollapse.classList.contains('show')) {
+            navbarCollapse.classList.remove('show'); 
+            navbarToggler.setAttribute('aria-expanded', 'false');
+            navbarToggler.classList.remove('collapsed'); 
+        }
+    }
+
+
+
+    let isExpanded = false;
+    const initialItems = 3;
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const newsItems = document.querySelectorAll(".news-items a");
+        newsItems.forEach((item, index) => {
+            if (index >= initialItems) {
+                item.style.display = "none";
+            }
+        });
+    });
+
+    function toggleNews() {
+        const newsItems = document.querySelectorAll(".news-items a");
+        const button = document.getElementById("toggle-button");
+
+        if (isExpanded) {
+            newsItems.forEach((item, index) => {
+                if (index >= initialItems) {
+                    item.style.display = "none";
+                }
+            });
+        } else {
+            newsItems.forEach((item) => {
+                item.style.display = "block";
+            });
+        }
+        isExpanded = !isExpanded;
+    }
+
+    function switchLanguage(lang) {
+        const newsItems = document.querySelectorAll(".news-items a");
+        
+        newsItems.forEach((item) => {
+            if (lang === 'eng') {
+                console.log("++++++++++++++++++++++++++++++++++++++++++++ENGLISH");
+                item.setAttribute('href', item.getAttribute('data-link-en'));
+            } else if (lang === 'jp') {
+                console.log("++++++++++++++++++++++++++++++++++++++++++++jp");
+                item.setAttribute('href', item.getAttribute('data-link-jp'));
+            }
+        });
+    }
+
+    (function($) 
+    {
+        window.fnames = new Array();
+        window.ftypes = new Array();
+        fnames[0] = 'EMAIL';
+        ftypes[0] = 'email';
+        fnames[1] = 'FNAME';
+        ftypes[1] = 'text';
+        fnames[2] = 'LNAME';
+        ftypes[2] = 'text';
+        fnames[3] = 'ADDRESS';
+        ftypes[3] = 'address';
+        fnames[4] = 'PHONE';
+        ftypes[4] = 'phone';
+        fnames[5] = 'BIRTHDAY';
+        ftypes[5] = 'birthday';
+    }(jQuery));
+
+
+    var $mcj = jQuery.noConflict(true);
+
+    function handleSmoothScrollToTop(event) 
+    {
+        event.preventDefault(); 
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
+    function changeSlide(index) {
+        // Change the carousel to the specified slide
+        $('#roboticsCarousel').carousel(index);
+        
+        // Remove active class from all buttons
+        $('.slide_button').removeClass('active');
+        
+        // Add active class to the clicked button
+        $('.slide_button[data-slide-to="' + index + '"]').addClass('active');
+    }
+
+    // Optional: Automatically update active button when the slide changes
+    $('#roboticsCarousel').on('slide.bs.carousel', function (e) {
+        var nextIndex = $(e.relatedTarget).index();
+        $('.slide_button').removeClass('active');
+        $('.slide_button[data-slide-to="' + nextIndex + '"]').addClass('active');
+    });
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxOL5Y4T6haZ0YCZFPKNhbJRJMLavYGPUD6hzgBydvIQKAxGQYg647sGRN9cK3KW_7nqQ/exec'
+    const scriptMailURL = 'https://script.google.com/a/macros/kailasrobotics.com/s/AKfycbyX7BUQ5_C_Tcre6QKSH2lAeYSLONg_uzqBAvFxx6SoCXQuZ_odJIJcY2BWyhWf2718Nw/exec'
+    const scriptMailCustomerURL = 'https://script.google.com/macros/s/AKfycbxcAV5zcHYPLERmcYdYEp9zthOCbWgHQDwaTE-CK-O8PiwXS5pgWBIZoiqDQd3SdvTEig/exec'
+    const form = document.forms['googleSheet']
+
+
+    form.addEventListener('submit', e => 
+    {
+        e.preventDefault()
+        var recaptcha = $("#g-recaptcha-response").val()
+        // console.log("reCAPTCHA response token:", recaptcha);
+        if (recaptcha === "") 
+        {
+            $("#formAlerts").html('<div class="alert alert-danger"><span lang="eng">Please check the recaptcha!</span></div>');
+        } 
+        else 
+        {
+        $("#formAlerts").html('');
+        setLoading(true)
+        var formData = new FormData(form);
+
+        var formDataObject = {};
+        for (var pair of formData.entries()) 
+        {
+            formDataObject[pair[0]] = pair[1];
+        }
+        // console.log("Form Data:", formDataObject); 
+
+        fetch(scriptURL, { method: 'POST', body: formData})
+            .then(response => 
+            {
+                $("#formAlerts").html('<div class="alert alert-success"><span lang="eng">Successfully!</span></div>');
+                clearForm()
+                setTimeout(function()
+                {
+                    $("#closeBtn").click()
+                    $("#formAlerts").html('')
+                    setLoading(false)
+                    fetch(scriptMailURL)
+                        .then(response => {
+                            console.log("Successfully")
+                            fetch(scriptMailCustomerURL)
+                                .then(response => 
+                                {
+                                    console.log("Successfully send mail for customer")
+                                }) 
+                                .catch(error => 
+                                {
+                                    console.log("Failed send mail for customer")
+                                })
+                        }) 
+                        .catch(error => {
+                            console.log("Failed")
+                            console.log("Error:", error); 
+                        })
+                }, 50) 
+            })
+            .catch(error => {
+                console.log("Error:", error); 
+                $("#formAlerts").html('<div class="alert alert-danger"><span >Error!</div>')
+                setLoading(false)
+                
+            })
+        } 
+    })
+
+    function setLoading(loading) 
+    {
+        if (loading) 
+        {
+            $("#myLoading").css("display", "flex")
+        } 
+        else 
+        {
+            $("#myLoading").css("display", "none")
+        }
+    }
+
+    function clearForm() 
+    {
+        $('#myForm').get(0).reset()
+    }
+
+
+
+    const handleActiveTab = (element)=>
+    {
+        var menu = document.querySelector('.menu');
+        var toggle = document.getElementById('checkbox_toggle');
+        var target = event.target;
+        toggle.checked = false;
+
+        Array.from(document.querySelectorAll('a')).forEach((el) => el.classList.remove('active'));
+        element.classList.add('active')
+    }
+
+    // $(window).load(function() 
+    // {
+    //     $(".btn-nav").on("click tap", function() 
+    //     {
+    //         $(".nav-content").toggleClass("showNav hideNav").removeClass("hidden");
+    //         $(this).toggleClass("animated");
+    //     });
+    // });
+
+    function openLinkedInA() 
+    {
+        window.open('https://www.linkedin.com/in/altanbileg-adiyasuren-66515836/', '_blank');
+    }
+
+    function openLinkedInM() 
+    {
+        window.open('https://www.linkedin.com/in/mdamba/', '_blank');
+    }
+
+    function openLinkedInSH() 
+    {
+        window.open('https://www.linkedin.com/in/yoshi-shiomi-75a8209/', '_blank');
+    }
+
+   
+</script>
