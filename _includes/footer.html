@@ -1,551 +1,382 @@
-<section id="contact">
-    <div class="rectangle-31">
-        <span class="contact-us">
-            <span lang="eng">CONTACT US</span> 
-            <span lang="jp">お問合わせ</span>   
-        </span>
-        <div class="mail-outline"></div>
-        <span class="info-email"id="openModal"> info@kailasrobotics.com</span>
-        <div class="arrow">
-            <div class="line"></div>
-            <div class="point"></div>
+<style>
+ 
+ .mc-field-group input {
+
+  width: 100%;
+  height: 45px;
+  text-indent: 2%;
+}
+
+#mc-embedded-subscribe {
+    background-color: #F1A556;
+    border: 0 none;
+    color: white;
+    font-size: 18px;
+    width: 167px;
+    height: 44px;
+    border-radius: 5px 5px 5px 5px;
+    margin: 0 0 0 0;
+}
+
+.mc-field-group-right{
+    text-align: right;
+}
+
+.mce_inline_error {
+    width: 200px;
+    
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #e85c41;
+}
+
+
+    .contact_bg
+    {
+        height: 200px;
+        margin: 50px 0 0 0;
+        background: #2b3a83;
+    }
+    .contact_txt
+    {
+        color: rgb(255, 255, 255);
+        font-family: Roboto, var(--default-font-family);
+        font-size: 48px;
+        font-weight: 500;
+    }
+    .contact_arrow
+    {
+        background: url(../assets/kailas_images/arrow1.png) no-repeat center;
+        background-size: 40%; 
+        transform: rotate(180deg); 
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .contact_email
+    {
+        width: 30px;
+        height: 30px;
+        background: url(../assets/images/20bd31f5-b945-4876-a382-59050689d5b9.png) no-repeat center;
+        background-size: cover;
+    }
+    .contact_email_txt
+    {
+        color: rgb(255, 255, 255);
+        font-family: Roboto, var(--default-font-family);
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28px;
+    }
+
+    .footer_kailas_logo
+    {
+        width: 254px;
+        height: 86px;
+        background: url(../assets/images/d823eeb3677b9d2b0946e52551de6c1247f188f9.png)no-repeat center;
+        background-size: cover;
+    }
+    .footer_navigation_title
+    {
+        margin-bottom: 10px;
+    
+        color: #000000;
+        font-family: Roboto, var(--default-font-family);
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 23px;
+        white-space: nowrap;
+    }
+
+    .footer_navigation_link
+    {
+        text-decoration: none !important; 
+        color: #2b3a83; 
+        margin-bottom: 10px;
+    }
+
+    .left_style_img {
+        justify-content: left;
+        align-items: start;
+    }
+
+    .left_style {
+        justify-content: left;
+    }
+
+    .header_text
+    {
+        font-weight: bold;  
+        font-size: 20px; 
+    }
+
+    .footer_twiter
+    {
+        width: 25px;
+        height: 24px;
+        background: url(../assets/images/7239d900-ebe7-47da-a205-63b5aaeb9df5.png) no-repeat center;
+        background-size: 100% 100%;
+    }
+    .footer_fb
+    {
+        width: 25px;
+        height: 24px;
+        background: url(../assets/images/cb13c364-3876-409a-b851-c2076d04ddc6.png) no-repeat center;
+        background-size: 100% 100%;
+    }
+
+    .mac_range
+    {
+        margin-top: 0px;
+    }
+
+    @media only screen and (max-width: 844px) 
+    {
+        .footer_kailas_logo 
+        {
+            margin-top: 50px;
+            width: 100%;
+            background-size:250px;
+        }
+
+        .left_style_img 
+        {
+            height: 100%; 
+        }
+        .left_style_img {
+            justify-content: center;
+        }
+
+        .left_style {
+            margin-top: 100px;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .header_text
+        {
+            margin-top: 50px;
+            font-weight: bold;  
+            text-align: center;
+            font-size: 20px; 
+        }
+        .mc-field-group-right{
+            text-align: center;
+        }
+
+       
+
+        #mc-embedded-subscribe 
+        {
+            
+            border: 0 none;
+            color: white;
+            font-size: 18px;
+            width: 167px;
+            height: 44px;
+            border-radius: 5px 5px 5px 5px;
+            margin-top: 40px;
+        }
+        #mc-embedded-subscribe 
+        {
+            margin: 1em auto; 
+        }
+        .mac_range
+        {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .mce_inline_error {
+            width: 100%;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            font-size: 14px;
+            font-weight: normal;
+            color: #e85c41;
+        }
+    }
+    @media only screen and (max-width: 767px) 
+    {
+        .mc-field-group input 
+        {
+            margin-top: 50px;
+            text-align: center;
+            width: 300px;
+            height: 45px;
+            text-indent: 2%;
+        }
+    }
+</style>
+
+<section id="contact" style="background-color: #f9fafb;">
+    <div class="border d-flex justify-content-center align-items-center contact_bg">
+        <div class="container">
+            <div class="row"> 
+                <div class="col-md-4  d-flex justify-content-center align-items-center contact_txt">
+                    <span lang="eng">CONTACT US</span> 
+                    <span lang="jp">お問合わせ</span> 
+                </div>
+                <div class="col-md-4  d-flex justify-content-center align-items-center contact_arrow"></div>
+                <div class="col-md-4  d-flex justify-content-center align-items-center">
+                    <div class="contact_email"></div>
+                    <span class="contact_email_txt" href="#myModal" data-toggle="modal"  data-target="#exampleModal">
+                        info@kailasrobotics.com
+                    </span>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="container-width">
-        <!-- <div class="main-width-footer"> -->
-            <div class="main-width">
-                <div class="rectangle-32">
-                    <div class="flex-row-cf">
-                        <div class="screenshot-33"></div>
-                        <div class="navigation">
-                            <span>Navigation</span>
-                        </div>
-                        <div class="top-news-product">
-                            <a href="#news" style="text-decoration: none !important; color: #2b3a83;" onclick="handleSmoothScrollToTop(event);" >
-                                <span lang="eng">Top</span> 
-                                <span lang="jp">Top</span>  
-                            </a>
-                            <a href="#news" style="text-decoration: none !important; color: #2b3a83;" onclick="handleSmoothScroll(event);" >
-                                <span lang="eng">NEWS</span> 
-                                <span lang="jp">ニュース</span>  
-                            </a>
-                            <a href="#product" style="text-decoration: none !important; color: #2b3a83;" onclick="handleSmoothScroll(event);">                    
-                                <span lang="eng">PRODUCTS</span> 
-                                <span lang="jp">プロダクト</span>  
-                            </a>
-                            <a  href="#about" style="text-decoration: none !important; color: #2b3a83;" onclick="handleSmoothScroll(event);">
-                                <span lang="eng">ABOUT US</span> 
-                                <span lang="jp">会社概要</span>  
-                            </a>
-
-                            <a href="#contact" style="text-decoration: none !important; color: #2b3a83;" onclick="handleSmoothScroll(event);"> 
-                                <span lang="eng">CONTACT</span> 
-                                <span lang="jp">お問合せ</span>  
-                            </a>
-                        </div>
-                        <div class="subscribe">
-                            <div id="mc_embed_shell" style="width: 100%;">
-                                <div id="mc_embed_signup">
-                                    <form action="https://kailasrobotics.us11.list-manage.com/subscribe/post?u=4b664da3e16931171aec5e14b&amp;id=87521d5634&amp;f_id=0027a0e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-                                        <div id="mc_embed_signup_scroll">
-                                            <h2>
-                                                <span lang="eng">Sign up to our Newsletter</span>
-                                                <span lang="jp">ニュースレターに登録</span>
-                                            </h2>
-                                            <div class="indicates-required">
-                                                <span class="asterisk">*</span> indicates required
-                                            </div>
-                                            <div class="mc-field-group">
-                                                <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
-                                                <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="" placeholder="E-mail">
-                                                <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
-                                            </div>
-                                            <div id="mce-responses" class="clear foot">
-                                                <div class="response" id="mce-error-response" style="display: none;"></div>
-                                                <div class="response" id="mce-success-response" style="display: none;"></div>
-                                            </div>
-                                            <div aria-hidden="true" style="position: absolute; left: -5000px;">
-                                                <input type="text" name="b_4b664da3e16931171aec5e14b_87521d5634" tabindex="-1" value="">
-                                            </div>
-                                            <div class="optionalParent">
-                                                <div class="clear foot">
-                                                    <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe"> 
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                                <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-                                <script type="text/javascript">
-                                (function($) {
-                                    window.fnames = new Array();
-                                    window.ftypes = new Array();
-                                    fnames[0] = 'EMAIL';
-                                    ftypes[0] = 'email';
-                                    fnames[1] = 'FNAME';
-                                    ftypes[1] = 'text';
-                                    fnames[2] = 'LNAME';
-                                    ftypes[2] = 'text';
-                                    fnames[3] = 'ADDRESS';
-                                    ftypes[3] = 'address';
-                                    fnames[4] = 'PHONE';
-                                    ftypes[4] = 'phone';
-                                    fnames[5] = 'BIRTHDAY';
-                                    ftypes[5] = 'birthday';
-                                }(jQuery));
-                                var $mcj = jQuery.noConflict(true);
-                                </script>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="line-36"></div>
-
-                    <div class="flex-row-c">
-                        <div class="regroup">   
-                            <!-- <div class="facebook">
-                                <div class="vector-37"></div>
-                            </div>
-                            <div class="instagram">
-                                <div class="vector-38"></div>
-                            </div> -->
-                            <div class="linkedin-39">
-                                <a target="_blank" href="https://www.linkedin.com/company/97391393/">
-                                    <div class="vector-3a"></div>
-                                </a>
-                                
-                            </div>
-                            <div class="twitter-x">
-                                <!-- <div class="vector-3b"></div> -->
-                                <a target="_blank" href="https://www.youtube.com/channel/UCn9Qw-gqk9xa18vCEAuvYAw">
-                                    <div class="vector-3c"></div>   
-                                </a>
-                            </div>
-                            <div class="youtube">
-                                <!-- <a target="_blank" href="https://www.youtube.com/channel/UCn9Qw-gqk9xa18vCEAuvYAw">
-                                    <div class="vector-3c"></div>   
-                                </a> -->
-                            </div>
-                        </div>
-                        <span class="rights-reserved">©2024 Kailas Robotics. All rights reserved.</span><span class="privacy-policy">Privacy Policy</span><span class="term-of-use">Term of Use</span><span class="ethics-statement">Ethics Statement</span>
-                    </div>
+    <div class="container-fluid py-5">
+        <div class="row"> 
+            <div class="col-md-1"></div>
+            <div class="col-md-4 left_style_img ">
+                <div class="d-flex flex-column"> 
+                    <div class="footer_kailas_logo"></div>
                 </div>
             </div>
-        <!-- </div> -->
+            <div class="col-md-2 left_style">
+                <div class="d-flex flex-column"> 
+                    <div class="footer_navigation_title mb-3">
+                        <span>Navigation</span>
+                    </div>
+                    <a href="#news" class="footer_navigation_link mb-2" onclick="handleSmoothScrollToTop(event);">
+                        <span lang="eng">Top</span> 
+                        <span lang="jp">Top</span>  
+                    </a>
+                    <a href="#news" class="footer_navigation_link mb-2" onclick="handleSmoothScroll(event);">
+                        <span lang="eng">NEWS</span> 
+                        <span lang="jp">ニュース</span>  
+                    </a>
+                    <a href="#product" class="footer_navigation_link mb-2" onclick="handleSmoothScroll(event);">                    
+                        <span lang="eng">PRODUCTS</span> 
+                        <span lang="jp">プロダクト</span>   
+                    </a>
+                    <a href="#about" class="footer_navigation_link mb-2" onclick="handleSmoothScroll(event);">
+                        <span lang="eng">ABOUT US</span> 
+                        <span lang="jp">会社概要</span> 
+                    </a>
+                    <a href="#contact" class="footer_navigation_link mb-2" onclick="handleSmoothScroll(event);"> 
+                        <span lang="eng">CONTACT</span> 
+                        <span lang="jp">お問合せ</span> 
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 left_style_img">
+                
+                <form action="https://kailasrobotics.us11.list-manage.com/subscribe/post?u=4b664da3e16931171aec5e14b&amp;id=87521d5634&amp;f_id=0027a0e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                    <div style="width: 100%;">
+                        <div class="row " >
+                            <div class="col-md-12">
+                                <h2 class="header_text">
+                                    <span lang="eng">Sign up to our Newsletter</span>
+                                    <span lang="jp">ニュースレターに登録</span>
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mc-field-group mc-field-group-right ">
+                                    <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="" placeholder="E-mail">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input  type="submit" name="subscribe" id="mc-embedded-subscribe" class="button subscr_button"  value="Subscribe">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mc-field-group">
+                                    <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+                                    <div class="response" id="mce-error-response" style="display: none;"></div>
+                                    <div class="response" id="mce-success-response" style="display: none;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+                <script type="text/javascript">
+                (function($) {
+                    window.fnames = new Array();
+                    window.ftypes = new Array();
+                    fnames[0] = 'EMAIL';
+                    ftypes[0] = 'email';
+                    fnames[1] = 'FNAME';
+                    ftypes[1] = 'text';
+                    fnames[2] = 'LNAME';
+                    ftypes[2] = 'text';
+                    fnames[3] = 'ADDRESS';
+                    ftypes[3] = 'address';
+                    fnames[4] = 'PHONE';
+                    ftypes[4] = 'phone';
+                    fnames[5] = 'BIRTHDAY';
+                    ftypes[5] = 'birthday';
+                }(jQuery));
+                var $mcj = jQuery.noConflict(true);
+                </script>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="container" style="margin-top: 50px; border-top: 1px solid lightgray;">
+            <div class="row"style="margin-top: 50px">
+                <div class="col-md-4" style="display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <a target="_blank" href="https://www.linkedin.com/company/97391393/">
+                            <div class="footer_twiter"></div>
+                        </a>
+                    </div>
+                    <div>
+                        <a target="_blank" href="https://www.youtube.com/channel/UCn9Qw-gqk9xa18vCEAuvYAw">
+                            <div class="footer_fb"></div>   
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 mac_range">
+                    <div style="text-align: center;" style="margin-top: 40px;">   
+                        <span style="
+                        
+                        color: #000000;
+                        font-family: Roboto, var(--default-font-family);
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 14px;
+                        text-align: center;"
+                        >©2024 Kailas Robotics. All rights reserved.</span>
+                    </div>
+                </div>
+                <div class="col-md-4 " style="display: flex; justify-content: space-between; align-items: center;"> 
+                    <div style="text-align: start;"  style="margin-top: 40px;">
+                        <span style="
+                        color: #2b3a83;
+                        font-family: Roboto, var(--default-font-family);
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 14px;
+                        white-space: nowrap;">Privacy Policy</span>
+                    </div>
+                    <div style="text-align: center;"  style="margin-top: 40px;">
+                        <span  style="
+                        color: #2b3a83;
+                        font-family: Roboto, var(--default-font-family);
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 14px;
+                        white-space: nowrap;">Term of Use</span>
+                    </div>
+                    <div style="text-align: end;">
+                        <span style="
+                        color: #2b3a83;
+                        font-family: Roboto, var(--default-font-family);
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 14px;
+                        white-space: nowrap;">Ethics Statement</span>
+                    </div>   
+                </div>
+            </div>
+        </div>
     </div>
 </section>
-
-<div id="myModal" class="modal">
-    <div class="modal-content">
-        <form id="myForm" name="googleSheet">
-            <div class="modal-header">
-                <h3 style="font-size: 35px;">
-                    <span lang="eng">Contact Us</span>
-                </h3>
-                <button type="button" class="close" id="closeBtn" data-dismiss="modal" aria-hidden="true" onclick="clearForm()">&times;</button>
-            </div>
-            <div class="modal-body">
-                <div id="formAlerts"></div>
-                <div class="controls controls-row">
-                    <div class="control-group">
-                        <label class="input-medium" for="name">
-                            <span style="font-size: 25px;">Name</span>
-                        </label>
-                        <div class="controls">
-                            <input class="input-block-level" type="text" id="inputName" name="name" autocomplete="off" required style="width: 100%;">
-                        </div>
-                    </div>
-                    <div class="control-group">
-                        <label class="input-medium" for="phone">
-                            <span style="font-size: 25px;">Telephone</span>
-                        </label>
-                        <div class="controls">
-                            <input class="input-block-level" type="number" id="inputTelephone" name="phone" autocomplete="off" required style="width: 100%;">
-                        </div>
-                    </div>
-                    <div class="control-group">
-                        <label class="input-medium" for="mail">
-                            <span style="font-size: 25px;">Email</span>
-                        </label>
-                        <div class="controls">
-                            <input class="input-block-level" type="email" id="inputEmail" name="mail" autocomplete="off" required style="width: 100%;">
-                        </div>
-                    </div>
-                    <div class="control-group">
-                        <label class="input-medium" for="requirement">
-                            <span style="font-size: 25px;">Message</span>
-                        </label>
-                        <div class="controls">
-                            <textarea rows="3" class="input-block-level" id="inputRequirement" name="requirement" autocomplete="off" required style="width: 100%;"></textarea>
-                        </div>
-                    </div>
-                    <div class="g-recaptcha" data-sitekey="6Lej9kwjAAAAAPav0xBFXmxKZoBLLC_oiO7uE5zi"></div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button class="btn btn-danger" type="reset">
-                    <span lang="eng">Reset</span>
-                </button>
-                <button class="btn btn-success" type="submit">
-                    <span lang="eng">Send</span>
-                </button>
-            </div>
-        </form>
-    </div>
-</div>
-<script type='text/javascript' src="assets/js/jquery.min.js"></script>
-<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-<script src="https://www.google.com/recaptcha/api.js" async defer></script> 
-<script>
-
-    function getBrowserLang()
-    {   
-        const browserLang = navigator.language || navigator.userLanguage; 
-        
-        console.log("Detected browser language:", browserLang);
-        if (browserLang.startsWith('ja')) 
-        {
-            return 'jp';
-        } 
-        else 
-        {
-            return 'eng';
-        }
-    }
-
-    let langs = ['jp', 'mon', 'eng'];
-    let lang = getBrowserLang(); 
-    
-    setLangStyles(lang);
-
-    function setStyles(styles) 
-    {
-        var elementId = '__lang_styles';
-        var element = document.getElementById(elementId);
-        if (element) {
-            element.remove();
-        }
-
-        let style = document.createElement('style');
-        style.id = elementId;
-        style.type = 'text/css';
-
-        if (style.styleSheet) {
-            style.styleSheet.cssText = styles;
-        } else {
-            style.appendChild(document.createTextNode(styles));
-        }
-        document.getElementsByTagName('head')[0].appendChild(style);
-    }
-
-    function setLang(lang) 
-    {
-        setLangStyles(lang);
-    }
-
-    function setLangStyles(lang) 
-    {
-        let styles = langs
-            .filter(function (l) 
-            {
-                return l != lang;
-            })
-            .map(function (l) 
-            {
-                return ':lang(' + l + ') { display: none; }';
-            })
-            .join(' ');
-
-        setStyles(styles);
-    }
-
-    (function($) 
-    {
-        window.fnames = new Array();
-        window.ftypes = new Array();
-        fnames[0] = 'EMAIL';
-        ftypes[0] = 'email';
-        fnames[1] = 'FNAME';
-        ftypes[1] = 'text';
-        fnames[2] = 'LNAME';
-        ftypes[2] = 'text';
-        fnames[3] = 'ADDRESS';
-        ftypes[3] = 'address';
-        fnames[4] = 'PHONE';
-        ftypes[4] = 'phone';
-        fnames[5] = 'BIRTHDAY';
-        ftypes[5] = 'birthday';
-    }(jQuery));
-    var $mcj = jQuery.noConflict(true);
-
-    document.addEventListener('click', function(event) 
-    {
-        var menu = document.querySelector('.menu');
-        var toggle = document.getElementById('checkbox_toggle');
-        var target = event.target;
-
-        if (!menu.contains(target) && target !== toggle && target.parentNode !== toggle && !target.closest('.nav-links')) 
-        {
-            toggle.checked = false;
-        }
-    })
-
-    function handleSmoothScrollToTop(event) 
-    {
-        event.preventDefault(); 
-
-        window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-    }
-
-    var modal = document.querySelector(".modal");
-
-    var btn = document.getElementById("openModal");
-
-    var span = document.querySelector(".close");
-
-    btn.onclick = function() 
-    {
-        modal.classList.add("show");
-        document.body.style.overflow = "hidden";
-    }
-
-    span.onclick = function() 
-    {
-        modal.classList.remove("show");
-        document.body.style.overflow = "";
-    }
-
-    window.onclick = function(event) 
-    {
-        if (event.target == modal) 
-        {
-            modal.classList.remove("show");
-            document.body.style.overflow = ""; 
-        }
-    }
-
-    function handleSmoothScroll(event) 
-    {
-        event.preventDefault();
-
-        const targetId = event.currentTarget.getAttribute('href');
-        const targetElement = document.querySelector(targetId); 
-
-        if (targetElement) 
-        {
-            const offset = 150;
-            const targetOffsetTop = targetElement.offsetTop - offset; 
-
-
-            window.scrollTo(
-                {
-                    top: targetOffsetTop,
-                    behavior: 'smooth'
-                }
-            );
-        }
-    }
-
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxOL5Y4T6haZ0YCZFPKNhbJRJMLavYGPUD6hzgBydvIQKAxGQYg647sGRN9cK3KW_7nqQ/exec'
-    const scriptMailURL = 'https://script.google.com/a/macros/kailasrobotics.com/s/AKfycbyX7BUQ5_C_Tcre6QKSH2lAeYSLONg_uzqBAvFxx6SoCXQuZ_odJIJcY2BWyhWf2718Nw/exec'
-    const scriptMailCustomerURL = 'https://script.google.com/macros/s/AKfycbxcAV5zcHYPLERmcYdYEp9zthOCbWgHQDwaTE-CK-O8PiwXS5pgWBIZoiqDQd3SdvTEig/exec'
-    const form = document.forms['googleSheet']
-
-
-    form.addEventListener('submit', e => 
-    {
-        e.preventDefault()
-        var recaptcha = $("#g-recaptcha-response").val()
-        // console.log("reCAPTCHA response token:", recaptcha);
-        if (recaptcha === "") 
-        {
-            $("#formAlerts").html('<div class="alert alert-danger"><span lang="eng">Please check the recaptcha!</span></div>');
-        } 
-        else 
-        {
-        $("#formAlerts").html('');
-        setLoading(true)
-        var formData = new FormData(form);
-
-        var formDataObject = {};
-        for (var pair of formData.entries()) 
-        {
-            formDataObject[pair[0]] = pair[1];
-        }
-        // console.log("Form Data:", formDataObject); 
-
-        fetch(scriptURL, { method: 'POST', body: formData})
-            .then(response => 
-            {
-                $("#formAlerts").html('<div class="alert alert-success"><span lang="eng">Successfully!</span></div>');
-                clearForm()
-                setTimeout(function()
-                {
-                    $("#closeBtn").click()
-                    $("#formAlerts").html('')
-                    setLoading(false)
-                    fetch(scriptMailURL)
-                        .then(response => {
-                            console.log("Successfully")
-                            fetch(scriptMailCustomerURL)
-                                .then(response => 
-                                {
-                                    console.log("Successfully send mail for customer")
-                                }) 
-                                .catch(error => 
-                                {
-                                    console.log("Failed send mail for customer")
-                                })
-                        }) 
-                        .catch(error => {
-                            console.log("Failed")
-                            console.log("Error:", error); 
-                        })
-                }, 50) 
-            })
-            .catch(error => {
-                console.log("Error:", error); 
-                $("#formAlerts").html('<div class="alert alert-danger"><span >Error!</div>')
-                setLoading(false)
-                
-            })
-        } 
-    })
-
-    function setLoading(loading) 
-    {
-        if (loading) 
-        {
-            $("#myLoading").css("display", "flex")
-        } 
-        else 
-        {
-            $("#myLoading").css("display", "none")
-        }
-    }
-
-    function clearForm() 
-    {
-        $('#myForm').get(0).reset()
-    }
-
-    window.onload = function() 
-    {
-        const userLang = navigator.language || navigator.userLanguage; 
-        if (userLang.startsWith('ja')) 
-        {
-            // Set Japanese as default
-            document.querySelector('.jp').classList.add('active');
-            document.querySelector('.english').classList.remove('active');
-            setLang('jp');
-        } 
-        else 
-        {
-            // Set English as default
-            document.querySelector('.english').classList.add('active');
-            document.querySelector('.jp').classList.remove('active');
-            setLang('eng');
-        }
-    };
-
-    const handleActiveTab = (element)=>
-    {
-        var menu = document.querySelector('.menu');
-        var toggle = document.getElementById('checkbox_toggle');
-        var target = event.target;
-        toggle.checked = false;
-
-        Array.from(document.querySelectorAll('a')).forEach((el) => el.classList.remove('active'));
-        element.classList.add('active')
-    }
-
-    $(window).load(function() 
-    {
-        $(".btn-nav").on("click tap", function() 
-        {
-            $(".nav-content").toggleClass("showNav hideNav").removeClass("hidden");
-            $(this).toggleClass("animated");
-        });
-    });
-
-    function openLinkedInA() 
-    {
-        window.open('https://www.linkedin.com/in/altanbileg-adiyasuren-66515836/', '_blank');
-    }
-
-    function openLinkedInM() 
-    {
-        window.open('https://www.linkedin.com/in/mdamba/', '_blank');
-    }
-
-    function openLinkedInSH() 
-    {
-        window.open('https://www.linkedin.com/in/yoshi-shiomi-75a8209/', '_blank');
-    }
-
-    var slideIndex = 1;
-    showDivs(slideIndex);
-    
-    function plusDivs(n) 
-    {
-        showDivs(slideIndex += n);
-    }
-    
-    function currentDiv(n) 
-    {
-        showDivs(slideIndex = n);
-    }
-    
-    function showDivs(n) 
-    {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("slideimage");
-        if (n > x.length) {slideIndex = 1}    
-        if (n < 1) {slideIndex = x.length}
-        
-        for (i = 0; i < x.length; i++) 
-        {
-            x[i].style.display = "none";  
-        }
-        
-        for (i = 0; i < dots.length; i++)
-        {
-            dots[i].className = dots[i].className.replace(" list", "");
-        }
-        x[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " list";
-    }
-
-    var slideIndex = 1;
-    showDivs1(slideIndex);
-    
-    function plusDivs1(n) 
-    {
-        showDivs1(slideIndex += n);
-    }
-    
-    function currentDiv1(n) 
-    {
-        showDivs1(slideIndex = n);
-    }
-    
-    function showDivs1(n) 
-    {
-        var i;
-        var x = document.getElementsByClassName("mySlidess");
-        var dots = document.getElementsByClassName("slideimages");
-        if (n > x.length) {slideIndex = 1}    
-        if (n < 1) {slideIndex = x.length}
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" list", "");
-        }
-        x[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " list";
-    }
-</script>

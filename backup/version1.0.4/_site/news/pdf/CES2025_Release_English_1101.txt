@@ -1,0 +1,39 @@
+"Kailas Robotics to Exhibit at CES 2025 Japan Pavilion"
+
+Kailas Robotics (Headquarters: Nishi-Kawaguchi, Saitama Prefecture) will make its debut at the world’s largest digital technology trade show, "CES 2025," held in Las Vegas, USA, from January 9 to January 12, 2025. The company will exhibit in the startup-exclusive area (Eureka Park) within the Japan Pavilion.
+
+During this exhibition, Kailas Robotics will showcase a demonstration that combines its patented technology, "robotic arm for mobile platforms," with XR goggles equipped with eye-tracking technology, allowing the robotic arm to automatically capture objects that the user gazes at. This innovative technology, applicable not only to drones and UGVs but also to humanoids and prosthetics, will be featured at the world's largest tech show.
+
+Kailas Robotics aims to leverage global feedback from this exhibition for solution development geared towards implementing science and technology and expanding its reach to end users.
+
+- Exhibition Overview
+1. "MobiRobo" - A Robotic Arm that Captures Target Objects with Eye-Tracking
+Traditional robotic arms are designed with the assumption that the pivot point at the base is fixed, making it impossible for them to grasp objects while moving, unlike humans. "MobiRobo" breaks this convention by accurately capturing target objects even when the arm's pivot point is mobile. Initially developed for drone integration, this lightweight, high-performance robotic arm can be used in tasks such as high-altitude work, external wall inspections, exterior cleaning, remote sample collection, and hands-free delivery services.
+
+The demonstration at CES envisions the use of this arm as an assistive device for individuals with upper limb disabilities, as a third hand for tasks such as soldering, or as a component of humanoid robots.
+
+- About CES 2025 and the Japan (J-Startup) Pavilion
+CES, held annually in Las Vegas, USA, is one of the world's largest tech events, showcasing cutting-edge technologies across a wide range of categories. The event places significant emphasis on startup exhibits, with over 1,000 startups converging in a special area known as Eureka Park, attracting substantial attention from attendees. In the previous event, approximately 140,000 visitors attended.
+
+- Event Dates: Tuesday, January 7 – Friday, January 10, 2025
+- Location: Las Vegas, USA
+- CES Official Website: [https://www.ces.tech/](https://www.ces.tech/)
+
+Since 2019, JETRO has set up the Japan (J-Startup) Pavilion in the Eureka Park area to support the overseas expansion and promotion of Japanese startup companies. At CES 2025, the pavilion will be strategically located along the main street near the entrance to attract a large audience.
+
+- Exhibit Area Information: [Venetian Hall G](https://www.freemanco.com/forms/531815/venetian_hallg_target_move-in.pdf)
+
+- Future Outlook
+Kailas Robotics aims to establish business alliances with global key players who can utilize its technology and make it available to end users as quickly as possible. Additionally, the global feedback received from the CES 2025 exhibition will be applied to future research and product development.
+
+- About Kailas Robotics
+Kailas Robotics develops compact, high-performance robotic arms that can be integrated with drones and humanoids. In 2023, the company was selected for the Deep Tech course of the GSAP (Global Startup Acceleration Program) led by the Ministry of Economy, Trade and Industry and participated in UC Berkeley's SkyDeck. It has also been chosen for programs such as the "CIC J-StarX Boston Robotics Program," "AICHI Manufacturing Acceleration Program," and the "SHIP for Funding" program by Saitama Prefecture.
+
+For more detailed information about Kailas Robotics, visit: [https://kailasrobotics.com](https://kailasrobotics.com)
+
+- Kailas Robotics Inc.
+Location: SAITEC 506, 3-12-18 Kamiaoki, Kawaguchi City, Saitama Prefecture, 333-0844, Japan  
+CEO: Munkhbayar Danbadarjaa
+
+- Contact for this release (Person in Charge: Shiomi) 
+Email: public-relation@kailasrobotics.com

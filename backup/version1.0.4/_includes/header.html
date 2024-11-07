@@ -1,0 +1,65 @@
+<div class="rectangle" style="z-index: 1000; position: fixed; top: 0; height: 75px; border-bottom: 1px solid rgb(214, 203, 203);">
+    <nav class="navbar"> 
+        <div class="logo">
+            <div class="vector"></div>
+            <div class="vector-1"></div>
+            <div class="union"></div>
+        </div>
+        <ul class="nav-links">
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <div class="menu">
+            <li>
+                <a href="#news" onclick="handleActiveTab(this);handleSmoothScroll(event);" >
+                    <span lang="eng">NEWS</span> 
+                    <span lang="jp">ニュース</span>  
+                </a>
+            </li>
+            <li>
+                <a href="#product" onclick="handleActiveTab(this);handleSmoothScroll(event);">                    
+                    <span lang="eng">PRODUCTS</span> 
+                    <span lang="jp">プロダクト</span>  
+                </a>
+            </li>
+          
+            <li>
+                <a  href="#about" onclick="handleActiveTab(this);handleSmoothScroll(event);">
+                    <span lang="eng">ABOUT US</span> 
+                    <span lang="jp">会社について</span>  
+                </a>
+            </li>
+            <li>
+                <a href="#contact" onclick="handleActiveTab(this);handleSmoothScroll(event);"> 
+                    <span lang="eng">CONTACT</span> 
+                    <span lang="jp">お問合せ</span>  
+                </a>
+            </li>
+            <li class="language" >
+                <a href="#" class="english active" onclick="handleActiveTab(this); setLang('eng');" >ENG</a>
+                <span class="space">/</span>
+                <a  href="#" class="jp" onclick="handleActiveTab(this); setLang('jp');">日本語</a>
+            </li>
+           
+          </div>
+        </ul>
+    </nav>
+</div>
+<div class="rectangle-2" >
+    <span class="make-impossible-possible">Make Impossible Possible </span>
+    <span class="robotic-arms-for-moving-platform">ROBOTIC ARMS FOR MOVING PLATFORMS</span>
+</div>
+<section id="global-trends"  class="global-section">
+    <div class="interview">
+        <span class="response-global-trends">
+            <span lang="eng">
+                In response to aging populations and workplace automation trends, human-robot collaboration is essential. Our lightweight robotic arms easily attach to drones and other moving platforms.
+
+            </span>
+            <span style="text-wrap: wrap;" lang="jp">
+                ドローンのような不安定なプラットフォームでもビジョンシステムによる対象物の自動認識、自動キャッチが可能。
+                ロボットアームの常識を覆す、 強固な土台が不要な軽量且つ高速正確なロボットアーム。    
+                       
+            </span>
+        </span>
+    </div>
+</section>

@@ -1,144 +1,120 @@
+<Style>
+    .news_title
+    {
+        color: #2b3a83;
+        font-family: Roboto, var(--default-font-family);
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: center;
+        padding-bottom:50px ;
+        white-space: nowrap;
+    }
+
+    .news_date 
+    {
+        color: #000000;
+        font-family: Roboto, var(--default-font-family);
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+    
+    .space
+    {
+        margin-left: 10px;
+    }
+
+    .space_top
+    {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    @media only screen and (max-width: 999px) 
+    {
+      
+        .news_title
+        {
+            font-size: 38px;
+            font-weight: 400;
+        }
+        .news_date 
+        {
+            font-size: 20px;
+        }
+    }
+
+    @media only screen and (max-width: 760px) 
+    {
+        .space
+        {
+            margin-left: 0px;
+        }
+        .news_title
+        {
+            font-size: 38px;
+            font-weight: 400;
+        }
+        .news_date 
+        {
+            font-size: 20px;
+        }
+    }
+
+    @media only screen and (max-width: 699px) 
+    {
+        .news_title
+        {
+            font-size: 38px;
+            font-weight: 400;
+        }
+        .news_date 
+        {
+            font-size: 17px;
+        }
+    }
+
+</Style>
 <section id="news" class="news-section">
-    <div class="container-width">
-        <div class="main-width">
-            <div class="flex-row-bfa">
-                <span class="news">
-                    <span lang="eng">NEWS</span> 
-                    <span lang="jp">ニュース</span>  
-                </span>
-                <span class="xponential-expo-mou one">
-                    <a lang="eng" href="/news/J-StarX-Boston_Robotics-PRG_1023_2024_en.html" target="_blank">
-                        <span >2024.10.23</span>
-                        <span class="between_space">Press Release</span>
-                        <span > Kailas Robotics Selected for JETRO "CIC 2024...</span> 
-                    </a>   
-                    <a lang="jp" href="/news/J-StarX-Boston_Robotics-PRG_1023_2024_jp.html" target="_blank">
-                        <span >2024.10.23</span>
-                        <span class="between_space">プレスリリース </span>
-                        <span> JETRO ”2024 J-StarX Boston Robotics Progra ...</span>  
-                    </a>   
-                </span>
-                <span class="xponential-expo-mou two">
-                    <a lang="eng" href="/news/AICHI_Manufacturing_0910_2024_en.html" target="_blank">
-                        <span >2024.09.10</span>
-                        <span class="between_space">Press Release</span>
-                        <span > Kailas Robotics Selected for Aichi Prefecture’s...</span> 
-                    </a>   
-                    <a lang="jp" href="/news/AICHI_Manufacturing_0910_2024_jp.html" target="_blank">
-                        <span >2024.09.10</span>
-                        <span class="between_space">プレスリリース </span>
-                        <span> 愛知県の『AICHI Manufacturing Acceleration ... </span>  
-                    </a>   
-                </span>
-                <span class="xponential-expo-mou three">
-                    <a lang="eng" href="/news/SHIP-Saitama_0827_2024_en.html" target="_blank">
-                        <span >2024.08.06</span>
-                        <span class="between_space">Press Release</span>
-                        <span > Kailas Robotics Selected for Saitama Prefectu...</span> 
-                    </a>   
-                    <a lang="jp" href="/news/SHIP-Saitama_0827_2024_jp.html" target="_blank">
-                        <span >2024.08.06</span>
-                        <span class="between_space">プレスリリース </span>
-                        <span> 埼玉県の『SHIP for Funding』支援プログラム... </span>  
-                    </a>   
-                </span>
-                <span class="xponential-expo-mou four">
-                    <a lang="eng" href="/news/Japan-US_Research_WK_0805_2024_en.html" target="_blank">
-                        <span >2024.08.05</span>
-                        <span class="between_space">Press Release</span>
-                        <span > Our CSO Yoshi Shiomi delivered a presentation...</span> 
-                    </a>   
-                    <a lang="jp" href="/news/Japan-US_Research_WK_0805_2024_jp.html" target="_blank">
-                        <span >2024.08.05</span>
-                        <span class="between_space">プレスリリース </span>
-                        <span> Japan-US Research Collaboration WeekにCSO...</span>  
-                    </a>   
-                </span>
-                <span class="xponential-expo-mou five">
-                    <a lang="eng" href="/news/IP_granted-Kailas_Release_0422_en.html" target="_blank">
-                        <span >2024.04.23 </span>
-                        <span class="between_space">Press Release</span>
-                        <span > Patent granted : for 6-axis robotic arm</span> 
-                    </a>   
-                    <a lang="jp" href="/news/IP_granted-Kailas_Release_0422_jp.html" target="_blank">
-                        <span >2024.04.23  </span>
-                        <span class="between_space">プレスリリース </span>
-                        <span> 6軸ロボットアームの基本特許を取得 </span>  
-                    </a>   
-                </span>
-                <span class="xponential-expo-mou six">
-                    <a lang="eng" href="/news/XPONENTIAL_2024-Kailas_Release_0423_en.html" target="_blank">
-                        <span>2024.04.22 </span>
-                        <span class="between_space">Press Release </span>
-                        <span> XPONENTIAL EXPO </span> 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 news_title">
+                <div style="padding-bottom: 20px;border-bottom: 2px solid darkblue;">
+                    <span lang="eng">NEWS</span>
+                    <span lang="jp">ニュース</span>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-9 ">
+                <div id="news-items" class="news-items">
+                    {% for item in site.data.news %}
+                    <a id="dynamic-link" style="text-decoration: none;" href="{{ item.link_en }}" target="_blank"
+                       data-link-en="{{ item.link_en }}" data-link-jp="{{ item.link_jp }}">
+                        <div class="row news_date" style="border-bottom:1px solid lightgray;">
+                            <div class="col-md-2  space_top d-flex justify-content-center align-items-center">
+                                <span>{{ item.date }}</span>
+                            </div>
+                            
+                            <div class="col-md-10  space_top">
+                                <span lang="eng" class="eng ">{{ item.title_en }}</span>
+                                <span lang="jp" class="jp ">{{ item.title_jp }}</span>
+                            </div>
+                        </div>
                     </a>
-                    <a lang="jp" href="/news/XPONENTIAL_2024-Kailas_Release_0423_jp.html" target="_blank">
-                        <span>2024.04.22 </span>
-                        <span class="between_space">プレスリリース </span>
-                        <span > XPONENTIAL 初展示会 </span> 
-                    </a>
-                </span>
-                <span class="xponential-expo-mou seven">
-                    <a lang="eng" href="/news/MDF_Kailas_Release_0408_en.html" target="_blank">
-                        <span>2024.04.08 </span>
-                        <span class="between_space">Press Release </span>
-                        <span> MD-Farm & MOU</span> 
-                    </a>   
-                    <a lang="jp" href="/news/MDF_Kailas_Release_0408_jp.html" target="_blank">
-                        <span>2024.04.08 </span>
-                        <span lang="jp" class="between_space">プレスリリース </span>
-                        <span lang="jp"> MD-Farm & MOU</span>  
-                    </a>  
-                </span>
-                <span class="xponential-expo-mou eight">
-                    <a lang="eng" href="/news/japan_innovation_campus_20231114_en.html" target="_blank">
-                        <span >2024.04.01 </span>
-                        <span class="between_space">Press Release</span>
-                        <span >
-                            Selected for Japan <br class="phone-ssh"> Innovation Campus co-work..
-                            <!-- Selected for Japan <br class="phone-ssh"> Innovation Campus co-working -->
-                        </span> 
-                    </a>   
-                    <a lang="jp" href="/news/japan_innovation_campus_20231114_jp.html" target="_blank">
-                        <span >2024.04.01 </span>
-                        <span class="between_space">プレスリリース </span>
-                        <span>
-                            Japan Innovation Campus コワーキングへ採択…
-                        </span>  
-                    </a>   
-                </span>
-                <span class="xponential-expo-mou nine">
-                    <a lang="eng" href="/news/JETRO_GSAP_20230913_en.html" target="_blank">
-                        <span >2023.09.13 </span>
-                        <span class="between_space">Press Release</span>
-                        <span >
-                            Kailas Robotics Selected for JETRO's GSAP Pro...
-                            <!-- Selected for Japan <br class="phone-ssh"> Innovation Campus co-working -->
-                        </span> 
-                    </a>   
-                    <a lang="jp" href="/news/JETRO_GSAP_20230913_jp.html" target="_blank">
-                        <span >2023.09.13 </span>
-                        <span class="between_space">プレスリリース </span>
-                        <span>
-                            JETROが主催する“グローバル・スタートアッ...
-                        </span>  
-                    </a>   
-                </span>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 py-5">
+                <div class=" d-flex justify-content-center align-items-center">
+                    <button class="less_button" id="toggle-button" class="btn btn-primary" onclick="toggleNews()"> 
+                        <span lang="eng">View more</span>
+                        <span lang="jp">詳しく見る</span>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
-
-    
-    <!-- <div class="flex-row-d">
-        <div class="line-9"></div>
-        <div class="line-a"></div>
-    </div>
-    <button class="button">
-        <span class="view-more">
-            <span lang="eng">View more</span> 
-            <span lang="jp">詳しく見る</span>  
-        </span>
-        <div class="vector-b"></div>
-        <div class="vector-c"></div>
-    </button> -->
 </section>

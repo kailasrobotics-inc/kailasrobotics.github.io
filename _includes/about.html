@@ -1,244 +1,403 @@
-<section id="about">
-   
-    <div class="windows">
-        <div class="rectangle-1c"><span class="about-us-1d">
-                <span lang="eng">ABOUT US</span> 
-                <span lang="jp">会社概要</span> 
-            </span>
-        </div>
-        <div class="container-width-contact">
-            <div class="main-width">
-                <div class="rectangle-1e">
-                    <span class="company-profile">Company <br />Profile</span>
-                    <div class="line-1f"></div>
+<style>
+    .about_us
+    {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-shrink: 0;
+        position: relative;
+        width: 228px;
+        height: 56px;
+        color: #ffffff;
+        font-family: Roboto, var(--default-font-family);
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 56px;
+        text-align: center;
+        white-space: nowrap;
+        z-index: 79;
+    }
 
-                    <table class="kailas-robotics-inc-saitec-room">
-                        <tr>
-                            <td class="kailas-robotics-inc-saitec-room-20">Company Name</td>
-                            <td class="kailas-robotics-inc-saitec-room-21">Kailas Robotics Inc.</td>
-                        </tr>
-                        <tr>
-                            <td class="kailas-robotics-inc-saitec-room-20">Inception</td>
-                            <td class="kailas-robotics-inc-saitec-room-21">2022.09</td>
-                        </tr>
-                        <tr>
-                            <td class="kailas-robotics-inc-saitec-room-20">Japan Office (Head office)</td>
-                            <td class="kailas-robotics-inc-saitec-room-21">
-                                <span lang="eng"> Room 506, 3-12-18 Kamiaoki,<br/> Kawaguchi-shi, Saitama, <br/>333-0844, Japan</span>
-                                <span lang="jp"> 〒333-0844 埼玉県川口市上青木3-12-18 <br>埼玉県産業技術総合センター506号室</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="kailas-robotics-inc-saitec-room-20">USA Office</td>
-                            <td class="kailas-robotics-inc-saitec-room-21">212-214 Homer Ave, Palo Alto, CA 94301, <br/>(Japan Innovation Campus), USA</td>
-                        </tr>
-                    </table>
-                    <div class="vector-23"></div>
-                    <div class="vector-24"></div>
-                </div>
-            </div>
-        </div>
-        <div class="container-width">
-            <div class="main-width">
-                <span class="founders">Founders</span>
-                <div class="grid-container-about">
-                    <div class="grid-item-about">
-                        <div class="flex-row-baa">
-                            <div class="group"></div>
-                        </div>
-                        <div class="foonders">
-                            <div class="flex-row-27">
-                                <span class="dambadarjaa-munkhbayar">
-                                    <span lang="eng">Dambadarjaa Munkhbayar</span>
-                                    <span lang="jp">ダンバダルジャ・ムンフバヤル</span>
-                                </span>
-                            </div>
-                            <div class="flex-row-28">
-                                <span class="ceo">CEO</span>
-                            </div>
-                            <div class="flex-row-b">
-                                <span class="computer-science-engineer">
-                                    10+yrs Computer Science Engineer<br />Sorako Japan: Founder<br />Tokai University
-                                </span>
-                            </div>
-                            <div class="rectangle-29">
-                                <button class="linkedin"  onclick="openLinkedInM()">
-                                    <div class="vector-2a"></div>
-                                </button>
-                            </div>
-                        
-                        </div>
-                        
-                    </div>
+    .about_profile_logo
+    {
+        width: 400px;
+        height: 250px;
+        background-image: url(../assets/kailas_images/about_logo1.png);
+        background-size: 404px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .about_profile_table
+    {
+        position: relative;
+        color: #000000;
+        font-family: Roboto, var(--default-font-family);
+        font-size: 1.1vw;
+        font-weight: 400;
+        margin-top: 0px;
+        text-align: left;  
+    }
 
-                    <div class="grid-item-about">
-                        <div class="flex-row-baa">
-                            <div class="group-25"></div>
-                        </div>
-                        <div class="flex-row-27">
-                            <span class="adiyasuren-altanbileg">
-                                <span lang="eng">Adiyasuren Altanbileg</span>
-                                <span lang="jp">アデイヤスレン・アルタンビレグ</span>
-                            </span>
-                        </div>
-                        <div class="flex-row-28">
-                            <span class="ceo">CTO</span>
-                        </div>
-                        <div class="flex-row-b">
-                            <span class="computer-science-engineer">
-                                10+yrs Robotics Engineer<br />KSJ: CTO & Board member<br />Int'l Physics Olympian<br />Tokyo university
-                            </span>
-                        </div>
-                        <div class="rectangle-29">
-                            <button class="linkedin"  onclick="openLinkedInA()">
-                                <div class="vector-2a"></div>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="grid-item-about">
-                        <div class="flex-row-baa">
-                            <div class="group-26"></div>
-                        </div>
-                        <div class="flex-row-27">
-                            <span class="yoshi-shiomi">
-                                <span lang="eng">Yoshi Shiomi</span>
-                                <span lang="jp">塩見 佳久</span>
-                            </span>
-                        </div>
-                        <div class="flex-row-28">
-                            <span class="ceo">CSO</span>
-                        </div>
-                        <div class="flex-row-b">
-                            <span class="computer-science-engineer">
-                                FLIP FRIDAY Founder<br />Chalk Digital Japan: CEO<br />Prodrone: EVP<br />Yoshimoto Kogyo: Producer
-                            </span>
-                        </div>
-                        <div class="rectangle-29">
-                            <button class="linkedin" onclick="openLinkedInSH()">
-                                <div class="vector-2a"></div>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>        
-    </div>    
-    <div class="phone ">
-        <div class="rectangle-1c"><span class="about-us-1d">
-                <span lang="eng">ABOUT US</span> 
-                <span lang="jp">会社概要</span> 
-            </span>
-        </div>
-        <div class="rectangle-1e">
-            <span class="company-profile">Company <br />Profile</span>
-            <div class="line-1f"></div>
+    .about_profile_table_td
+    {
+        margin-left: 100px;
+        position: relative;
+        color: #000000;
+        font-family: Roboto, var(--default-font-family);
+        font-size: 1.1vw;
+        font-weight: 400;
+        text-align: left; 
+    }
+
+    .about_founder_txt
+    {
+        height: 47px;
+        color: #2b3a83;
+        font-family: Roboto, var(--default-font-family);
+        font-size: 40px;
+        font-weight: 500;
+        text-align: center;
+        white-space: nowrap;
+        text-align: left;
+    }
+
+    .about_founder_image1
+    {
+        flex-shrink: 0;
+        position: relative;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        border: 5px solid #2b3a83;
+        background: url(../assets/images/8af3f18907723a60b47748376c807c85.jpg) no-repeat center;
+        background-size: cover;
+    }
+    .about_founder_image2
+    {
+        flex-shrink: 0;
+        position: relative;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        border: 5px solid #2b3a83;
+        background: url(../assets/images/4f008da777343f965f1b754ba522038d.jpg) no-repeat center;
+        background-size: cover;
+    }
+    .about_founder_image3
+    {
+        flex-shrink: 0;
+        position: relative;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        border: 5px solid #2b3a83;
+        background: url(../assets/images/3f37de8f7abc6f8b65008b8c755a54eb.jpg) no-repeat center;
+        background-size: cover;
+    }
+    .about_founder_name
+    {
+        color: #2b3a83;
+        font-family: Roboto, var(--default-font-family);
+        font-size: 26px;
+        font-weight: 500;
+        line-height: 30px;
+        white-space: nowrap;
+    }
+
+    .about_founder_position
+    {
+        text-align: left;
+        color: #2b3a83;
+        font-family: Roboto, var(--default-font-family);
+        font-size: 20px;
+        font-weight: 500;
+        white-space: nowrap;
+    }
     
-            <table class="kailas-robotics-inc-saitec-room" style="width: 85%;">
-                
-                <tr>
-                    <td class="kailas-robotics-inc-saitec-room-20">Company Name</td>
-                    <td class="kailas-robotics-inc-saitec-room-21">Kailas Robotics Inc.</td>
-                </tr>
-                <tr>
-                    <td class="kailas-robotics-inc-saitec-room-20">Inception</td>
-                     <td class="kailas-robotics-inc-saitec-room-21">2022.09</td>
-                </tr>
-                <tr>
-                      <td class="kailas-robotics-inc-saitec-room-20">Japan Office<br>  (Head office)</td>
-                      <td class="kailas-robotics-inc-saitec-room-21" style="white-space;">
-                        <span lang="eng"> Room 506, 3-12-18 Kamiaoki, Kawaguchi-shi, Saitama, 333-0844, Japan</span>
-                        <span lang="jp"> 〒333-0844 埼玉県川口市上青木 3-12-18 埼玉県産業技術総合センター506号室</span>
-                    </td>
-                </tr>
-                <tr>
-                      <td class="kailas-robotics-inc-saitec-room-20">USA Office</td>
-                      <td class="kailas-robotics-inc-saitec-room-21">212-214 Homer Ave, Palo Alto,<br/> CA 94301, (Japan Innovation <br/>Campus), USA</td>
-                </tr>
-            </table>
-            <div class="vector-23"></div>
-            <div class="vector-24"></div>
-        </div>
-        <span class="founders">Founders</span>
-        <div class="grid-container-about">
-            <div class="grid-item-about">
-                <div class="flex-row-baa">
-                    <div class="group"></div>
-                
+    .about_founder_description
+    {
+        color: #000000;
+        font-family: Roboto, var(--default-font-family);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 27.438px;
+        text-align: left;
+        height: 160px;
+    }
+
+    .about_founder_social_btn
+    {
+        width: 100%;
+        height: 50px;
+        background: #f5f5f5;
+        border-radius: 5px;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about_founder_social_icon
+    {
+        background: url(../assets/images/bb0b0979-fb07-4ccc-a186-696c9ef127c9.png) no-repeat center;
+        width: 30px;
+        height: 30px;
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    @media (max-width: 1500px) 
+    {
+       
+        .about_profile_table
+        {
+            font-size: 1.6vw; 
+        }
+
+        .about_profile_table_td
+        {
+            font-size: 1.6vw; 
+        }
+    }
+
+    @media (max-width: 1000px) 
+    {
+        .about_founder_image1
+        {
+            width: 200px;
+            height: 200px;
+        }
+        .about_founder_image2
+        {
+            width: 200px;
+            height: 200px;
+        }
+        .about_founder_image3
+        {
+            width: 200px;
+            height: 200px;
+        }
+        .about_profile_logo {
+            width: 400px;
+            height: 250px;
+            background-size: 30vw;
+        } 
+
+        .about_founder_name {
+            font-size: 18px;
+        }
+
+        .about_founder_position {
+            font-size: 17px;
+        }
+
+        .about_founder_description {
+            font-size: 15px;
+        }
+
+        .about_profile_table
+        {
+            font-size: 2.1vw 
+        }
+
+        .about_profile_table_td
+        {
+            font-size: 2.1vw
+        }
+    }
+
+    @media only screen and (max-width: 766px) 
+    {
+        .about_profile_logo {
+            width: 400px;
+            height: 250px;
+            background-size: 340px;
+        } 
+        .about_profile_table
+        {
+            font-size: 18px; 
+        }
+
+        .about_profile_table_td
+        {
+            font-size: 18px;
+        }
+
+        .about_founder_name
+        {
+            font-size: 26px;
+        }
+
+        .about_founder_position
+        {
+            font-size: 20px;
+        }
+        
+        .about_founder_description
+        {
+            font-size: 20px;
+            line-height: 27.438px;
+        }
+    }
+
+
+    .col-md-3 {
+        display: flex;
+        justify-content: center;  /* Centers horizontally */
+        align-items: center;      /* Centers vertically */
+        border-color: black;      /* Keeping the existing border */
+    }
+    @media only screen and (max-width: 699px) 
+    {
+        .about_profile_logo {
+            width: 400px;
+            height: 250px;
+            background-size: 340px;
+        } 
+        .about_profile_table
+        {
+            font-size: 14px; 
+        }
+
+        .about_profile_table_td
+        {
+            font-size: 14px;
+        }
+    }
+</style>
+
+<div id="product" class="d-flex justify-content-center align-items-center border rounded p-3" style="background: #2b3a83;">
+    <span class="text-center products-e">
+        <h1 class=" about_us">
+            <span lang="eng">ABOUT US</span> 
+            <span lang="jp">会社概要</span> 
+        </h1>
+    </span>
+</div>
+
+<section id="about" >
+    <div class="container-fluid">
+        <div class="py-5" style="background-color: #f9fafb;">
+            <div class="row py-5">
+                <div class="col-md-1"></div>
+    
+                <div class="col-md-4 border-color-black">
+                    <div class="about_profile_logo"></div>
                 </div>
-                <div class="flex-row-27">
-                    <span class="dambadarjaa-munkhbayar">
-                        <span lang="eng">Dambadarjaa Munkhbayar</span>
-                        <span lang="jp">ダンバダルジャ<br>ムンフバヤル</span>
-                    </span>
-                
+                <div class="col-md-1"></div>
+                <div class="col-md-5 d-flex py-4 flex-column justify-content-center">
+                    <table class="table about_profile_table"> 
+                        <tbody>
+                            <tr>
+                                <td>Company Name</td>
+                                <td class="about_profile_table_td">Kailas Robotics Inc.</td>
+                            </tr>
+                            <tr>
+                                <td>Inception</td>
+                                <td class="about_profile_table_td">2022.09</td>
+                            </tr>
+                            <tr>
+                                <td>Japan Office (Head office)</td>
+                                <td class="about_profile_table_td">
+                                    <span lang="eng"> Room 506, 3-12-18 Kamiaoki, Kawaguchi-shi, Saitama, 333-0844, Japan</span>
+                                    <span lang="jp"> 〒333-0844 埼玉県川口市上青木 3-12-18 埼玉県産業技術総合センター506号室</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>USA Office</td>
+                                <td class="about_profile_table_td">212-214 Homer Ave, Palo Alto, CA 94301, (Japan Innovation Campus), USA</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <div class="flex-row-28">
-                    <span class="ceo">CEO</span>
-                
-                </div>
-                <div class="flex-row-b">
-                    <span class="computer-science-engineer">
-                        10+yrs Computer Science Engineer<br />Sorako Japan: Founder<br />Tokai University
-                    </span>
-                </div>
-                <div class="rectangle-29">
-                    <button class="linkedin" onclick="openLinkedInM()">
-                        <div class="vector-2a"></div>
-                    </button>
-                </div>
-            </div>
-            <div class="grid-item-about"></div>
-            <div class="grid-item-about">
-                <div class="flex-row-baa">
-                    <div class="group-25"></div>
-                </div>
-                <div class="flex-row-27">
-                    
-                    <span class="adiyasuren-altanbileg">
-                        <span lang="eng">Adiyasuren Altanbileg</span>
-                        <span lang="jp">アデイヤスレン<br>アルタンビレグ</span>
-                    </span>
-                </div>
-                <div class="flex-row-28">
-                    <span class="ceo">CTO</span>
-                </div>
-                <div class="flex-row-b">
-                    <span class="computer-science-engineer">
-                        10+yrs Robotics Engineer<br />KSJ: CTO & Board member<br />Int'l Physics Olympian<br />Tokyo university
-                    </span>
-                </div>
-                <div class="rectangle-29">
-                    <button class="linkedin" onclick="openLinkedInA()">
-                        <div class="vector-2a"></div>
-                    </button>
-                </div>
-            </div>
-            <div class="grid-item-about"></div>
-            <div class="grid-item-about">
-                <div class="flex-row-baa">
-                    
-                    <div class="group-26"></div>
-                </div>
-                <div class="flex-row-27">
-                    <span class="yoshi-shiomi">
-                        <span lang="eng">Yoshi Shiomi</span>
-                        <span lang="jp">塩見 佳久</span>
-                    </span>
-                </div>
-                <div class="flex-row-28">
-                    <span class="ceo">CSO</span>
-                </div>
-                <div class="flex-row-b">
-                    <span class="computer-science-engineer">
-                        FLIP FRIDAY Founder<br />Chalk Digital Japan: CEO<br />Prodrone: EVP<br />Yoshimoto Kogyo: Producer
-                    </span>
-                </div>
-                <div class="rectangle-29">
-                    <button class="linkedin"  onclick="openLinkedInSH()">
-                        <div class="vector-2a"></div>
-                    </button>
-                </div>
+                <div class="col-md-1"></div>
             </div>
         </div>
     </div>
-</section>
+    <div class="container d-flex justify-content-center ">
+        <div class="col-md-6   ">
+            <span class="about_founder_txt">Founders</span>
+        </div>
+        <div class="col-md-6 "></div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 ">
+                <div class="card-body ">
+                    <div class="row d-flex justify-content-center">
+                        <div class="about_founder_image1"></div>
+                    </div>
+                    <div class="row">
+                        <span class="py-5 about_founder_name container">
+                            <span lang="eng">Dambadarjaa Munkhbayar</span>
+                            <span lang="jp">ダンバダルジャ ムンフバヤル</span>
+                        </span>
+                    </div>
+                    <div class="row">
+                        <p class="py-1 about_founder_position container">CEO</p>
+                    </div>
+                    <div class="row">
+                        <p class="py-1 about_founder_description container">
+                        10+yrs Computer Science Engineer<br>Sorako Japan: Founder<br>Tokai University</p>
+                    </div>
+                    <div class="row">
+                        <button class="btn btn-link about_founder_social_btn" onclick="openLinkedInM()">
+                            <div class="about_founder_social_icon"></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="card-body ">
+                    <div class="row d-flex justify-content-center">
+                        <div class="about_founder_image2"></div>
+                    </div>
+                    <div class="row">
+                        <span class="py-5 about_founder_name  container" style="width: 100%;">
+                            <span lang="eng">Adiyasuren Altanbileg</span>
+                            <span lang="jp">アデイヤスレン アルタンビレグ</span>
+                        </span>
+                    </div>
+                    <div class="row">
+                        <p class="py-1 about_founder_position  container" style="width: 100%;">CTO</p>
+                    </div>
+                    <div class="row " >
+                        <p class="py-1 about_founder_description  container" style="width: 100%;">
+                        10+yrs Robotics Engineer<br>KSJ: CTO & Board member<br>Int'l Physics Olympian<br>Tokyo university</p>
+                    </div>
+                    <div class="row">
+                        <button class="btn btn-link about_founder_social_btn" onclick="openLinkedInA()">
+                            <div class="about_founder_social_icon"></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="card-body">
+                    <div class="row d-flex justify-content-center">
+                        <div class="about_founder_image3"></div>
+                    </div>
+                    <div class="row">
+                        <span class="py-5 about_founder_name container">
+                            <span lang="eng">Yoshi Shiomi</span>
+                            <span lang="jp">塩見 佳久</span>
+                        </span>
+                    </div>
+                    <div class="row">
+                        <p class="py-1 about_founder_position container">CSO</p>
+                    </div>
+                    <div class="row">
+                        <p class="py-1 about_founder_description container">
+                        FLIP FRIDAY Founder<br>Chalk Digital Japan: CEO<br>Prodrone: EVP<br>Yoshimoto Kogyo: Producer</p>
+                    </div>
+                    <div class="row">
+                        <button class="btn btn-link about_founder_social_btn" style="outline: none;" onclick="openLinkedInSH()">
+                            <div class="about_founder_social_icon"></div>
+                        </button>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+</section> 
