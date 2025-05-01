@@ -1,0 +1,25 @@
+Kailas Robotics プレスリリース  
+Kailas Roboticsが村田製作所の「KUMIHIMO Tech Camp with Murata 2024」にて優秀賞を受賞
+
+
+株式会社Kailas Robotics（本社：埼玉県川口市、代表取締役：塩見佳久、以下「Kailas Robotics」）は、株式会社村田製作所（以下「村田製作所」）が主催する事業共創プロジェクト「KUMIHIMO Tech Camp with Murata 2024」において、優秀賞を受賞したことをお知らせいたします。
+
+KUMIHIMO Tech Camp with Murata 2024について  
+「KUMIHIMO Tech Camp with Murata」は、村田製作所が一般販売していない最先端の電子部品（センサ・通信モジュールなど）をスタートアップや大学に提供し、これからの世の中を変えていく製品・サービス・ソリューションのアイデアを共創するプロジェクトです。本年度は最優秀賞1社、優秀賞2社、敢闘賞2社が選出され、Kailas Roboticsは優秀賞に選ばれました。
+https://solution.murata.com/ja-jp/collaboration/kumihimo-tech-camp/
+https://solution.murata.com/ja-jp/collaboration/kumihimo-tech-camp/archive/2024/result/
+
+
+受賞の背景と今後の展望  
+Kailas Roboticsは、ドローンやUGV（無人地上車両）、ヒューマノイドロボットなど移動体に搭載可能な小型・高性能ロボットアーム「MobiRobo」を開発しています。独自のSoC（System on Chip）ベース設計とFPGA技術により、支点が動いても正確に物体を把持できるコア技術を持ち、産業界や社会課題の解決に貢献することを目指しています。
+
+今回の受賞を機に、村田製作所の高品質なハードウェアとKailas Roboticsの先進的なロボットアーム技術を融合させることで、より多様な分野での課題解決に取り組む検討をしてまいります。
+
+Kailas Roboticsについて  
+Kailas Roboticsは、2022年設立のスタートアップ企業です。小型・高性能ロボットアームの開発を通じて、製造・農業・物流・医療など幅広い分野に革新的な自動化ソリューションを提供を目指しています。2025年1月には「CES Innovation Award」を受賞し、国内外で高い評価を得ています。
+
+【本件に関するお問い合わせ先】  
+株式会社Kailas Robotics  
+埼玉県川口市上青木3-12-18 埼玉県産業技術総合センター506  
+E-mail: public-relation@kailasrobotics.com  
+ウェブサイト: https://kailasrobotics.com
