@@ -1,0 +1,26 @@
+Awarded the Excellence Prize at "KUMIHIMO Tech Camp with Murata 2024"
+
+Kailas Robotics Co., Ltd. (Headquarters: Kawaguchi City, Saitama Prefecture; CEO: Yoshihisa Shiomi; hereinafter "Kailas Robotics") is pleased to announce that it has been awarded the Excellence Prize at the "KUMIHIMO Tech Camp with Murata 2024," a business co-creation project organized by Murata Manufacturing Co., Ltd. (hereinafter "Murata Manufacturing").
+
+About KUMIHIMO Tech Camp with Murata 2024  
+"KUMIHIMO Tech Camp with Murata" is a collaborative project in which Murata Manufacturing provides startups and universities with access to cutting-edge electronic components (such as sensors and communication modules) that are not generally available for sale. The program aims to co-create ideas for products, services, and solutions that will shape the future. This year, one company was selected for the Grand Prize, two for the Excellence Prize, and two for the Fighting Spirit Prize. Kailas Robotics was selected as one of the Excellence Prize winners.
+(Reference: https://solution.murata.com/ja-jp/collaboration/kumihimo-tech-camp/  
+https://solution.murata.com/ja-jp/collaboration/kumihimo-tech-camp/archive/2024/result/)
+
+Background of the Award and Future Prospects  
+Kailas Robotics develops "MobiRobo," a compact and high-performance robotic arm that can be mounted on mobile platforms such as drones, UGVs (unmanned ground vehicles), and humanoid robots. Leveraging our proprietary SoC (System on Chip)-based design and FPGA technology, we have developed core technology that enables precise object handling even when the base is in motion. Our goal is to contribute to solving challenges in industry and society.
+
+Taking this award as an opportunity, we will consider further integrating Murata Manufacturing’s high-quality hardware with Kailas Robotics’ advanced robotic arm technology to address challenges in an even broader range of fields.
+
+About Kailas Robotics  
+Founded in 2022, Kailas Robotics is a startup company dedicated to the development of compact, high-performance robotic arms. Through these innovations, we aim to provide cutting-edge automation solutions across a wide variety of sectors, including manufacturing, agriculture, logistics, and healthcare. In January 2025, we were honored with the "CES Innovation Award" and have received high acclaim both domestically and internationally.
+
+For inquiries regarding this matter:  
+Kailas Robotics Co., Ltd.  
+Saitama Industrial Technology Center 506, 3-12-18 Kamiaoki, Kawaguchi City, Saitama Prefecture  
+E-mail: public-relation@kailasrobotics.com  
+Website: https://kailasrobotics.com
+
+
+---
+Answer from Perplexity: pplx.ai/share
