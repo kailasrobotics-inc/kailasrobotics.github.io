@@ -1,0 +1,40 @@
+Kailas Robotics Inc. Selected for JETRO “GSAP Manufacturing Tech Course” — Aiming to Enter the U.S. Manufacturing Industry
+
+~ Taking on the Global Market with “MobiRobo,” a Mobile Manipulator Pioneering the Era of Physical AI ~
+
+Kailas Robotics Inc. (Headquarters: Kawaguchi City, Saitama, Japan; CEO: Yoshihisa Shiomi) is pleased to announce its selection for the 
+“Manufacturing Tech & HardTech Course” of the Global Startup Acceleration Program (GSAP) 2025, hosted by JETRO (Japan External Trade Organization).
+
+Challenging the U.S. Market with Innovative Mobile Manipulator Technology  
+Kailas Robotics is an innovative robotics company developing and manufacturing “MobiRobo,” a 
+mobile manipulator equipped with industry-first technology that enables it to grasp objects while in motion. 
+Our six-axis robot arm supports high-speed data integration with AI frameworks. Despite its ultra-compact and lightweight design, 
+it offers precise operation and can be mounted on drones, AMRs, and humanoid robots, making it a groundbreaking product for various mobile platforms.
+
+Partnering with a World-Class Acceleration Program  
+The GSAP Manufacturing Tech Course, for which we have been selected, is run in collaboration with “industry 4.0,” 
+an accelerator based in Illinois, USA. This approximately 12-week program leverages strong connections with major 
+manufacturers and investors. Participating companies receive lectures on strategy, marketing, and fundraising, along with one-on-one mentoring, 
+networking, and investor demo days—all aimed at making a strong entry into the U.S. manufacturing market.
+
+World-Class Technology with International Recognition  
+Kailas Robotics has already earned several international accolades:  
+- CES 2025 Innovation Award: Officially recognized for our innovative technology at the world’s largest technology trade show  
+- Global Pitch Battle Robotics Division Winner: Ranked first among five companies at the CES 2025 Japan Pavilion  
+- Application Development Collaboration with MinebeaMitsumi: Technology co-development with a Nikkei Stock Average constituent company  
+- Murata Manufacturing Co-Creation Project Excellence Award: Winner at KUMIHIMO Tech Camp with Murata 2024
+
+Aiming to Contribute to the Next Generation of Manufacturing  
+CEO Yoshihisa Shiomi commented, “Our selection for the GSAP Manufacturing Tech Course is a significant first 
+step toward spreading our innovative mobile manipulator technology worldwide. By collaborating with mentors with 
+decades of experience in the U.S. manufacturing industry, we aim to help solve the challenges of labor shortages and improved 
+safety in manufacturing.”
+
+Through advanced System on Chip (SoC) designs and FPGA technology, we continue to develop 
+innovative robotic arms capable of achieving precision operations while in motion—something previously thought impossible. 
+Kailas Robotics will continue to support the transformation of the manufacturing industry in the Industry 4.0 era and work toward a 
+society that enhances human potential and safety.
+
+
+JETRO GSAP Page (in Japanese)
+https://www.jetro.go.jp/news/announcement/2025/0c011536f843a74c.html
